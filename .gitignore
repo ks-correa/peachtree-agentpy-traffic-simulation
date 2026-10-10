@@ -1,0 +1,9 @@
+# Datasets grandes
+data/*.zip
+data/export.csv
+data/peachtree_full.csv
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+.venv/
