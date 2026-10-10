@@ -1,0 +1,9 @@
+{
+  "training_acquisition": "B2",
+  "confirmed_scope_events": 21,
+  "scope_vehicles": 276,
+  "observed_exposure_vehicle_seconds": 16983.100000000002,
+  "model": "Necessary topology only; discretionary disabled",
+  "classification": "ASSUMPTION_SIMPLIFICATION_SUPPORTED_BY_SPARSE_TRAIN_SAMPLE",
+  "reason": "21 events do not robustly identify a multivariate gap/speed/distance probability; no B1 used"
+}

@@ -1,0 +1,114 @@
+{
+  "tests_total": 151,
+  "passed": 125,
+  "skipped": 26,
+  "failures": 0,
+  "errors": 0,
+  "skipped_details": [
+    {
+      "test": "test_export_audit.ActualExportTests.test_export_and_subset_integrity",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_export_audit.ActualExportTests.test_independent_full_location_scan",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_export_audit.ActualExportTests.test_no_fabricated_split_or_transferability",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_export_audit.ActualExportTests.test_population_reconciliation",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_export_audit.ActualExportTests.test_previous_audit_preserved",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_export_audit.ActualExportTests.test_unavailable_percentages_are_null",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_headway",
+      "reason": "No local trajectories: cannot test headway semantics"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_lane_changes",
+      "reason": "No local trajectories: cannot test lane-change detection"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_leader_follower",
+      "reason": "No local trajectories: cannot test leader/follower references"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_train_test_isolation",
+      "reason": "No local trajectories: cannot verify real TRAIN/TEST isolation"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_vehicle_id_and_no_leakage",
+      "reason": "No local trajectories: cannot test Vehicle_ID or identity leakage"
+    },
+    {
+      "test": "test_local_audit.AuditTests.test_vehicle_time",
+      "reason": "No local trajectories: cannot test vehicle time monotonicity"
+    },
+    {
+      "test": "test_peachtree_audit.PeachtreeSourceTests.test_actual_frames_and_identity_isolation",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_audit.PeachtreeSourceTests.test_reciprocal_counts_and_filter_denominators",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_integrity_and_reconciliation",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_not_declared_frozen_or_calibrated",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_audit.PeachtreeSourceTests.test_transferability_orientation_and_categorical_types",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_actual_deterministic_output_hashes",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_all_sources_stay_intact",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_confirmed_events_follow_protocol",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_documented_sections_intersections",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_draft_is_not_a_freeze_or_calibration",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_parquet_qc_scope_identity_and_integrity",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_real_clock_counts_and_document_association",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_real_physical_cohort_pairs_and_conservation",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    },
+    {
+      "test": "test_peachtree_system.ActualSystemTests.test_real_throughput_matches_events_not_records",
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
+    }
+  ],
+  "B1_LOCKED": true
+}

@@ -1,0 +1,7 @@
+series,bin_s,maximum_cumulative_departure_deviation,maximum_cumulative_departure_deviation_event_times,MAE_per_bin,timing_bias_s,real_total,simulated_total,timing_bias_definition
+OLD_BASELINE,10.0,8,8.0,1.2553191489361701,0.738617732997415,274,274,"sorted departures, not paired vehicle trajectories"
+OLD_BASELINE,30.0,7,8.0,1.6875,0.738617732997415,274,274,"sorted departures, not paired vehicle trajectories"
+OLD_BASELINE,60.0,6,8.0,1.75,0.738617732997415,274,274,"sorted departures, not paired vehicle trajectories"
+REVISED_BASELINE,10.0,7,9.0,1.3617021276595744,2.4039693994336573,274,274,"sorted departures, not paired vehicle trajectories"
+REVISED_BASELINE,30.0,7,9.0,2.25,2.4039693994336573,274,274,"sorted departures, not paired vehicle trajectories"
+REVISED_BASELINE,60.0,6,9.0,2.125,2.4039693994336573,274,274,"sorted departures, not paired vehicle trajectories"

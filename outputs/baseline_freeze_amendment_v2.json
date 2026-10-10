@@ -1,0 +1,71 @@
+{
+  "version": 2,
+  "reason": "Before any successful rollout: source same-lane overlap 0.4328168656m at frame931; earliest nonoverlap snapshot under declared approach-lane carry is frame936. Original no-leader GREEN median1.18m/s conflates starts with free flow. Include downstream unconstrained no-leader observations and prespecify P85 with P50/P95 bounds. No optimizer/visual/B1 result used.",
+  "original_freeze": "baseline_scope_freeze_v1.json",
+  "scope_unchanged": true,
+  "B1_LOCKED": true,
+  "clock_start_relative_s": 93.4,
+  "clock_start_frame": 936,
+  "criteria": {
+    "v0": "Prespecified P85 positive speed of no-leader normal-lane road observations; next signal GREEN or no next signal; exclude saturation and kinematic jumps. P50/P95 bounds. Amendment before any successful rollout: original sample mostly starts, not free cruise.",
+    "T": "Median valid reported Time_Headway in cleaned moving GREEN CF sample at or above median strictly positive CF speed; front-to-front seed, then calibrated net-gap parameter",
+    "s0": "Median positive cleaned CF bumper gap at exactly reported zero speed",
+    "a": "Median strictly positive nonsaturated cleaned CF acceleration",
+    "b": "Median absolute strictly negative nonsaturated cleaned CF acceleration",
+    "bounds": "Prespecified empirical P10/P90 of each estimation sample; median is initial candidate. Bounds not selected on visual fit.",
+    "queue_proxy": "Exactly stopped connected lane chain; adjacency gap bounded by TRAIN standstill-gap P90. Numerical zero tolerance1e-6m/s; no cognitive threshold.",
+    "yellow": "Inspect B2 sample first; conservative comfortable-stopping-distance rule if no stable decision rule identifiable.",
+    "calibration_seeds": [
+      10,
+      11,
+      12
+    ],
+    "final_train_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029
+    ],
+    "delta": {
+      "value": 4,
+      "classification": "LITERATURE_DERIVED",
+      "source": "https://mtreiber.de/MicroApplet/IDM.html"
+    },
+    "objective_components": [
+      "mean_speed_relative_error",
+      "speed_W1_normalized",
+      "headway_W1_normalized",
+      "route_time_relative_error",
+      "stopped_fraction_absolute_error",
+      "throughput_temporal_normalized_error"
+    ],
+    "objective_weights": "Equal arithmetic mean of individually reported dimensionless errors; missing exits/unfinished demand add explicit feasibility penalty",
+    "optimization": "Bounded deterministic parameter search followed by Powell; candidate score is average of fixed development seeds, never best seed"
+  }
+}

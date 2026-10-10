@@ -1,0 +1,11 @@
+parameter,source,method,classification,identifiable,future_use,status
+desired_free_speed,I80 TRAIN (absent),Free-flow candidates are not observed desired speed,CALIBRATED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+acceleration_behavior,I80 TRAIN (absent),Empirical acceleration; condition on ego and leader,DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+braking_behavior,I80 TRAIN (absent),Empirical negative acceleration,DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+gap_response,I80 TRAIN (absent),Conditional response; causal reaction not identified by correlation,CALIBRATED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+relative_speed_response,I80 TRAIN (absent),Conditional acceleration response,CALIBRATED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+headway_distribution,I80 TRAIN (absent),Valid non-sentinel same-time interactions,DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+vehicle_classes,I80 TRAIN (absent),Per-vehicle class proportions,DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+arrivals,I80 TRAIN (absent),"Boundary crossings, not arbitrary first observation",DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+lane_change_frequency,I80 TRAIN (absent),Contiguous transitions per vehicle exposure,DATASET_DERIVED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT
+merge_behavior,I80 TRAIN (absent),Requires I-80 geometry and trajectory evidence,CALIBRATED,False,Conditional future method; no parameter estimated,NO_I80_ROWS_IN_EXPORT

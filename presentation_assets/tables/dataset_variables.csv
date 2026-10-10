@@ -1,0 +1,22 @@
+Variable,Uso en el modelo,source_artifact
+Vehicle_ID,"Identidad de trayectoria, con adquisición",data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Frame_ID,Reloj relativo a10Hz,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Global_Time,"Separar adquisiciones; epoch inconsistente, no fecha civil corregida",data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Local_X,Posición lateral del frente; contexto de carril,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Local_Y,"Frente longitudinal, alcance y crossings",data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+v_Vel,Velocidad inicial/medición; no replay,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+v_Acc,Diagnóstico estadístico y estimación B2,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Lane_ID,Carril inicial/entrada y seguimiento,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Vehicle_Class,TARGET clases2/3,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+v_Length,Geometría del vehículo,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+v_Width,Ancho y render,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Preceding,CF observado para métricas,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Following,Reconstrucción de colas observadas,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Space_Headway,Headway frente a frente,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Time_Headway,Estimación empírica; sentinel excluido,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Section_ID,Contexto vial,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Int_ID,Transiciones de intersección,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Direction,NB/SB,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Movement,Through,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Origin (o_zone),Contexto de ruta,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema
+Destination (d_zone),Contexto de ruta,data/reference/Peachtree_metadata_text.txt;data/peachtree_full.csv schema

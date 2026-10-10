@@ -1,0 +1,2 @@
+speed_mean_ft_s,speed_KS,speed_W1_ft_s,headway_mean_ft,headway_KS,headway_W1_ft,travel_mean_s,travel_W1_s,operational_stopped,stop_episodes,vehicles_stopped_fraction,complete_stop_duration_mean_s,stop_duration_W1_s,queue_proxy_mean,queue_proxy_max,throughput_total,throughput_temporal_L1_normalized,rows
+15.91885963695866,0.0,0.0,48.56369782590305,0.0,0.0,54.161879173369364,0.0,0.2735429118189508,319,0.781021897810219,12.594788273615636,0.0,2.231261638733706,13.0,274,0.0,144226

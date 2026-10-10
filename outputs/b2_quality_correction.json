@@ -1,0 +1,9 @@
+{
+  "phase": "PEACHTREE-3",
+  "type": "B2_IMPLEMENTATION_QUALITY_FILTER_CORRECTION",
+  "scope_changed": false,
+  "clock_changed": false,
+  "percentiles_changed": false,
+  "reason": "Free-speed sample must also exclude the predeclared +/-1s road lane-transition windows and use global-coordinate jump diagnostic. Applies already frozen quality rule; no B1 or visual fitting. Prior TRAIN run retained in archive/train_calibration_v2. Re-run same finite search and 30 fixed final seeds.",
+  "B1_LOCKED": true
+}

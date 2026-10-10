@@ -1,0 +1,2 @@
+queue_mean,queue_P90,queue_max,queue_spatial_mean_ft,queue_at_green_onset_mean,stopped_queue_clearance_mean_s,clearance_mean_s,residual_5s_mean,residual_10s_mean,propagation_mean_s
+0.6610090022505627,2.0,6,13.4125473555889,2.0,2.5559999999999796,9.106818181818197,0.14,0.0,1.0160000000000031

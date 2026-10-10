@@ -1,0 +1,10 @@
+{
+  "tests_run": 36,
+  "passed": 30,
+  "skipped": 6,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 4.761,
+  "status": "PASS",
+  "scope": "Peachtree methods/source tests and historical audit regression; historical missing-source tests explicitly skipped"
+}

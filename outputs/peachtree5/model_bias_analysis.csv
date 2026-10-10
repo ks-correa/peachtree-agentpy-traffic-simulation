@@ -1,0 +1,9 @@
+metric,TRAIN_B2_bias,VALIDATION_B1_bias,classification,interpretation
+speed_mean_ft_s,0.22023003819741582,0.32806272272060966,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+headway_mean_ft,3.777974661737595,15.22175483818161,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+travel_mean_s,-1.0585327090521943,-0.8527887189926773,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+operational_stopped,-0.01724932880561808,-0.023270489389013715,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+vehicles_stopped_fraction,0.004987834549878389,0.012483399734395717,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+stop_episodes,-69.73333333333332,-62.099999999999994,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+complete_stop_duration_mean_s,2.8668760820776757,6.257148157414598,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"
+section_travel_mean_s,2.860854796352534,3.106988430825698,SYSTEMATIC MODEL BIAS,"Signs only; sizes and uncertainty retained, no arbitrary validation percentage"

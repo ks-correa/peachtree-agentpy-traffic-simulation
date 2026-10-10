@@ -1,0 +1,68 @@
+field,code,meaning,source,confidence
+direction,1,EB,Peachtree metadata PDF p14,DOCUMENTED
+direction,2,NB,Peachtree metadata PDF p14,DOCUMENTED
+direction,3,WB,Peachtree metadata PDF p14,DOCUMENTED
+direction,4,SB,Peachtree metadata PDF p14,DOCUMENTED
+movement,1,THROUGH,Peachtree metadata PDF p14,DOCUMENTED
+movement,2,LEFT_TURN,Peachtree metadata PDF p14,DOCUMENTED
+movement,3,RIGHT_TURN,Peachtree metadata PDF p14,DOCUMENTED
+int_id,1,10th St; controller 51; SIGNAL,"Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED_AND_SPATIAL_ORDER_VERIFIED
+int_id,2,11th St; controller 52; SIGNAL,"Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED_AND_SPATIAL_ORDER_VERIFIED
+int_id,3,12th St; controller 53; SIGNAL,"Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED_AND_SPATIAL_ORDER_VERIFIED
+int_id,4,13th St; controller None; STOP,"Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED_AND_SPATIAL_ORDER_VERIFIED
+int_id,5,14th St; controller 73; SIGNAL,"Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED_AND_SPATIAL_ORDER_VERIFIED
+section_id,1,"Arterial section 1, between intersections 0 and 1; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+section_id,2,"Arterial section 2, between intersections 1 and 2; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+section_id,3,"Arterial section 3, between intersections 2 and 3; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+section_id,4,"Arterial section 4, between intersections 3 and 4; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+section_id,5,"Arterial section 5, between intersections 4 and 5; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+section_id,6,"Arterial section 6, between intersections 5 and 6; study limit substitutes at ends","Peachtree data analysis reports: PDF p10 (identifiers), p11 Fig4 (topology/zones), p12 Table1 (acquisition fingerprint), p9 (tracking extension)",DOCUMENTED
+lane_id,0,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,1,NORMAL_FROM_MEDIAN_ORDER,Peachtree metadata p13 and data analysis Fig4; observed codes,DOCUMENTED
+lane_id,2,NORMAL_FROM_MEDIAN_ORDER,Peachtree metadata p13 and data analysis Fig4; observed codes,DOCUMENTED
+lane_id,3,NORMAL_FROM_MEDIAN_ORDER,Peachtree metadata p13 and data analysis Fig4; observed codes,DOCUMENTED
+lane_id,4,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,11,LEFT_TURN_BAY,Peachtree metadata p13 and data analysis Fig4; observed codes,DOCUMENTED
+lane_id,1061,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,1131,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,1201,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,2081,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+lane_id,9999,UNDOCUMENTED_OR_SPECIAL_NOT_ASSIGNED,Peachtree metadata p13 and data analysis Fig4; observed codes,UNRESOLVED
+o_zone,0,UNRESOLVED_ZERO_ZONE,Data analysis PDF p11 Fig4; names distinguish origin vs destination,UNRESOLVED
+o_zone,101,"South study edge, Peachtree NB",Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,102,10th east origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,103,11th east origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,105,Section3 east driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,110,Section4 east driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,111,Section4 east driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,112,13th east origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,113,14th east origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,114,"North study edge, Peachtree SB",Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,115,14th west origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,116,Section5 west driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,118,Section5 west driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,120,Section4 west driveway origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,121,12th west origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,122,11th west origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+o_zone,123,10th west origin,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,201,"South study edge, Peachtree SB",Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,202,10th east destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,203,11th east destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,204,Section3 east driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,206,12th east destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,207,Section4 east driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,208,Section4 east driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,210,Section4 east driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,211,Section4 east driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,212,13th east destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,213,14th east destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,214,"North study edge, Peachtree NB",Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,215,14th west destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,218,Section5 west driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,220,Section4 west driveway destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,221,12th west destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,222,11th west destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+d_zone,223,10th west destination,Data analysis PDF p11 Fig4; names distinguish origin vs destination,DOCUMENTED_FIGURE
+v_class,1,MOTORCYCLE,Data analysis PDF p12 Table1 / text; metadata p13 says truck,DOCUMENTED
+v_class,2,AUTOMOBILE,Data analysis PDF p12 Table1 / text; metadata p13 says truck,DOCUMENTED
+v_class,3,TRUCK_OR_BUS,Data analysis PDF p12 Table1 / text; metadata p13 says truck,DOCUMENTED

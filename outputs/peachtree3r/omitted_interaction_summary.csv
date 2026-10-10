@@ -1,0 +1,5 @@
+interaction,target_frames,target_vehicles,background_vehicles,interpretation
+same_lane_geometric_predecessor,11074,109,90,geometric interaction opportunity; not independent causal effect
+operationally_stopped_queue_predecessor,1913,12,11,observed adjacent queued predecessor outside target cohort
+adjacent_lane_overlap,5848,91,42,spatial proximity proxy only; no assertion of conflict or influence
+nearby_turning_50ft,16840,233,83,spatial proximity proxy only; no assertion of conflict or influence

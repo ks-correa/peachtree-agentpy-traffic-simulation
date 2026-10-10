@@ -1,0 +1,69 @@
+controller_id,record_type,code,movement_label,min_initial_s,max_limit_s,yellow_s,red_clear_s,printed_cycle_s,offset_A,source,sheet_capture_date,active_acquisition_plan_status
+51,PHASE_BANK_1,1,WBL,5.0,10.0,3.6,1.2,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,2,EBT,15.0,45.0,3.8,2.6,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,3,NBL,8.0,15.0,3.6,2.1,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,4,SBT,12.0,30.0,3.6,1.9,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,5,EBL,8.0,10.0,3.6,1.2,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,6,WBT,15.0,45.0,3.8,2.6,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,7,SBL,5.0,15.0,3.6,2.1,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,PHASE_BANK_1,8,NBT,16.0,30.0,3.6,1.9,,,int51.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+51,COORDINATION_PLAN,1,,,,,,95.0,75.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,2,,,,,,80.0,79.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,3,,,,,,80.0,79.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,4,,,,,,100.0,65.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,5,,,,,,90.0,49.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,6,,,,,,80.0,49.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,7,,,,,,100.0,37.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,8,,,,,,90.0,28.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+51,COORDINATION_PLAN,9,,,,,,80.0,5.0,int51.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,PHASE_BANK_1,1,WBL,0.0,0.0,0.0,0.0,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,2,EBT,15.0,45.0,3.6,2.9,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,3,NBL,0.0,0.0,0.0,0.0,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,4,SBT,9.0,21.0,3.2,2.6,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,5,EBL,0.0,0.0,0.0,0.0,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,6,WBT,15.0,45.0,3.6,2.9,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,7,SBL,0.0,0.0,0.0,0.0,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,PHASE_BANK_1,8,NBT,9.0,21.0,3.2,2.6,,,int52.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+52,COORDINATION_PLAN,1,,,,,,95.0,92.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,2,,,,,,80.0,10.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,3,,,,,,80.0,75.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,4,,,,,,100.0,78.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,5,,,,,,90.0,62.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,6,,,,,,80.0,65.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,7,,,,,,100.0,60.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,8,,,,,,90.0,39.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+52,COORDINATION_PLAN,9,,,,,,80.0,79.0,int52.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,PHASE_BANK_1,1,WBL,0.0,0.0,0.0,0.0,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,2,EBT,15.0,50.0,3.6,2.1,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,3,NBL,0.0,0.0,0.0,0.0,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,4,SBT,9.0,28.0,3.2,2.6,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,5,EBL,0.0,0.0,0.0,0.0,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,6,WBT,15.0,50.0,3.6,2.1,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,7,SBL,0.0,0.0,0.0,0.0,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,PHASE_BANK_1,8,NBT,9.0,28.0,3.2,2.6,,,int53.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+53,COORDINATION_PLAN,1,,,,,,95.0,93.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,2,,,,,,80.0,11.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,3,,,,,,80.0,70.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,4,,,,,,100.0,79.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,5,,,,,,90.0,55.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,6,,,,,,80.0,12.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,7,,,,,,100.0,79.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,8,,,,,,90.0,40.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+53,COORDINATION_PLAN,9,,,,,,80.0,32.0,int53.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,PHASE_BANK_1,1,WBL,5.0,10.0,3.6,1.6,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,2,EBT,15.0,40.0,3.7,2.6,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,3,NBL,5.0,12.0,3.6,1.6,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,4,SBT,9.0,34.0,3.2,2.4,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,5,EBL,5.0,12.0,3.6,1.6,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,6,WBT,15.0,40.0,3.7,2.6,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,7,SBL,0.0,0.0,0.0,0.0,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,PHASE_BANK_1,8,NBT,9.0,34.0,3.2,2.4,,,int73.pdf p1,2006-01-27,NOT_CERTIFIED_FROM_PRINTED_SHEET
+73,COORDINATION_PLAN,1,,,,,,95.0,61.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,2,,,,,,80.0,55.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,3,,,,,,80.0,55.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,4,,,,,,100.0,47.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,5,,,,,,90.0,48.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,6,,,,,,80.0,48.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,7,,,,,,100.0,79.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,8,,,,,,90.0,26.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"
+73,COORDINATION_PLAN,9,,,,,,80.0,26.0,int73.pdf p2,2006-01-27,"NOT_CERTIFIED; printed TOD at09:30 plan1 and15:45 plan7, not asserted field activation"

@@ -1,0 +1,17 @@
+component,sample,x,y,n,pearson,spearman,interpretation
+B1,same_frame_leader,relative_speed,v_acc,237705,0.0478177696642583,0.07171709444477956,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_frame_leader,space_headway,v_acc,237705,0.02953872382419761,-0.011593502655363616,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_frame_leader,bumper_gap_ft,v_acc,237705,0.029579624606884902,-0.011362117781101268,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_frame_leader,v_vel,v_acc,237705,-0.0071587996455716035,-0.03088857472060012,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_road_positive_gap,relative_speed,v_acc,153043,0.11618561838336923,0.12922532896467906,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_road_positive_gap,space_headway,v_acc,153043,0.04316609622210639,-0.019862610277296862,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_road_positive_gap,bumper_gap_ft,v_acc,153043,0.04345879697918829,-0.01921991022797096,Descriptive repeated observations; no independent-sample p-values or causal identification
+B1,same_road_positive_gap,v_vel,v_acc,153043,-0.01743060681794699,-0.04399817073663877,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_frame_leader,relative_speed,v_acc,314573,0.07255269463956232,0.09281749651926981,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_frame_leader,space_headway,v_acc,314573,0.023456601822279988,-0.013314611016486013,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_frame_leader,bumper_gap_ft,v_acc,314573,0.023566408067320407,-0.01275262910620944,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_frame_leader,v_vel,v_acc,314573,-0.013612208924838512,-0.036153046197875384,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_road_positive_gap,relative_speed,v_acc,240322,0.14107032122373775,0.13456397675117696,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_road_positive_gap,space_headway,v_acc,240322,0.01745281116184058,-0.026400032876723892,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_road_positive_gap,bumper_gap_ft,v_acc,240322,0.017913761037401776,-0.025790165871167756,Descriptive repeated observations; no independent-sample p-values or causal identification
+B2,same_road_positive_gap,v_vel,v_acc,240322,-0.03370166144291236,-0.05113892331269482,Descriptive repeated observations; no independent-sample p-values or causal identification

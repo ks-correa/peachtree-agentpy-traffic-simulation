@@ -1,0 +1,6 @@
+reference,url,evidence,source_artifact
+USDOT / FHWA · NGSIM dataset8ect-6jqj,https://data.transportation.gov/Automobiles/Next-Generation-Simulation-NGSIM-Vehicle-Trajectories/8ect-6jqj,scripts/download_peachtree.py,scripts/download_peachtree.py;docs/b2_estimation_criteria.json;AgentPy package metadata
+API de descarga,https://data.transportation.gov/resource/8ect-6jqj.json,scripts/download_peachtree.py,scripts/download_peachtree.py;docs/b2_estimation_criteria.json;AgentPy package metadata
+Peachtree metadata,,data/reference/Peachtree_Street_Metadata_Documentation.pdf,scripts/download_peachtree.py;docs/b2_estimation_criteria.json;AgentPy package metadata
+AgentPy documentación,https://agentpy.readthedocs.io/,Installed AgentPy0.1.5 package metadata,scripts/download_peachtree.py;docs/b2_estimation_criteria.json;AgentPy package metadata
+IDM utilizado,https://mtreiber.de/MicroApplet/IDM.html,docs/b2_estimation_criteria.json,scripts/download_peachtree.py;docs/b2_estimation_criteria.json;AgentPy package metadata

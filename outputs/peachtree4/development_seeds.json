@@ -1,0 +1,11 @@
+{
+  "seeds": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004
+  ],
+  "purpose": "Optimization mean of all five; no best-seed",
+  "frozen_at": "2026-10-10T15:09:31.704724+00:00"
+}

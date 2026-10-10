@@ -1,0 +1,69 @@
+{
+  "browser": "Chrome headless",
+  "sections": [
+    {
+      "section": "Proyecto",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Datos",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Modelo",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Simulaci\u00f3n",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Calibraci\u00f3n",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Validaci\u00f3n",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Escenarios",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Resultados",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Comportamiento emergente",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Decisi\u00f3n",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Limitaciones",
+      "browser_rendered": true,
+      "exceptions": 0
+    },
+    {
+      "section": "Material para presentaci\u00f3n",
+      "browser_rendered": true,
+      "exceptions": 0
+    }
+  ],
+  "page_errors": [],
+  "canvas_visible": true,
+  "playback_run_pause_checked": true,
+  "ZIP_download_verified": true
+}

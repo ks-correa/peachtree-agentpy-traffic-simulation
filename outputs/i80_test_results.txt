@@ -1,0 +1,29 @@
+test_export_and_subset_integrity (test_export_audit.ActualExportTests.test_export_and_subset_integrity) ... ok
+test_independent_full_location_scan (test_export_audit.ActualExportTests.test_independent_full_location_scan) ... ok
+test_no_fabricated_split_or_transferability (test_export_audit.ActualExportTests.test_no_fabricated_split_or_transferability) ... ok
+test_population_reconciliation (test_export_audit.ActualExportTests.test_population_reconciliation) ... ok
+test_previous_audit_preserved (test_export_audit.ActualExportTests.test_previous_audit_preserved) ... ok
+test_unavailable_percentages_are_null (test_export_audit.ActualExportTests.test_unavailable_percentages_are_null) ... ok
+test_empty_subset_is_header_only (test_export_audit.ExportParserTests.test_empty_subset_is_header_only) ... ok
+test_exact_location_filter (test_export_audit.ExportParserTests.test_exact_location_filter) ... ok
+test_locale_formats_remain_distinct (test_export_audit.ExportParserTests.test_locale_formats_remain_distinct) ... ok
+test_missing_location_cannot_be_certified (test_export_audit.ExportParserTests.test_missing_location_cannot_be_certified) ... ok
+test_parser_filter_preserves_raw_values (test_export_audit.ExportParserTests.test_parser_filter_preserves_raw_values) ... ok
+test_detector_not_trajectory (test_local_audit.AuditTests.test_detector_not_trajectory) ... ok
+test_headway (test_local_audit.AuditTests.test_headway) ... skipped 'No local trajectories: cannot test headway semantics'
+test_lane_changes (test_local_audit.AuditTests.test_lane_changes) ... skipped 'No local trajectories: cannot test lane-change detection'
+test_leader_follower (test_local_audit.AuditTests.test_leader_follower) ... skipped 'No local trajectories: cannot test leader/follower references'
+test_no_fabricated_split (test_local_audit.AuditTests.test_no_fabricated_split) ... ok
+test_parser (test_local_audit.AuditTests.test_parser) ... ok
+test_period_detection (test_local_audit.AuditTests.test_period_detection) ... ok
+test_reproducible_inventory (test_local_audit.AuditTests.test_reproducible_inventory) ... ok
+test_source_integrity (test_local_audit.AuditTests.test_source_integrity) ... ok
+test_train_test_isolation (test_local_audit.AuditTests.test_train_test_isolation) ... skipped 'No local trajectories: cannot verify real TRAIN/TEST isolation'
+test_unavailable_metrics_not_zero (test_local_audit.AuditTests.test_unavailable_metrics_not_zero) ... ok
+test_vehicle_id_and_no_leakage (test_local_audit.AuditTests.test_vehicle_id_and_no_leakage) ... skipped 'No local trajectories: cannot test Vehicle_ID or identity leakage'
+test_vehicle_time (test_local_audit.AuditTests.test_vehicle_time) ... skipped 'No local trajectories: cannot test vehicle time monotonicity'
+
+----------------------------------------------------------------------
+Ran 24 tests in 2.503s
+
+OK (skipped=6)

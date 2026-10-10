@@ -1,0 +1,7 @@
+indicator,train_n,test_n,difference_mean,difference_median,ks,wasserstein,status
+speed,0,0,,,,,NO_I80_ROWS_IN_EXPORT
+acceleration,0,0,,,,,NO_I80_ROWS_IN_EXPORT
+space_headway,0,0,,,,,NO_I80_ROWS_IN_EXPORT
+time_headway,0,0,,,,,NO_I80_ROWS_IN_EXPORT
+vehicle_class,0,0,,,,,NO_I80_ROWS_IN_EXPORT
+lane_change_frequency,0,0,,,,,NO_I80_ROWS_IN_EXPORT

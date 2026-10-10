@@ -1,0 +1,827 @@
+{
+  "coverage": "ALL 17 PRESENTATION REQUIREMENTS COVERED",
+  "slides": [
+    {
+      "slide_number": 1,
+      "section": "Proyecto",
+      "recommended_title": "Portada",
+      "main_message": "Simulación basada en agentes del tráfico en un corredor urbano semaforizado mediante datos reales NGSIM Peachtree Street",
+      "data_source": "outputs/peachtree6/experiment_freeze.json;guía de presentación proporcionada",
+      "metrics": [
+        "acquisition_id",
+        "label",
+        "first_frame",
+        "last_frame",
+        "unique_frames",
+        "rows",
+        "vehicles",
+        "relative_start_s",
+        "relative_end_s",
+        "dominant_delta_s",
+        "intervals_at_dominant_pct",
+        "civil_recording_label_from_report",
+        "civil_label_evidence",
+        "epoch_status",
+        "formula",
+        "all_target_signal_known_from_relative_s",
+        "test_frozen",
+        "source_artifact"
+      ],
+      "figure_file": "01_project_cover.png",
+      "table_file": "tables/dataset_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Simulación basada en agentes del tráfico en un corredor urbano semaforizado mediante datos reales NGSIM Peachtree Street",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 2,
+      "section": "Proyecto",
+      "recommended_title": "Fenómeno real y problema",
+      "main_message": "Vehículos y señales generan colas y variaciones de desempeño.",
+      "data_source": "outputs/peachtree3u/structural_model_freeze.json",
+      "metrics": [
+        "acquisition_id",
+        "label",
+        "first_frame",
+        "last_frame",
+        "unique_frames",
+        "rows",
+        "vehicles",
+        "relative_start_s",
+        "relative_end_s",
+        "dominant_delta_s",
+        "intervals_at_dominant_pct",
+        "civil_recording_label_from_report",
+        "civil_label_evidence",
+        "epoch_status",
+        "formula",
+        "all_target_signal_known_from_relative_s",
+        "test_frozen",
+        "source_artifact"
+      ],
+      "figure_file": "02_problem_scope.png",
+      "table_file": "tables/dataset_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Vehículos y señales generan colas y variaciones de desempeño.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 3,
+      "section": "Proyecto",
+      "recommended_title": "Pregunta y objetivo",
+      "main_message": "¿Cómo afectan cambios en el green split y en la coordinación semafórica entre 11th y 12th al tiempo de recorrido, las detenciones y la dinámica del tráfico Through, bajo diferentes condiciones observadas de demanda?",
+      "data_source": "guía de presentación proporcionada;outputs/peachtree3u/structural_model_freeze.json",
+      "metrics": [
+        "recommendation",
+        "classification",
+        "validation",
+        "source_artifact"
+      ],
+      "figure_file": "03_question_objective.png",
+      "table_file": "tables/decision_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "¿Cómo afectan cambios en el green split y en la coordinación semafórica entre 11th y 12th al tiempo de recorrido, las detenciones y la dinámica del tráfico Through, bajo diferentes condiciones observadas de demanda?",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 4,
+      "section": "Modelo",
+      "recommended_title": "Agentes y entorno",
+      "main_message": "El comportamiento colectivo surge de interacciones locales.",
+      "data_source": "simulation/agents.py;outputs/peachtree3u/structural_model_freeze.json",
+      "metrics": [
+        "component",
+        "value/rule",
+        "classification",
+        "source",
+        "source_artifact"
+      ],
+      "figure_file": "04_agents_environment.png",
+      "table_file": "tables/component_provenance.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "El comportamiento colectivo surge de interacciones locales.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 5,
+      "section": "Datos",
+      "recommended_title": "Obtención de datos",
+      "main_message": "Datos externos USDOT documentados, no datos sintéticos.",
+      "data_source": "scripts/download_peachtree.py;outputs/peachtree_acquisition_timing.csv",
+      "metrics": [
+        "acquisition_id",
+        "label",
+        "first_frame",
+        "last_frame",
+        "unique_frames",
+        "rows",
+        "vehicles",
+        "relative_start_s",
+        "relative_end_s",
+        "dominant_delta_s",
+        "intervals_at_dominant_pct",
+        "civil_recording_label_from_report",
+        "civil_label_evidence",
+        "epoch_status",
+        "formula",
+        "all_target_signal_known_from_relative_s",
+        "test_frozen",
+        "source_artifact"
+      ],
+      "figure_file": "05_dataset_evidence.png",
+      "table_file": "tables/dataset_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Datos externos USDOT documentados, no datos sintéticos.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 6,
+      "section": "Datos",
+      "recommended_title": "Datos y estadística",
+      "main_message": "Describir observaciones separadas por adquisición, con unidades y población.",
+      "data_source": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet",
+      "metrics": [
+        "context",
+        "Variable",
+        "unit",
+        "population",
+        "N",
+        "Mean",
+        "Median",
+        "SD",
+        "Variance",
+        "Min",
+        "Max",
+        "P25",
+        "P75",
+        "source_artifact"
+      ],
+      "figure_file": "06_speed_distribution.png",
+      "table_file": "tables/descriptive_statistics.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Describir observaciones separadas por adquisición, con unidades y población.",
+      "supporting_figure_files": [
+        "06_acceleration_distribution.png",
+        "06_arrivals.png",
+        "06_direction_frequency.png",
+        "06_headway_distribution.png",
+        "06_speed_boxplot.png",
+        "06_travel_boxplot.png",
+        "06_travel_distribution.png"
+      ]
+    },
+    {
+      "slide_number": 7,
+      "section": "Modelo",
+      "recommended_title": "Modelo conceptual",
+      "main_message": "IDM, señales y FIFO producen movimiento, detención y descarga.",
+      "data_source": "simulation/model.py;simulation/agents.py;outputs/peachtree3u/structural_model_freeze.json",
+      "metrics": [
+        "component",
+        "value/rule",
+        "classification",
+        "source",
+        "source_artifact"
+      ],
+      "figure_file": "07_conceptual_model.png",
+      "table_file": "tables/component_provenance.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "IDM, señales y FIFO producen movimiento, detención y descarga.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 8,
+      "section": "Modelo",
+      "recommended_title": "Implementación AgentPy",
+      "main_message": "AgentPy integra a0,1s; Streamlit visualiza sus estados.",
+      "data_source": "simulation/model.py;simulation/metrics.py;ui/canvas_renderer.py",
+      "metrics": [
+        "parameter",
+        "PRE",
+        "FINAL",
+        "unit",
+        "source_artifact"
+      ],
+      "figure_file": "08_agentpy_architecture.png",
+      "table_file": "tables/model_parameters.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "AgentPy integra a0,1s; Streamlit visualiza sus estados.",
+      "supporting_figure_files": [
+        "08_base_simulation_capture.png",
+        "simulation_exports/official_B2_departures.png",
+        "simulation_exports/official_B2_directional.png",
+        "simulation_exports/official_B2_operational_stopped.png",
+        "simulation_exports/official_B2_travel_mean_s.png",
+        "simulation_exports/run_B2_E3_Completa_departures.png",
+        "simulation_exports/run_B2_E3_Completa_queue.png",
+        "simulation_exports/run_B2_E3_Completa_speed_stopped.png",
+        "simulation_exports/run_B2_E3_space_time.png"
+      ]
+    },
+    {
+      "slide_number": 9,
+      "section": "Calibración",
+      "recommended_title": "Calibración y verificación",
+      "main_message": "B2 es TRAIN: parámetros calibrados y luego congelados.",
+      "data_source": "outputs/peachtree4/pre_vs_post_calibration.csv",
+      "metrics": [
+        "metric",
+        "n",
+        "FINAL_CALIBRATED",
+        "SD",
+        "CI95_low",
+        "CI95_high",
+        "REAL_B2",
+        "PRECALIBRATION",
+        "absolute_change",
+        "relative_change",
+        "interpretation",
+        "source_artifact"
+      ],
+      "figure_file": "09_calibration.png",
+      "table_file": "tables/calibration_pre_post.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "B2 es TRAIN: parámetros calibrados y luego congelados.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 10,
+      "section": "Validación",
+      "recommended_title": "Validación",
+      "main_message": "B1 generaliza con limitaciones, no es fully unseen validation.",
+      "data_source": "outputs/peachtree5/train_vs_validation.csv",
+      "metrics": [
+        "metric",
+        "TRAIN_REAL_B2",
+        "TRAIN_SIM_B2",
+        "VALIDATION_REAL_B1",
+        "VALIDATION_SIM_B1",
+        "source_artifact"
+      ],
+      "figure_file": "10_validation.png",
+      "table_file": "tables/validation_real_sim.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "B1 generaliza con limitaciones, no es fully unseen validation.",
+      "supporting_figure_files": [
+        "10_validation_headway.png",
+        "10_validation_speed.png",
+        "10_validation_stopping.png",
+        "10_validation_throughput.png",
+        "10_validation_travel.png"
+      ]
+    },
+    {
+      "slide_number": 11,
+      "section": "Escenarios",
+      "recommended_title": "Tres escenarios",
+      "main_message": "Exactamente tres alternativas predeclaradas, sin optimización.",
+      "data_source": "outputs/peachtree6/scenario_design_freeze.json",
+      "metrics": [
+        "recommendation",
+        "classification",
+        "validation",
+        "source_artifact"
+      ],
+      "figure_file": "11_scenarios.png",
+      "table_file": "tables/decision_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Exactamente tres alternativas predeclaradas, sin optimización.",
+      "supporting_figure_files": [
+        "11_signal_timeline.png"
+      ]
+    },
+    {
+      "slide_number": 12,
+      "section": "Resultados",
+      "recommended_title": "Resultados",
+      "main_message": "Comparar SIM alternativas frente a SIM BASE en ambos contextos.",
+      "data_source": "outputs/peachtree6/b1_scenario_summary.csv;outputs/peachtree6/b2_scenario_summary.csv",
+      "metrics": [
+        "context",
+        "scenario",
+        "metric",
+        "n",
+        "mean",
+        "SD",
+        "CI95_low",
+        "CI95_high",
+        "median",
+        "P25",
+        "P75",
+        "source_artifact"
+      ],
+      "figure_file": "12_travel_comparison.png",
+      "table_file": "tables/scenario_results_B2.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Comparar SIM alternativas frente a SIM BASE en ambos contextos.",
+      "supporting_figure_files": [
+        "12_departures_B1.png",
+        "12_departures_B2.png",
+        "12_directional_results.png",
+        "12_scenario_table.png",
+        "12_stopping_comparison.png"
+      ]
+    },
+    {
+      "slide_number": 13,
+      "section": "Comportamiento emergente",
+      "recommended_title": "Comportamiento emergente",
+      "main_message": "Colas, acumulación y descarga son patrones emergentes cuantificables.",
+      "data_source": "outputs/peachtree6/emergent_behavior.csv",
+      "metrics": [
+        "context",
+        "scenario",
+        "metric",
+        "n",
+        "mean",
+        "SD",
+        "CI95_low",
+        "CI95_high",
+        "median",
+        "P25",
+        "P75",
+        "source_artifact"
+      ],
+      "figure_file": "13_emergent_behavior.png",
+      "table_file": "tables/directional_results.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Colas, acumulación y descarga son patrones emergentes cuantificables.",
+      "supporting_figure_files": [
+        "13_space_time_base.png",
+        "13_space_time_e1.png"
+      ]
+    },
+    {
+      "slide_number": 14,
+      "section": "Decisión",
+      "recommended_title": "Decisión",
+      "main_message": "E1 es la alternativa robusta dentro del alcance evaluado.",
+      "data_source": "outputs/peachtree6/experiment_freeze.json;outputs/peachtree6/pareto_analysis.csv",
+      "metrics": [
+        "context",
+        "scenario",
+        "metric",
+        "n",
+        "mean",
+        "SD",
+        "CI95_low",
+        "CI95_high",
+        "median",
+        "P25",
+        "P75",
+        "mean_percentage_change",
+        "fraction_seeds_improved",
+        "source_artifact"
+      ],
+      "figure_file": "14_final_decision.png",
+      "table_file": "tables/paired_effects.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "E1 es la alternativa robusta dentro del alcance evaluado.",
+      "supporting_figure_files": [
+        "14_paired_effects.png",
+        "14_paired_stopping.png",
+        "14_robustness.png"
+      ]
+    },
+    {
+      "slide_number": 15,
+      "section": "Limitaciones",
+      "recommended_title": "Limitaciones y supuestos",
+      "main_message": "Sesgos y omisiones limitan la interpretación absoluta y de campo.",
+      "data_source": "outputs/peachtree5/validation_freeze.json",
+      "metrics": [
+        "component",
+        "value/rule",
+        "classification",
+        "source",
+        "source_artifact"
+      ],
+      "figure_file": "15_limitations.png",
+      "table_file": "tables/component_provenance.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Sesgos y omisiones limitan la interpretación absoluta y de campo.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 16,
+      "section": "Decisión",
+      "recommended_title": "Conclusiones",
+      "main_message": "Modelo útil con límites; E1 consistente; coordinación sensible al contexto.",
+      "data_source": "outputs/peachtree5/validation_freeze.json;outputs/peachtree6/experiment_freeze.json",
+      "metrics": [
+        "recommendation",
+        "classification",
+        "validation",
+        "source_artifact"
+      ],
+      "figure_file": "16_conclusions.png",
+      "table_file": "tables/decision_summary.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Modelo útil con límites; E1 consistente; coordinación sensible al contexto.",
+      "supporting_figure_files": []
+    },
+    {
+      "slide_number": 17,
+      "section": "Material para presentación",
+      "recommended_title": "Referencias y evidencias",
+      "main_message": "Referencias y freezes permiten rastrear cada evidencia.",
+      "data_source": "presentation_assets/tables/references.csv",
+      "metrics": [
+        "reference",
+        "url",
+        "evidence",
+        "source_artifact"
+      ],
+      "figure_file": "17_references.png",
+      "table_file": "tables/references.csv",
+      "limitations": [
+        "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+        "Too few stopping episodes and overly long complete stops in both acquisitions",
+        "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+        "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+        "REAL queue context includes non-target arterial vehicles; secondary only",
+        "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+        "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+        "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+        "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+      ],
+      "speaker_note_summary": "Referencias y freezes permiten rastrear cada evidencia.",
+      "supporting_figure_files": []
+    }
+  ],
+  "scientific_results_unchanged": true,
+  "dashboard_status": "VISUAL PRESENTATION DASHBOARD READY",
+  "browser_visual_qa": "Chrome headless;12 sections, actual Canvas draw, Run/Pause, ZIP download checked",
+  "generated_PNG_count": 41,
+  "export_table_count": 16,
+  "chart_audit": "presentation_chart_audit.json",
+  "figures": [
+    {
+      "filename": "01_project_cover.png",
+      "source_artifact": "outputs/peachtree6/experiment_freeze.json;guía de presentación proporcionada"
+    },
+    {
+      "filename": "02_problem_scope.png",
+      "source_artifact": "outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "03_question_objective.png",
+      "source_artifact": "guía de presentación proporcionada;outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "04_agents_environment.png",
+      "source_artifact": "simulation/agents.py;outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "05_dataset_evidence.png",
+      "source_artifact": "scripts/download_peachtree.py;outputs/peachtree_acquisition_timing.csv"
+    },
+    {
+      "filename": "06_acceleration_distribution.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "06_arrivals.png",
+      "source_artifact": "outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json"
+    },
+    {
+      "filename": "06_direction_frequency.png",
+      "source_artifact": "outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json"
+    },
+    {
+      "filename": "06_headway_distribution.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "06_speed_boxplot.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "06_speed_distribution.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "06_travel_boxplot.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "06_travel_distribution.png",
+      "source_artifact": "data/b2_baseline_source.parquet;outputs/peachtree5/b1_target_core.parquet"
+    },
+    {
+      "filename": "07_conceptual_model.png",
+      "source_artifact": "simulation/model.py;simulation/agents.py;outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "08_agentpy_architecture.png",
+      "source_artifact": "simulation/model.py;simulation/metrics.py;ui/canvas_renderer.py"
+    },
+    {
+      "filename": "09_calibration.png",
+      "source_artifact": "outputs/peachtree4/pre_vs_post_calibration.csv"
+    },
+    {
+      "filename": "10_validation.png",
+      "source_artifact": "outputs/peachtree5/train_vs_validation.csv"
+    },
+    {
+      "filename": "10_validation_headway.png",
+      "source_artifact": "outputs/peachtree5/REAL_B1_headway.npy;outputs/peachtree5/SIM_B1_headway.npy"
+    },
+    {
+      "filename": "10_validation_speed.png",
+      "source_artifact": "outputs/peachtree5/REAL_B1_speed.npy;outputs/peachtree5/SIM_B1_speed.npy"
+    },
+    {
+      "filename": "10_validation_stopping.png",
+      "source_artifact": "outputs/peachtree5/REAL_B1_duration.npy;outputs/peachtree5/SIM_B1_duration.npy"
+    },
+    {
+      "filename": "10_validation_throughput.png",
+      "source_artifact": "outputs/peachtree5/REAL_B1_exits.npy;outputs/peachtree5/SIM_B1_exits.npy"
+    },
+    {
+      "filename": "10_validation_travel.png",
+      "source_artifact": "outputs/peachtree5/REAL_B1_travel.npy;outputs/peachtree5/SIM_B1_travel.npy"
+    },
+    {
+      "filename": "11_scenarios.png",
+      "source_artifact": "outputs/peachtree6/scenario_design_freeze.json"
+    },
+    {
+      "filename": "11_signal_timeline.png",
+      "source_artifact": "outputs/peachtree6/signals_B2_{BASE,E1,E2,E3}.json;outputs/peachtree6/signal_changes_by_cycle.csv;outputs/peachtree6/scenario_design_freeze.json"
+    },
+    {
+      "filename": "12_departures_B1.png",
+      "source_artifact": "outputs/peachtree6/temporal_departures.csv;outputs/peachtree6/b1_scenario_summary.csv"
+    },
+    {
+      "filename": "12_departures_B2.png",
+      "source_artifact": "outputs/peachtree6/temporal_departures.csv;outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "filename": "12_directional_results.png",
+      "source_artifact": "outputs/peachtree6/directional_results.csv"
+    },
+    {
+      "filename": "12_scenario_table.png",
+      "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "filename": "12_stopping_comparison.png",
+      "source_artifact": "outputs/peachtree6/b1_scenario_summary.csv;outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "filename": "12_travel_comparison.png",
+      "source_artifact": "outputs/peachtree6/b1_scenario_summary.csv;outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "filename": "13_emergent_behavior.png",
+      "source_artifact": "outputs/peachtree6/emergent_behavior.csv"
+    },
+    {
+      "filename": "13_space_time_base.png",
+      "source_artifact": "outputs/peachtree6/illustrative_B2_BASE.parquet;outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "13_space_time_e1.png",
+      "source_artifact": "outputs/peachtree6/illustrative_B2_E1.parquet;outputs/peachtree3u/structural_model_freeze.json"
+    },
+    {
+      "filename": "14_final_decision.png",
+      "source_artifact": "outputs/peachtree6/experiment_freeze.json;outputs/peachtree6/pareto_analysis.csv"
+    },
+    {
+      "filename": "14_paired_effects.png",
+      "source_artifact": "outputs/peachtree6/paired_differences.csv"
+    },
+    {
+      "filename": "14_paired_stopping.png",
+      "source_artifact": "outputs/peachtree6/paired_differences.csv"
+    },
+    {
+      "filename": "14_robustness.png",
+      "source_artifact": "outputs/peachtree6/robustness_summary.csv"
+    },
+    {
+      "filename": "15_limitations.png",
+      "source_artifact": "outputs/peachtree5/validation_freeze.json"
+    },
+    {
+      "filename": "16_conclusions.png",
+      "source_artifact": "outputs/peachtree5/validation_freeze.json;outputs/peachtree6/experiment_freeze.json"
+    },
+    {
+      "filename": "17_references.png",
+      "source_artifact": "presentation_assets/tables/references.csv"
+    }
+  ],
+  "chart_status": "ALL PRESENTATION CHARTS UNDERSTANDABLE WITHOUT HOVER",
+  "simulation_section": {
+    "report": "simulation_layout_report.json",
+    "status": "SIMULATION SECTION PRESENTATION READY",
+    "exports": [
+      {
+        "figure_file": "simulation_exports/official_B2_departures.png",
+        "table_file": "simulation_exports/official_B2_departures.csv",
+        "source_artifact": "outputs/peachtree6/temporal_departures.csv;outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_directional.png",
+        "table_file": "simulation_exports/official_B2_directional.csv",
+        "source_artifact": "outputs/peachtree6/directional_results.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_operational_stopped.png",
+        "table_file": "simulation_exports/official_B2_operational_stopped.csv",
+        "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_travel_mean_s.png",
+        "table_file": "simulation_exports/official_B2_travel_mean_s.csv",
+        "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_departures.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_departures.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_queue.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_queue.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_space_time.png",
+        "table_file": "simulation_exports/run_B2_E3_space_time.csv",
+        "source_artifact": "outputs/peachtree6/illustrative_B2_E3.parquet;outputs/peachtree3u/structural_model_freeze.json"
+      }
+    ]
+  }
+}

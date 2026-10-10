@@ -1,0 +1,11 @@
+parameter,source,method,classification,identifiable,future_use
+desired_speed,Unavailable trajectory data,Not estimable,CALIBRATED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+reaction/headway behavior,Unavailable trajectory data,Not estimable,CALIBRATED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+safe_gap,Unavailable trajectory data,Not estimable,CALIBRATED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+acceleration distribution,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+deceleration distribution,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+lane-change tendency,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+merge behavior,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+vehicle class proportions,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+arrival pattern,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"
+flow distribution,Unavailable trajectory data,Not estimable,DATASET_DERIVED,NO_WITH_LOCAL_FILES,"Conditional; classification is intended future method, not an estimate"

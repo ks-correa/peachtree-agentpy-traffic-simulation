@@ -1,0 +1,100 @@
+{
+  "status": "FROZEN",
+  "created_at": "2026-10-10T16:30:32.429583+00:00",
+  "configurations": [
+    "BASE",
+    "E1",
+    "E2",
+    "E3"
+  ],
+  "exactly_three_alternatives": true,
+  "BASE": {
+    "rule": "Own observed acquisition schedule, byte-equivalent signal rows"
+  },
+  "E1": {
+    "rule": "Nominal Through green+10%; extra green from same-cycle RED; G onset and nextG onset fixed; Y duration fixed",
+    "classification": "EXPERIMENTAL_RULE",
+    "increment_rule": "floor(min(0.1*G,RED-0.1)/0.1)*0.1;0.1s grid and positive RED constraint only",
+    "partial_cycles": "Unchanged unless a complete observed/edge-extended G/Y/R/G cycle is available",
+    "all_red": "Not separately observed in modeled schedules; no independent all-red phase changed"
+  },
+  "E2": {
+    "rule": "Single downstream intersection shift applied equally to both modeled NB/SB phase series",
+    "DOMINANT_PROGRESSION_DIRECTION": "SB",
+    "direction": 4,
+    "B2_demand_counts": {
+      "2": 121,
+      "4": 153
+    },
+    "upstream_intersection": 3,
+    "downstream_intersection": 2,
+    "PROGRESSION_TRAVEL_TIME": 19.870569577818287,
+    "n_no_stop": 41,
+    "P25": 15.749255986871589,
+    "P75": 33.23471817465128,
+    "IQR": 17.48546218777969,
+    "source": "B2 REAL complete no-stop Through effective-cut trips",
+    "minimum_no_stop_n": 10,
+    "reference_cycle_s": 100.09999999999991,
+    "upstream_green_reference_s": 193.0,
+    "downstream_green_reference_s": 134.1,
+    "BASE_OFFSET": 41.1999999999999,
+    "E2_OFFSET": 19.870569577818287,
+    "OFFSET_SHIFT_SECONDS": -21.329430422181616,
+    "interpretation": "CORRIDOR PROGRESSION STRATEGY FOR B2 DOMINANT THROUGH DIRECTION; same shift in B1, no B1 design"
+  },
+  "E3": {
+    "rule": "Exactly E1 then E2; same predeclared shift, never recompute offset"
+  },
+  "edge_rule": "Nearest complete observed G/Y/R cycle repeated only outside observed clock coverage to support a shifted full horizon; experimental edge assumption, interior durations unchanged",
+  "decision_score": {
+    "weights": {
+      "TRAVEL": 0.25,
+      "STOPPING": 0.25,
+      "TEMPORAL_FLOW": 0.25,
+      "DIRECTIONAL_BALANCE": 0.25
+    },
+    "TRAVEL": "mean(corridor/BASE, section/BASE)-1",
+    "STOPPING": "mean(stopped_fraction/BASE, vehicles_stopped/BASE, mean_stopped_time_per_vehicle/BASE, stop_episodes_per_vehicle/BASE)-1",
+    "TEMPORAL_FLOW": "mean(t50/BASE,t90/BASE,tfinal/BASE)-1",
+    "DIRECTIONAL_BALANCE": "max over NB/SB of mean(travel/BASE-1, stopped/BASE-1); lower is better",
+    "tie_rule": "Pareto first; among alternatives non-dominated in both contexts, minimum equally pooled B1/B2 score with negative score in both; else NO_ALTERNATIVE_DOMINATES_BASELINE",
+    "robustness": "mean negative in both and >50% paired seeds negative in each = ROBUST_IMPROVEMENT; opposite mean signs CONTEXT_DEPENDENT; positive both and majority positive ROBUST_WORSENING; otherwise MIXED"
+  },
+  "primary_metrics": [
+    "travel_mean_s",
+    "section_travel_mean_s",
+    "operational_stopped",
+    "vehicles_stopped_fraction",
+    "stop_episodes_per_vehicle",
+    "departure_t50_s",
+    "departure_t90_s",
+    "departure_final_s",
+    "NB_travel_mean_s",
+    "SB_travel_mean_s",
+    "NB_operational_stopped",
+    "SB_operational_stopped"
+  ],
+  "negative_difference_means_improvement": true,
+  "temporal_convention": "Earlier t50/t90/final lower=better; positive cumulative departure E-BASE means earlier progression",
+  "scenario_optimization": false,
+  "design_may_change_after_results": false,
+  "freeze_hashes": {
+    "peachtree3u": "3794b17b25c4e36eee63995071f327f7e2ecec44a0f32f8c26791d4f82a61830",
+    "peachtree4": "a2db1ea6f3b0b489181e2c913320c6360f9517f70594f60d9c4c81f83ae75e93",
+    "peachtree5": "2f88120be4319ccc1e17765b453d4353d6b3584b19a67c2a0d14d31e5fd06306"
+  },
+  "signal_hashes": {
+    "outputs\\peachtree6\\signals_B1_BASE.json": "8c0e88c8ae3df02e605ae3c8da44b577a29a165a387a622bad4389141e706653",
+    "outputs\\peachtree6\\signals_B1_E1.json": "ce2beaf95227ad4d05aba78be13ec776d866c22d32c991009f74b2374a40b67e",
+    "outputs\\peachtree6\\signals_B1_E2.json": "fa172fb0375861f8b9d7b446547845c0508ef4e86bbc5d90d17276977523bdd0",
+    "outputs\\peachtree6\\signals_B1_E3.json": "a6fd74056ee07483b0f030e4f471fbbce8c0f75ab3e20c92b084cf68b3ed7ae5",
+    "outputs\\peachtree6\\signals_B2_BASE.json": "eeef15ccf93a9b16436b55a4dd04946a4d8419322351d1890df93798e8730149",
+    "outputs\\peachtree6\\signals_B2_E1.json": "8ab6df5bbdd04d1b220ff223d93daa192fc93678fb39ab53d3051cb1f12c9b37",
+    "outputs\\peachtree6\\signals_B2_E2.json": "bf065b72b8d2a17389e24cdba3792a868057b2a4ce8f884158bd841fc0c447ac",
+    "outputs\\peachtree6\\signals_B2_E3.json": "79cfd05270aa3a45d5ad6a163ce66072420ec0b86f1015cd02756c0cd0d03929"
+  },
+  "seed_hash": "9a939b3bcf78b2b56c36d37d166861b49031c2ec147c27da0fce229929a75649",
+  "code_hash": "9ea386c459829f46efe462332edadd3f561b092b2fdb475bb2d9ab353b5edabf",
+  "temporal_censoring_rule": "Departure50/90/final refer to full fixed expected cohort; unavailable quantiles missing if horizon-censored, never computed on a smaller completed subset"
+}

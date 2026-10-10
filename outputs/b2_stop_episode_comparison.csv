@@ -1,0 +1,4 @@
+series,vehicles,vehicles_stopped,fraction_vehicles_stopped,episodes,complete_episodes,mean_stops_per_vehicle,median_stops_per_vehicle,duration_mean_s,duration_median_s,duration_P25_s,duration_P75_s,duration_max_s,censored_episodes
+REAL_B2,274,218,0.7956204379562044,334,321,1.218978102189781,1.0,13.513395638629284,11.6,1.9,20.200000000000003,56.6,13
+OLD_BASELINE,274,186,0.6788321167883211,219,205,0.7992700729927007,1.0,14.68829268292683,12.6,7.9,19.0,48.1,14
+REVISED_BASELINE,274,196,0.7153284671532847,232,216,0.8467153284671532,1.0,15.00462962962963,13.85,7.875,19.825000000000003,48.2,16

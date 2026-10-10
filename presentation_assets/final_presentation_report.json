@@ -1,0 +1,492 @@
+{
+  "scientific_freezes_and_results_intact": true,
+  "no_new_experiments": true,
+  "no_recalibration": true,
+  "coverage": "ALL 17 PRESENTATION REQUIREMENTS COVERED",
+  "status": "VISUAL PRESENTATION DASHBOARD READY",
+  "presentation_QA": {
+    "presentation_tests": 12,
+    "passed": 12,
+    "failures": 0,
+    "errors": 0,
+    "scientific_test_report_retained": {
+      "tests_total": 222,
+      "passed": 196,
+      "skipped": 26,
+      "failures": 0,
+      "errors": 0,
+      "scenarios_authorized": true,
+      "skipped_details": [
+        {
+          "test": "test_export_audit.ActualExportTests.test_export_and_subset_integrity",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_export_audit.ActualExportTests.test_independent_full_location_scan",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_export_audit.ActualExportTests.test_no_fabricated_split_or_transferability",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_export_audit.ActualExportTests.test_population_reconciliation",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_export_audit.ActualExportTests.test_previous_audit_preserved",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_export_audit.ActualExportTests.test_unavailable_percentages_are_null",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_headway",
+          "reason": "No local trajectories: cannot test headway semantics"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_lane_changes",
+          "reason": "No local trajectories: cannot test lane-change detection"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_leader_follower",
+          "reason": "No local trajectories: cannot test leader/follower references"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_train_test_isolation",
+          "reason": "No local trajectories: cannot verify real TRAIN/TEST isolation"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_vehicle_id_and_no_leakage",
+          "reason": "No local trajectories: cannot test Vehicle_ID or identity leakage"
+        },
+        {
+          "test": "test_local_audit.AuditTests.test_vehicle_time",
+          "reason": "No local trajectories: cannot test vehicle time monotonicity"
+        },
+        {
+          "test": "test_peachtree_audit.PeachtreeSourceTests.test_actual_frames_and_identity_isolation",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_audit.PeachtreeSourceTests.test_reciprocal_counts_and_filter_denominators",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_integrity_and_reconciliation",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_not_declared_frozen_or_calibrated",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_audit.PeachtreeSourceTests.test_transferability_orientation_and_categorical_types",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_actual_deterministic_output_hashes",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_all_sources_stay_intact",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_confirmed_events_follow_protocol",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_documented_sections_intersections",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_draft_is_not_a_freeze_or_calibration",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_parquet_qc_scope_identity_and_integrity",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_real_clock_counts_and_document_association",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_real_physical_cohort_pairs_and_conservation",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        },
+        {
+          "test": "test_peachtree_system.ActualSystemTests.test_real_throughput_matches_events_not_records",
+          "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+        }
+      ]
+    },
+    "no_scientific_test_rerun": true,
+    "no_new_experiments": true
+  },
+  "browser_QA": {
+    "browser": "Chrome headless",
+    "sections": [
+      {
+        "section": "Proyecto",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Datos",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Modelo",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Simulación",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Calibración",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Validación",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Escenarios",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Resultados",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Comportamiento emergente",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Decisión",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Limitaciones",
+        "browser_rendered": true,
+        "exceptions": 0
+      },
+      {
+        "section": "Material para presentación",
+        "browser_rendered": true,
+        "exceptions": 0
+      }
+    ],
+    "page_errors": [],
+    "canvas_visible": true,
+    "playback_run_pause_checked": true,
+    "ZIP_download_verified": true
+  },
+  "assets_PNG": 41,
+  "tables_CSV": 16,
+  "chart_improvement_QA": {
+    "tests": 18,
+    "passed": 18,
+    "failures": 0,
+    "errors": 0,
+    "technical_UI_charts_checked": 14,
+    "technical_UI_passed": true,
+    "no_scientific_experiments": true
+  },
+  "chart_browser_QA": {
+    "sections": [
+      {
+        "section": "Proyecto",
+        "plotly_charts": 1,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Datos",
+        "plotly_charts": 7,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Modelo",
+        "plotly_charts": 3,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Simulación",
+        "plotly_charts": 0,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Calibración",
+        "plotly_charts": 1,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Validación",
+        "plotly_charts": 6,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Escenarios",
+        "plotly_charts": 2,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Resultados",
+        "plotly_charts": 7,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Comportamiento emergente",
+        "plotly_charts": 2,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Decisión",
+        "plotly_charts": 5,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Limitaciones",
+        "plotly_charts": 1,
+        "no_exception": true,
+        "no_toolbar": true
+      },
+      {
+        "section": "Material para presentación",
+        "plotly_charts": 0,
+        "no_exception": true,
+        "no_toolbar": true
+      }
+    ],
+    "technical_mode_rendered": true,
+    "page_errors": [],
+    "scientific_controls_used": false
+  },
+  "chart_status": "ALL PRESENTATION CHARTS UNDERSTANDABLE WITHOUT HOVER",
+  "simulation_layout_QA": {
+    "status": "SIMULATION SECTION PRESENTATION READY",
+    "separation": "CURRENT RUN AND OFFICIAL RESULTS CLEARLY SEPARATED",
+    "science": "SCIENTIFIC RESULTS UNCHANGED",
+    "scientific_files_verified": 2305,
+    "scientific_hashes_intact": true,
+    "B1": {
+      "horizon_s": 969.3,
+      "clock": "16:09.3",
+      "target": 251,
+      "initial": 2,
+      "arrivals": 249,
+      "source_artifact": "outputs/peachtree5/b1_exogenous_inputs.json"
+    },
+    "B2": {
+      "horizon_s": 939.3,
+      "clock": "15:39.3",
+      "target": 274,
+      "initial": 21,
+      "arrivals": 253,
+      "source_artifact": "outputs/peachtree3u/final_inputs.json"
+    },
+    "layout": [
+      "Configuración",
+      "Contexto y escenario",
+      "Progreso temporal y demanda",
+      "Canvas claro",
+      "Métricas en vivo",
+      "Dinámica de la corrida",
+      "Resultados oficiales — 30 réplicas",
+      "Comportamiento emergente",
+      "Interpretación"
+    ],
+    "graphs_per_context": 8,
+    "technical_same_structure": true,
+    "UI_tests": {
+      "UI_tests": 24,
+      "passed": 24,
+      "failures": 0,
+      "errors": 0,
+      "scientific_tests_rerun": false,
+      "new_scientific_experiments": false
+    },
+    "browser_QA": {
+      "combinations": [
+        {
+          "context": "B1",
+          "scenario": "BASE",
+          "horizon_s": 969.3000000000001,
+          "scheduled_target": 251,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B1",
+          "scenario": "E1",
+          "horizon_s": 969.3000000000001,
+          "scheduled_target": 251,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B1",
+          "scenario": "E2",
+          "horizon_s": 969.3000000000001,
+          "scheduled_target": 251,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B1",
+          "scenario": "E3",
+          "horizon_s": 969.3000000000001,
+          "scheduled_target": 251,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B2",
+          "scenario": "BASE",
+          "horizon_s": 939.3000000000001,
+          "scheduled_target": 274,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B2",
+          "scenario": "E1",
+          "horizon_s": 939.3000000000001,
+          "scheduled_target": 274,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B2",
+          "scenario": "E2",
+          "horizon_s": 939.3000000000001,
+          "scheduled_target": 274,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        },
+        {
+          "context": "B2",
+          "scenario": "E3",
+          "horizon_s": 939.3000000000001,
+          "scheduled_target": 274,
+          "correct_saved_signals": true,
+          "correct_live_metrics": true,
+          "official_context_verified": true,
+          "run_pause_continue": true,
+          "demonstration_end": true,
+          "white_canvas": true,
+          "charts": 8
+        }
+      ],
+      "checked": 8,
+      "PNG_downloads": 8,
+      "CSV_downloads": 8,
+      "technical_same_layout": true,
+      "full_visual_window_matches_official_horizon": true,
+      "page_errors": [],
+      "new_scientific_experiments": false
+    },
+    "exports": [
+      {
+        "figure_file": "simulation_exports/official_B2_departures.png",
+        "table_file": "simulation_exports/official_B2_departures.csv",
+        "source_artifact": "outputs/peachtree6/temporal_departures.csv;outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_directional.png",
+        "table_file": "simulation_exports/official_B2_directional.csv",
+        "source_artifact": "outputs/peachtree6/directional_results.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_operational_stopped.png",
+        "table_file": "simulation_exports/official_B2_operational_stopped.csv",
+        "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/official_B2_travel_mean_s.png",
+        "table_file": "simulation_exports/official_B2_travel_mean_s.csv",
+        "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_departures.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_departures.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_queue.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_queue.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.png",
+        "table_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.csv",
+        "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+      },
+      {
+        "figure_file": "simulation_exports/run_B2_E3_space_time.png",
+        "table_file": "simulation_exports/run_B2_E3_space_time.csv",
+        "source_artifact": "outputs/peachtree6/illustrative_B2_E3.parquet;outputs/peachtree3u/structural_model_freeze.json"
+      }
+    ],
+    "playback_source": "Frozen AgentPy seed7000 snapshots; no new physics or experiments",
+    "snapshot_end_note": "Snapshots end 0.3 s before the official horizon; the last saved state is held visually without adding physical steps."
+  }
+}

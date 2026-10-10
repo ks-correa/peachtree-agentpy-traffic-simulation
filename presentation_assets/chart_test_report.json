@@ -1,0 +1,9 @@
+{
+  "tests": 18,
+  "passed": 18,
+  "failures": 0,
+  "errors": 0,
+  "technical_UI_charts_checked": 14,
+  "technical_UI_passed": true,
+  "no_scientific_experiments": true
+}

@@ -1,0 +1,23 @@
+{
+  "training_acquisition": "B2",
+  "max_active": 35,
+  "max_stopped": 8,
+  "max_queue_proxy": 5,
+  "speed_collective_min_ft_s": 4.043522879920314e-06,
+  "speed_collective_max_ft_s": 40.75485917399634,
+  "max_braking_vehicles": 29,
+  "state_exposure_counts_at_half_second": {
+    "ENTERING": 21,
+    "FOLLOWING": 25605,
+    "STOPPED_SIGNAL": 409,
+    "FREE_FLOW": 6178
+  },
+  "sample_agent_snapshots": 32213,
+  "section_time_observed_n": 262,
+  "section_time_observed_mean_s": 34.21368682719782,
+  "section_time_simulated_n": 262,
+  "section_time_simulated_mean_s": 37.74083969465649,
+  "throughput_bin_residual_min": -6,
+  "throughput_bin_residual_max": 8,
+  "interpretation": "Accumulation, collective speed variation, stopping and release numerically observed. Braking/spatial traces instrumented; lag association is not causal proof of a backward wave."
+}

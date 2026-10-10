@@ -1,0 +1,3 @@
+direction,retained_buffer_rows,valid_external_stopped_leader_frames,affected_targets,fraction_all_buffer_frames
+2,3739,0,0,0.0
+4,2410,16,1,0.006639004149377593

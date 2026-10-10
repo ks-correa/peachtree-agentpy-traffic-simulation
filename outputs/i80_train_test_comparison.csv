@@ -1,0 +1,4 @@
+strategy,train,test,train_rows,test_rows,train_vehicles,test_vehicles,vehicle_id_overlap,traffic_condition,distribution_shift,leakage,status
+A,P1+P2,P3,,,,,,NOT_EVALUABLE,NOT_EVALUABLE,NOT_VERIFIABLE,NO_I80_ROWS_IN_EXPORT
+B,P1,P2,,,,,,NOT_EVALUABLE,NOT_EVALUABLE,NOT_VERIFIABLE,NO_I80_ROWS_IN_EXPORT
+C,Earlier complete trajectory blocks,Later complete trajectory block,,,,,,NOT_EVALUABLE,NOT_EVALUABLE,NOT_VERIFIABLE,NO_I80_ROWS_IN_EXPORT

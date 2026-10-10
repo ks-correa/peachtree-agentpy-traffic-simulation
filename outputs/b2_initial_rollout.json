@@ -1,0 +1,31 @@
+{
+  "seconds": 1.6172217999992426,
+  "summary": {
+    "mean_speed_ft_s": 14.923836556983265,
+    "median_speed_ft_s": 14.191858825500566,
+    "mean_headway_ft": 56.27324454879256,
+    "mean_travel_time_s": 66.89804238773179,
+    "median_travel_time_s": 63.399683120978096,
+    "stopped_fraction": 0.020794206723854965,
+    "vehicles_entered": 253,
+    "initial_vehicles": 21,
+    "vehicles_exited": 274,
+    "vehicles_remaining": 0,
+    "pending_arrivals": 0,
+    "lane_changes": 0,
+    "safety_interventions": 0,
+    "mean_entry_delay_s": 5.239424823233248,
+    "max_entry_delay_s": 218.92265625000005,
+    "conservation_verified": true
+  },
+  "errors": {
+    "mean_speed_relative_error": 0.09480593673623557,
+    "speed_W1_normalized": 0.08190250722459044,
+    "headway_W1_normalized": 0.2591502977206108,
+    "route_time_relative_error": 0.1010527154797393,
+    "stopped_fraction_absolute_error": 0.07836349127281544,
+    "throughput_temporal_normalized_error": 0.35766423357664234,
+    "unfinished_fraction_penalty": 0.0,
+    "objective": 0.16215653033510566
+  }
+}

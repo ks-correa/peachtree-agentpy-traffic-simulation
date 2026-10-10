@@ -1,0 +1,170 @@
+{
+  "classification": "NOT_VIABLE_FOR_AGENTPY",
+  "scope": "LOCAL_FILES_ONLY",
+  "reason": "MISSING_VEHICLE_TRAJECTORIES",
+  "trajectory_files": 0,
+  "trajectory_rows": 0,
+  "unique_vehicles": null,
+  "detector": {
+    "rows": 172800,
+    "columns": [
+      "Station_Id",
+      "Local_Time",
+      "Global_Time",
+      "Vup_Lane1",
+      "Vdn_Lane1",
+      "Oup_Lane1",
+      "Odn_Lane1",
+      "Sp_Lane1",
+      "Vup_Lane2",
+      "Vdn_Lane2",
+      "Oup_Lane2",
+      "Odn_Lane2",
+      "Sp_Lane2",
+      "Vup_Lane3",
+      "Vdn_Lane3",
+      "Oup_Lane3",
+      "Odn_Lane3",
+      "Sp_Lane3",
+      "Vup_Lane4",
+      "Vdn_Lane4",
+      "Oup_Lane4",
+      "Odn_Lane4",
+      "Sp_Lane4",
+      "Vup_Lane5",
+      "Vdn_Lane5",
+      "Oup_Lane5",
+      "Odn_Lane5",
+      "Sp_Lane5",
+      "MaxV_Lane1",
+      "MaxV_Lane2",
+      "MaxV_Lane3",
+      "MaxV_Lane4",
+      "MaxV_Lane5",
+      "AdjustedV_Lane1",
+      "AdjustedV_Lane2",
+      "AdjustedV_Lane3",
+      "AdjustedV_Lane4",
+      "AdjustedV_Lane5"
+    ],
+    "stations": [
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "timestamps": 28800,
+    "global_time_min": 1112857200000,
+    "global_time_max": 1114066770000,
+    "timestamp_step_ms": [
+      30000,
+      172830000
+    ],
+    "missing_cells": 0,
+    "malformed_rows": 0,
+    "duplicate_station_time_keys": 0,
+    "nonmonotonic_station_rows": 0,
+    "csv_txt_same_bytes": false,
+    "sha256": {
+      "detector-data/detector-data.csv": "fe2f6f9944f20c8148b3c1b7b06d5ec501f12404c44e293fe706e56db9d7e007",
+      "detector-data/detector-data.txt": "135b5a5e6c565aef28b7ea2fea169ef307936117689c1a7cf1149e8717f35a75"
+    }
+  },
+  "trajectory_checks": {
+    "missing_values": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "exact_duplicates": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "vehicle_frame_duplicates": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "vehicle_time_monotonicity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "impossible_positions": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "negative_velocity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "extreme_acceleration": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "negative_headway": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "missing_preceding": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "missing_following": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "unexpected_lane_id": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "impossible_lane_changes": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "position_discontinuities": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "tracking_errors": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "smoothing": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    },
+    "cross_period_vehicle_identity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "MISSING_VEHICLE_TRAJECTORIES"
+    }
+  },
+  "sources": {
+    "data\\I-80-Emeryville-CA.zip": "0b431240a21cc6d6cad3cf461cce643b9ce8ee5847611f985e0572374c4fd7c6",
+    "data\\1-_US_101_Metadata_Documentation.pdf": "3a3009e2fac9701784de9fd2768b726ab4d46f8f0faaed4310b58669419c12c8"
+  },
+  "missing_metadata": "I-80 Metadata Documentation.pdf",
+  "unrelated_metadata": "data/1-_US_101_Metadata_Documentation.pdf",
+  "performance": {
+    "detector_rows_processed": 172800,
+    "trajectory_rows_processed": 0,
+    "elapsed_seconds": 1.156,
+    "peak_process_working_set_mb": 71.62,
+    "memory_scope": "Entire audit process; Windows peak working set, excludes temporary disk spool"
+  }
+}

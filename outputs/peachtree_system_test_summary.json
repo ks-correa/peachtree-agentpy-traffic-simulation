@@ -1,0 +1,10 @@
+{
+  "tests_run": 56,
+  "passed": 50,
+  "skipped": 6,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 5.03,
+  "status": "PASS",
+  "skips_scope": "Historical no-trajectory I80 audit only; reconstruction tests not skipped"
+}

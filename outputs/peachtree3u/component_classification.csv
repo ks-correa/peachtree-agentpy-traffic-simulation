@@ -1,0 +1,25 @@
+component,value/rule,classification,source
+dt,0.1,DATASET_DERIVED,NGSIM10Hz; existing dt
+effective control references,"{'2/2': 649.846, '2/4': 777.245, '3/2': 1184.777, '3/4': 1241.529}",DATASET_DERIVED,3T entry artifact; predeclared before3U SIM
+signal schedules,Existing B2 RED/YELLOW/GREEN clock; no offsets/splits changes,DATASET_DERIVED,B2 exogenous signal inputs; official afternoon files
+coordinate semantics,front=Local_Y; longitudinal center/rear projections,DATASET_DERIVED,Official metadata printed p13;3T
+reduced scope,NB400→1346.452; SB1400→597.878 ft,DATASET_DERIVED,3S frozen directional scope using B2 geometry/body clearance
+initial snapshot/arrival requests,Existing B2 Through class2/3 cohort,DATASET_DERIVED,B2 exogenous inputs
+entry speed samples,Existing B2 distributions with paired seeds,DATASET_DERIVED,B2 exogenous inputs
+IDM v0/T/s0/a/b,"{'v0': 12.511824704049223, 'T': 2.3561828489400907, 's0': 2.086210393921371, 'a': 2.6217268525153132, 'b': 2.625114577727408, 'delta': 4.0}",CALIBRATED,CALIBRATED_B2; original baseline full precision unchanged
+IDM delta,4.0,LITERATURE_DERIVED,Existing IDM exponent convention
+IDM acceleration/ballistic integration,Existing gap/speed law; simultaneous feasible acceleration constraint,LITERATURE_DERIVED,Existing VehicleAgent/IDM ballistic implementation
+numerical feasibility guard,Constrain acceleration to available displacement; no position or speed reset,ASSUMPTION,Existing implementation safety rule
+yellow handling,Latched comfortable-stop decision,ASSUMPTION,Existing yellow rule; no changes
+green release delay,1.6,DATASET_DERIVED,B2 pooled simplification; no stratification
+FIFO safe insertion,Preserve per direction/lane pending order and braking gap,ASSUMPTION,Existing3R correction
+followers,IDM only; no added propagation delay,ASSUMPTION,Frozen model choice
+main lanes/bay connector,Two normal lanes; only necessary safe lane11 merge,ASSUMPTION,Existing logical lane handling; sparse B2 lane-change sample
+stopped,0.1,ASSUMPTION,Frozen external operational threshold in m/s
+standstill queue gap,4.9414274828549685,DATASET_DERIVED,Existing B2 stoodP90
+head selection window,100.0,ASSUMPTION,Inherited100ft window; observed-entry measurement
+queue chain,"First same-lane stopped head, Following where available, positive frozen-gap chain",ASSUMPTION,3T reproducible measurement; observational lane0 recovery
+observational stop zones,Preserved3T lane/cycle P10–P90 bands; no physical force,DATASET_DERIVED,3T head distributions
+receiving condition,Free removal at frozen direction-specific cuts,ASSUMPTION,3S reduced boundary implementation
+target-only population,Through class2/3; no Background Agents,ASSUMPTION,Frozen cohort modelling scope
+future green split,NOT_IMPLEMENTED; E1/E2/E3 disabled,EXPERIMENTAL,"Future scenario only, outside phase"

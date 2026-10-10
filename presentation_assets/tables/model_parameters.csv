@@ -1,0 +1,6 @@
+parameter,PRE,FINAL,unit,source_artifact
+v0,12.511824704049223,13.826974853949704,m/s,outputs/peachtree4/calibration_freeze.json;outputs/peachtree3u/structural_model_freeze.json
+T,2.3561828489400907,1.98619700046232,s,outputs/peachtree4/calibration_freeze.json;outputs/peachtree3u/structural_model_freeze.json
+s0,2.086210393921371,2.217577716840254,m,outputs/peachtree4/calibration_freeze.json;outputs/peachtree3u/structural_model_freeze.json
+a,2.6217268525153132,3.060404045733389,m/s²,outputs/peachtree4/calibration_freeze.json;outputs/peachtree3u/structural_model_freeze.json
+b,2.625114577727408,2.191487875232387,m/s²,outputs/peachtree4/calibration_freeze.json;outputs/peachtree3u/structural_model_freeze.json

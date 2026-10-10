@@ -1,0 +1,11 @@
+metric,n,value,pearson,spearman,status
+valid_leader_percentage,0,,,,NO_I80_ROWS_IN_EXPORT
+valid_follower_percentage,0,,,,NO_I80_ROWS_IN_EXPORT
+missing_leader_references,0,,,,NO_I80_ROWS_IN_EXPORT
+missing_follower_references,0,,,,NO_I80_ROWS_IN_EXPORT
+reciprocity,0,,,,NO_I80_ROWS_IN_EXPORT
+acceleration_vs_space_headway,0,,,,NO_I80_ROWS_IN_EXPORT
+acceleration_vs_relative_speed,0,,,,NO_I80_ROWS_IN_EXPORT
+acceleration_vs_ego_speed,0,,,,NO_I80_ROWS_IN_EXPORT
+space_headway_distribution,0,,,,NO_I80_ROWS_IN_EXPORT
+time_headway_distribution,0,,,,NO_I80_ROWS_IN_EXPORT

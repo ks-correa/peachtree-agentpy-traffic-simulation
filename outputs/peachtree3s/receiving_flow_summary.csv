@@ -1,0 +1,3 @@
+direction,target_crossings,observed_average_veh_h,interdeparture_median_s,interdeparture_P95_s,interdeparture_max_s,interpretation
+2,121,463.74960076652826,1.6179374742495476,42.22384030788544,51.55721307611498,"Demand-conditioned observed TARGET flow, not receiving capacity"
+4,153,586.3941232832962,1.478264637082873,26.055909470631992,86.88629756930942,"Demand-conditioned observed TARGET flow, not receiving capacity"

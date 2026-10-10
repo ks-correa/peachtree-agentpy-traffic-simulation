@@ -1,0 +1,5 @@
+direction,region,observed_rows,vehicles,operational_stopped_frames,movements
+2,INSIDE_13TH_INTERSECTION,2463,119,0,"[1, 3]"
+2,APPROACH_13TH_150FT,5354,121,0,"[1, 2, 3]"
+4,INSIDE_13TH_INTERSECTION,2725,135,0,"[1, 3]"
+4,APPROACH_13TH_150FT,8014,144,345,[1]

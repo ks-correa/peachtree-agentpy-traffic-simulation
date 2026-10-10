@@ -1,0 +1,95 @@
+{
+  "phase": "PEACHTREE-3T",
+  "status": "NOT_FROZEN",
+  "classification": "B. NEEDS_STRUCTURAL_REVISION",
+  "remaining_difference": "STRUCTURAL",
+  "reason": "Envelope association is corrected, but physical stop references are not independently identified. No fit-selected shift or artificial delay is allowed.",
+  "scope": {
+    "intersections": [
+      2,
+      3
+    ],
+    "NB": {
+      "entry_ft": 400.0,
+      "exit_ft": 1346.452
+    },
+    "SB": {
+      "entry_ft": 1400.0,
+      "exit_ft": 597.878
+    }
+  },
+  "control_references": [
+    {
+      "intersection": 2,
+      "direction": 2,
+      "OLD_REFERENCE": 632.5395,
+      "NEW_REFERENCE": 632.5395,
+      "WHY": "NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar",
+      "SOURCE": "Official metadata p13; B2 front heads; B2 section/int transitions",
+      "N_OBSERVATIONS": 15,
+      "UNCERTAINTY": "Physical stop bar unresolved; lane/head variability retained",
+      "changed": false
+    },
+    {
+      "intersection": 2,
+      "direction": 4,
+      "OLD_REFERENCE": 777.262,
+      "NEW_REFERENCE": 777.262,
+      "WHY": "NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar",
+      "SOURCE": "Official metadata p13; B2 front heads; B2 section/int transitions",
+      "N_OBSERVATIONS": 18,
+      "UNCERTAINTY": "Physical stop bar unresolved; lane/head variability retained",
+      "changed": false
+    },
+    {
+      "intersection": 3,
+      "direction": 2,
+      "OLD_REFERENCE": 1168.9155,
+      "NEW_REFERENCE": 1168.9155,
+      "WHY": "NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar",
+      "SOURCE": "Official metadata p13; B2 front heads; B2 section/int transitions",
+      "N_OBSERVATIONS": 18,
+      "UNCERTAINTY": "Physical stop bar unresolved; lane/head variability retained",
+      "changed": false
+    },
+    {
+      "intersection": 3,
+      "direction": 4,
+      "OLD_REFERENCE": 1240.7775,
+      "NEW_REFERENCE": 1240.7775,
+      "WHY": "NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar",
+      "SOURCE": "Official metadata p13; B2 front heads; B2 section/int transitions",
+      "N_OBSERVATIONS": 12,
+      "UNCERTAINTY": "Physical stop bar unresolved; lane/head variability retained",
+      "changed": false
+    }
+  ],
+  "signals_sha256": "982004b1f17d250511b2047c55e0265aa6fa4d8afe396dbd7dbf177e81d57751",
+  "signal_schedules": "Existing B2 observed schedules, no timing/offset changes",
+  "stopped_definition": "speed <= 0.1 m/s, exact zero separate",
+  "queue_definition": "Front-most stopped same lane/direction, actual Following when available, contiguous spatial chain; frozen standstill gap",
+  "queue_gap_m": 4.9414274828549685,
+  "head_window_ft": 100,
+  "head_window_reference": "B2 observed entry, not nominal physical proxy",
+  "release_logic": "Existing1.6s pooled signal hold; followers IDM only",
+  "arrival_logic": "Existing B2 exogenous requests and safe-insertion FIFO",
+  "VehicleAgent_rules": "Unchanged AgentPy IDM/ballistic/no clipping/no replay",
+  "lane_handling": "Existing necessary bay merge; discretionary LC disabled; diagnostic lane0 only contiguous bracketing normal-lane agreement",
+  "dt_s": 0.1,
+  "IDM_parameters": {
+    "v0": 12.511824704049223,
+    "T": 2.3561828489400907,
+    "s0": 2.086210393921371,
+    "a": 2.6217268525153132,
+    "b": 2.625114577727408,
+    "delta": 4.0
+  },
+  "IDM_changed": false,
+  "physical_references_changed": false,
+  "new_mode": "CONTROL_ENVELOPE_REVISION: measurement/association only, NEW_REDUCED_SCOPE states unchanged",
+  "B1_LOCKED": true,
+  "E1_E2_E3": "DISABLED",
+  "final_calibration_authorized": false,
+  "UI_status": "UI_IMPLEMENTED_NOT_BROWSER_VALIDATED",
+  "future_validation_name": "TEMPORAL/ACQUISITION HOLDOUT VALIDATION WITH PRIOR FEASIBILITY SUMMARY EXPOSURE"
+}

@@ -1,0 +1,4 @@
+direction,intersection,street,mouth_B2_ft,control_type,observability,signal_schedule_available,unknown_clock_ticks,priority_identified,essential_gap_acceptance_identified,evidence
+4,1,10th,233.5375,SIGNAL,PARTIALLY_OBSERVED,True,0.0,,,Official B2 report: intersection4 STOP; signalTXT for10thSB/14thNB. Fig4 does not assign arterial approach priority/conflicts. Schedules alone do not identify receiving supply.
+2,4,13th,1589.104,STOP_INTERSECTION,KNOWN_BUT_UNPARAMETERIZED,False,,False,False,Official B2 report: intersection4 STOP; signalTXT for10thSB/14thNB. Fig4 does not assign arterial approach priority/conflicts. Schedules alone do not identify receiving supply.
+2,5,14th,1975.085,SIGNAL,PARTIALLY_OBSERVED,True,0.0,,,Official B2 report: intersection4 STOP; signalTXT for10thSB/14thNB. Fig4 does not assign arterial approach priority/conflicts. Schedules alone do not identify receiving supply.

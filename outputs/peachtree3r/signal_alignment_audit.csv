@@ -1,0 +1,5 @@
+intersection,direction,crossings,GREEN_crossings,RED_crossings,YELLOW_crossings,UNKNOWN_crossings,OLD_OFFSET_s,NEW_OFFSET_s,decision,unknown_clock_ticks,RED_indicator_stopped_count_correlation
+2,2,109,91,15,3,0,0.0,0.0,KEEP_OBSERVED_SCHEDULE; no documented offset/direction/frame correction identified,0.0,0.2538074421946071
+2,4,153,145,8,0,0,0.0,0.0,KEEP_OBSERVED_SCHEDULE; no documented offset/direction/frame correction identified,0.0,0.1903003853712574
+3,2,120,87,20,13,0,0.0,0.0,KEEP_OBSERVED_SCHEDULE; no documented offset/direction/frame correction identified,0.0,0.26808767163758723
+3,4,153,148,3,2,0,0.0,0.0,KEEP_OBSERVED_SCHEDULE; no documented offset/direction/frame correction identified,0.0,0.3105051141420341

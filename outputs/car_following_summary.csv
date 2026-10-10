@@ -1,0 +1,6 @@
+metric,value,status
+gap_acceleration_correlation,,MISSING_VEHICLE_TRAJECTORIES
+relative_speed_acceleration_correlation,,MISSING_VEHICLE_TRAJECTORIES
+leader_valid_percentage,,MISSING_VEHICLE_TRAJECTORIES
+follower_valid_percentage,,MISSING_VEHICLE_TRAJECTORIES
+reciprocity,,MISSING_VEHICLE_TRAJECTORIES

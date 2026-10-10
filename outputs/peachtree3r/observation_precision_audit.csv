@@ -1,0 +1,4 @@
+series,literal_zero_fraction,rounded_to_source_0_01_ft_s_zero_fraction,reported_precision_ft_s,interpretation
+REAL_B2,0.0991576979966704,0.0991576979966704,0.01,"Diagnostic observation operator from reported output precision, not primary stopped classifier or physics"
+OLD_BASELINE,0.0006396562003179651,0.07738597972972973,0.01,"Diagnostic observation operator from reported output precision, not primary stopped classifier or physics"
+REVISED_BASELINE,0.005586827863023275,0.08201849017031689,0.01,"Diagnostic observation operator from reported output precision, not primary stopped classifier or physics"

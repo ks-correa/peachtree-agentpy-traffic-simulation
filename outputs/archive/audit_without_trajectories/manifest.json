@@ -1,0 +1,19 @@
+{
+  "label": "AUDIT_WITHOUT_TRAJECTORIES",
+  "files_sha256": {
+    "docs\\ngsim_i80_feasibility.md": "b2c89ba0d0a96ba1354f53defada36f7cf11deb811823674d50da98a39aefd5a",
+    "outputs\\car_following_summary.csv": "de7a2829f036c0ce2683a88facb3cebfd8f2e25a81913b18841f19e4305368ef",
+    "outputs\\dataset_inventory.csv": "48f6893e370c239c472fd37d0a070641dccc55b93b315a40365429f2684e4340",
+    "outputs\\lane_change_summary.csv": "559c4de59982bd714ed45c67c3d4b9559a9d4a0fe6112e7146739a546cbfe548",
+    "outputs\\merge_summary.csv": "b4040138b69b0273d1f7f76bb84b42a5afdfac3e37999435f5d38a85776242b1",
+    "outputs\\parameter_identifiability.csv": "4b9618cc69ffc883d66480a6eca6f105cf0dda1f451e059fc9df823b834c4787",
+    "outputs\\period_summary.csv": "982c2f22bd2d3813db3a17f85790b7903fa9d7cc60fec11968c992dde30c1028",
+    "outputs\\scenario_feasibility.csv": "7ec8e7ce418fb81595e27ae4693d0143157d919bfc2b1d22dd814f6060bf8ba2",
+    "outputs\\train_test_strategy_comparison.csv": "87cb73ab9d01e46cac06d832e347916de6b5377eb7b7071cd73cdc62dcd1850f",
+    "outputs\\train_test_transferability.csv": "3df9b586321a6d82bc58e3d12b20ffe0cdc31b85cdcd800533e18ecfca1f26c0",
+    "outputs\\validation_indicator_candidates.csv": "6d7e47fbc6a790574cb7e93fc5ec89a6a6d108ee0d25300b1f2430745910cdec",
+    "outputs\\data_quality_audit.json": "dd27fe3fd26623279fe930def1bf122c9a798107736daf530c52ce9145bcfa65",
+    "outputs\\ngsim_final_feasibility_report.md": "0176fb869d660832ddc919b2ffc221e42904b5966c98dde847a30f0445081b74",
+    "outputs\\figures\\README.md": "14c70818275ab0db95fcf21c4a1bfa3eb0d14b72f06d5596a002070b8984670c"
+  }
+}

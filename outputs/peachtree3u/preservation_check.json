@@ -1,0 +1,8 @@
+{
+  "previous_artifacts_unchanged": true,
+  "intentional_UI_changes": [
+    "ui\\canvas_renderer.py",
+    "ui\\streamlit_app.py"
+  ],
+  "unexpected_changes": []
+}

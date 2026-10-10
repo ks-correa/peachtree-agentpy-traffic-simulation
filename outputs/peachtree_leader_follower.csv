@@ -1,0 +1,3 @@
+component,rows,preceding_nonzero,following_nonzero,valid_leader_rows,valid_follower_rows,valid_leader_pct,valid_follower_pct,leader_missing_same_frame,follower_missing_same_frame,leader_reciprocity_pct_conditional,follower_reciprocity_pct_conditional,same_lane_leader_rows,same_road_context_leader_rows,usable_car_following_rows,usable_car_following_pct,finite_time_headway_rows
+B1,391646,237705,237705,237705,237705,60.693840866496785,60.693840866496785,0,0,100.0,100.0,237705,156194,153043,39.076870439121045,109542
+B2,482241,314573,314573,314573,314573,65.23149213774855,65.23149213774855,0,0,100.0,100.0,314573,243340,240322,49.83441889013999,207196

@@ -1,0 +1,87 @@
+{
+  "training_acquisition": "B2",
+  "parameters": {
+    "v0": 12.511824704049223,
+    "T": 2.3561828489400907,
+    "s0": 2.086210393921371,
+    "a": 2.6217268525153132,
+    "b": 2.625114577727408,
+    "delta": 4.0
+  },
+  "queue_gap_m": 4.9414274828549685,
+  "bounds": {
+    "v0": [
+      4.81280162560325,
+      13.826974853949705
+    ],
+    "T": [
+      1.55,
+      4.53
+    ],
+    "s0": [
+      1.1277622555245108,
+      4.9414274828549685
+    ],
+    "a": [
+      0.04876809753619507,
+      3.4168148336296675
+    ],
+    "b": [
+      0.03352806705613411,
+      3.4259588519177036
+    ]
+  },
+  "development_objective": 0.0903817422301365,
+  "code_sha256": "9682e871d780df3a25c17ae06d71c81c05f1e8f41c6df03f7202cb0d68128cd6",
+  "search_plan": {
+    "training_acquisition": "B2",
+    "development_seeds": [
+      10,
+      11,
+      12
+    ],
+    "final_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029
+    ],
+    "latin_hypercube_candidates": 16,
+    "search_seed": 20261009,
+    "powell_maxfev": 40,
+    "coordinate_scale": "unit empirical bounds",
+    "selection": "minimum fixed-seed mean objective; no seed selection",
+    "code_sha256": "9682e871d780df3a25c17ae06d71c81c05f1e8f41c6df03f7202cb0d68128cd6",
+    "B1_LOCKED": true
+  },
+  "optimizer_message": "Maximum number of function evaluations has been exceeded.",
+  "reference_seed": 10,
+  "reference_seed_selection": "fixed before search, never selected for fit",
+  "B1_LOCKED": true
+}

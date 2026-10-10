@@ -1,0 +1,5 @@
+intersection,direction,OLD_REFERENCE,NEW_REFERENCE,WHY,SOURCE,N_OBSERVATIONS,UNCERTAINTY,changed
+2,2,632.5395,632.5395,NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar,Official metadata p13; B2 front heads; B2 section/int transitions,15,Physical stop bar unresolved; lane/head variability retained,False
+2,4,777.262,777.262,NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar,Official metadata p13; B2 front heads; B2 section/int transitions,18,Physical stop bar unresolved; lane/head variability retained,False
+3,2,1168.9155,1168.9155,NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar,Official metadata p13; B2 front heads; B2 section/int transitions,18,Physical stop bar unresolved; lane/head variability retained,False
+3,4,1240.7775,1240.7775,NO_PHYSICAL_CHANGE: B2 head band and annotation mouth do not survey painted signal stop bar,Official metadata p13; B2 front heads; B2 section/int transitions,12,Physical stop bar unresolved; lane/head variability retained,False

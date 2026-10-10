@@ -1,0 +1,213 @@
+# PEACHTREE-1 — Factibilidad final del dataset local
+
+**B. VIABLE_WITH_LIMITATIONS. Decisión: CONTINUAR con Peachtree**, primero resolviendo el reloj de adquisición, geometría y sincronización de señales. Hay observaciones individuales suficientes para un baseline y comparación independiente por adquisición. No se certifican todavía los dos horarios históricos ni se aprueba/fija el TEST.
+
+La evaluación anterior sobre export.csv no decide esta fase. La única fuente vehicular es `data/peachtree_full.csv`, descargada directamente por la API. No se utilizaron otras trayectorias del ZIP, export.csv, US-101 o I-80. Las fuentes auxiliares aportan documentación y archivos de señales/geometría, no muestras vehiculares de entrenamiento.
+
+## 1. Estructura y procedencia
+
+Fuente inalterada: 873,887 filas, 110,063,627 bytes, 25 columnas, 100 % location=peachtree. SHA-256: `9769b819a1c0a010fa16cafa06a50bc7bc352f8e14303222f64a00c5e65b6702`. No hay celdas faltantes. Hay 1545 IDs numéricos distintos y 2337 claves (componente, vehículo).
+
+Columnas exactas: `vehicle_id`, `frame_id`, `total_frames`, `global_time`, `local_x`, `local_y`, `global_x`, `global_y`, `v_length`, `v_width`, `v_class`, `v_vel`, `v_acc`, `lane_id`, `o_zone`, `d_zone`, `int_id`, `section_id`, `direction`, `movement`, `preceding`, `following`, `space_headway`, `time_headway`, `location`.
+
+Equivalencias: v_length/v_width/v_class/v_vel/v_acc son dimensiones, clase, velocidad y aceleración documentadas; el resto conserva nombres en minúsculas. Tipos enteros/float y perfil íntegro están en peachtree_dataset_audit.json.
+
+La metadata específica de Peachtree se obtuvo del adjunto oficial y se leyó/renderizó; nunca se aplicó metadata US-101. Las unidades documentadas son pies para posiciones/dimensiones, pies/s para velocidad, pies/s² para aceleración y segundos para time headway; Global_Time se describe como epoch en milisegundos. Space_Headway es separación frente a frente, no gap libre: este último se deriva restando longitud del líder. Las definiciones originales y sus contradicciones se conservan en `data/reference/Peachtree_Street_Metadata_Documentation.pdf`.
+
+Fuente documental: [metadata oficial Peachtree](https://data.transportation.gov/api/views/8ect-6jqj/files/8b5a833b-e286-467f-8c55-af45be37c8ab?download=true&filename=4-+Peachtree+Street+Metadata+Documentation.pdf). Fuente auxiliar: [ZIP oficial Peachtree](https://data.transportation.gov/api/views/8ect-6jqj/files/7244a8b5-077f-4851-bc06-3cfc7a75f0b0). Sólo se descargaron mediante rangos HTTP sus ZIP de CAD/GIS/señales; no ortofotos, videos o miembro de trayectorias.
+
+## 2. Periodos: hallazgo crítico del reloj
+
+**Global_Time por sí solo NO separa los dos periodos.** Hay 10442 valores distintos en una secuencia sin saltos: 1163019100–1164063200, con paso 100. Interpretarlos como epoch milisegundos produce una fecha de enero de 1970, incompatible con la colección documental. No se sumaron/multiplicaron constantes para fabricar fechas de 2006.
+
+Al cruzar el timestamp con frame_id se detectan exactamente dos relaciones afines: `global_time = origin_raw + 100 * frame_id`. Los interceptos observados son 1163018600 y 1163030300. Se identifican como **B1 y B2 (componentes de adquisición)**, no como P1/P2 históricos confirmados. Cada componente elimina por completo las colisiones de clave y reproduce exactamente los total_frames declarados por vehículo. Esto es evidencia fuerte de dos adquisiciones superpuestas por un reloj defectuoso en la representación API.
+
+| component | rows | vehicles | frame_min | frame_max | frames | duration_s | raw_clock_origin |
+|---|---|---|---|---|---|---|---|
+| B1 | 391646 | 1115 | 5 | 10208 | 10204 | 1020.3 | 1163018600 |
+| B2 | 482241 | 1222 | 2 | 10329 | 10328 | 1032.7 | 1163030300 |
+
+Las duraciones son 1020.3 y 1032.7 segundos (aproximadamente 17 minutos cada una), no exactamente 15 minutos. Los horarios 12:45–13:00 y 16:00–16:15 provienen de la documentación y de los nombres de señales, y **no se imponen** a estos componentes. La correspondencia entre B1/B2 y esos horarios sigue pendiente. La metadata incluye además referencias geográficas/temporales inconsistentes; no se usan para corregir el CSV por intuición.
+
+Se usa sólo tiempo relativo por componente, con diferencias crudas /1000 y con frame_id conservado. Es una coordenada analítica, no una modificación del original. La regla de gap >10 veces el tick dominante es diagnóstica y dio cero discontinuidades globales; la separación proviene de la relación frame/timestamp, no de un corte arbitrario.
+
+## 3. Aislamiento e identidad
+
+792 Vehicle_ID se repiten entre B1 y B2: 71.03 % de B1 y 64.81 % de B2. Entre esos IDs, 737 difieren en longitud, 595 en ancho y 681 en origen. Los IDs se reutilizan; tratarlos como identificadores globales mezclaría agentes distintos.
+
+La clave debe ser (componente de adquisición, Vehicle_ID), y las relaciones usan también frame_id. No hay ninguna trayectoria parcial repartida entre estos componentes ni claves compuestas compartidas. Esto resuelve colisiones de registro; no prueba identidad física independiente sin un identificador persistente o cotejo del origen de adquisición. Antes de congelar el diseño se debe verificar esa procedencia. No se considera que simplemente prefijar un ID demuestre ausencia de leakage.
+
+## 4–5. Calidad y frecuencia temporal
+
+Por componente no hay duplicados exactos, duplicados vehículo/frame, duplicados vehículo/time ni gaps; los tiempos son estrictamente crecientes tanto en el orden original por clave como después de ordenar. Todos los vehículos tienen exactamente los frames declarados. Ignorar componente produce duplicados aparentes que son colisiones de identidad entre adquisiciones, no filas para borrar.
+
+Delta_t observado por trayectoria: mediana=P5=P95=0.1 s, 100 % de intervalos al tick dominante. El intervalo relativo es defendible por los incrementos y la documentación; el reloj absoluto no lo es.
+
+| Calidad | B1 | B2 |
+|---|---:|---:|
+| frame_gaps | 0 | 0 |
+| negative_speed_rows | 0 | 0 |
+| unexpected_lane_undocumented_nonzero_rows | 599 | 542 |
+| lane_zero_rows | 96755 | 103995 |
+| lane_9999_rows | 589 | 533 |
+| same_context_main_lane_jump_gt1_rows | 6 | 9 |
+| wrong_direction_y_step_gt1ft_rows | 52 | 121 |
+| position_step_distance_max_ft | 31.7119 | 585.778 |
+| position_step_gt20ft_rows | 11 | 10 |
+| position_step_gt50ft_rows | 0 | 2 |
+| acceleration_at_abs_limit_12_27_rows | 11651 | 11433 |
+| negative_space_headway_rows | 0 | 0 |
+| negative_time_headway_rows | 0 | 0 |
+| duration_lt5s_vehicles | 652 | 693 |
+| median_observations_per_vehicle | 36 | 35 |
+| mean_duration_s | 35.0252 | 39.3633 |
+| median_duration_s | 3.5 | 3.4 |
+
+No se corrigió, suavizó o interpoló ningún valor. Lane_ID=0 aparece masivamente, y hay 9999/1061/1131/1201/2081 sin definición útil para carril normal. El código 11 está documentado como bahía de giro izquierdo. Se reportan los códigos sin tratar 1→11 o 0→2 automáticamente como cambios físicos. Local_Y se comprueba según dirección NB/SB en la misma sección, no como coordenada que siempre debe aumentar: hay tráfico bidireccional y giros.
+
+La aceleración se concentra en ±12.27 pies/s². Esa acumulación en el límite observado puede representar saturación/procesamiento; la auditoría no identifica su causa ni recupera extremos reales. Se reportan cuantiles y masa en los extremos, sin establecer un umbral arbitrario de aprobación. Se cuentan saltos >20 y >50 pies por tick como diagnósticos explícitos: velocidades implícitas >200 y >500 pies/s, muy superiores a las registradas. No son umbrales de aprobación del dataset ni se corrigieron las posiciones. El salto máximo de B2 supera 585 pies.
+
+## 6. Líder/seguidor
+
+| Componente | Líder válido / total | Seguidor válido / total | Reciprocidad entre referencias válidas | Car-following conservador / total |
+|---|---:|---:|---:|---:|
+| B1 | 60.69 % | 60.69 % | 100.00 % | 39.08 % |
+| B2 | 65.23 % | 65.23 % | 100.00 % | 49.83 % |
+
+Referencia válida: ID no cero y encontrado en la misma adquisición/frame. Los ceros significan ausencia de relación registrada y no son referencias rotas. Car-following conservador exige además mismo carril/dirección/sección, fuera de intersección, carril normal o bahía documentada, headway positivo y gap libre positivo. Las referencias faltantes y filtros por contexto están cuantificados en peachtree_leader_follower.csv. La reciprocidad de metadatos no demuestra por sí sola que el conductor reaccionó al líder.
+
+## 7. Señal estadística de seguimiento
+
+| component | x | n | pearson | spearman |
+|---|---|---|---|---|
+| B1 | relative_speed | 153043 | 0.11619 | 0.12923 |
+| B1 | space_headway | 153043 | 0.043166 | -0.019863 |
+| B1 | bumper_gap_ft | 153043 | 0.043459 | -0.01922 |
+| B1 | v_vel | 153043 | -0.017431 | -0.043998 |
+| B2 | relative_speed | 240322 | 0.14107 | 0.13456 |
+| B2 | space_headway | 240322 | 0.017453 | -0.0264 |
+| B2 | bumper_gap_ft | 240322 | 0.017914 | -0.02579 |
+| B2 | v_vel | 240322 | -0.033702 | -0.051139 |
+
+relative_speed = leader_speed − ego_speed. La señal instantánea es débil: Spearman para velocidad relativa es aproximadamente 0.129/0.135; headway y velocidad propia están cerca de cero en estas correlaciones marginales. Hay suficiente observación/contexto para intentar una regla condicional posterior, pero no se considera identificado un mecanismo sólo por estas correlaciones. Los bins son intervalos descriptivos, no ajustes de IDM/Gipps. No se presentan p-values de independencia: las observaciones repetidas por vehículo están correlacionadas.
+
+Time_Headway=9999.99 se trata como sentinel documentado de velocidad nula. Valores superiores se reportan por separado, sin truncar ni corregir. Para comparaciones de time headway se usan ego móvil, valor positivo y menor al sentinel; para space headway se conservan contextos de seguimiento válidos. No se mezclan headways=0 sin líder con gaps medidos.
+
+## 8. Cambios de carril
+
+| Componente | Transiciones crudas de etiqueta | Candidatos en carretera incl. bahía, sin A→B→A | Candidatos sólo carriles 1–4 | Vehículos con candidato |
+|---|---:|---:|---:|---:|
+| B1 | 5181 | 530 | 399 | 258 |
+| B2 | 5631 | 450 | 319 | 280 |
+
+No se equiparan todas las transiciones con maniobras. Se exige un salto entre frames contiguos en misma sección/dirección, fuera de intersecciones y entre etiquetas interpretables. Se excluyen ambos saltos de excursiones A→B→A consecutivas y saltos entre carriles principales no adyacentes; el registro crudo se conserva. Bahías 11 se reportan aparte, sin rechazarlas por la diferencia numérica. Persistencia a 0.3/0.5/1 s es sensibilidad descriptiva, no duración lateral ni umbral de aceptación.
+
+Eventos por origen/destino, velocidad y headway antes/después están disponibles en archivos de eventos y transiciones. Hay muestra para una regla empírica simple, pero el contexto de rutas/giros debe distinguir cambios necesarios de discrecionales; no se inventa la intención del conductor.
+
+## 9–10. Movimientos, intersecciones y señales
+
+Hay movement, direction, int_id, section_id, o_zone y d_zone. La documentación interpreta movement 1=through, 2=left y 3=right; direction 1=EB, 2=NB, 3=WB y 4=SB. Int_ID toma 0–5 y Section_ID 0–6. Los IDs permiten estratificar aproximaciones y rutas; no sustituyen un mapa verificado de límites y giros.
+
+**SIGNAL_DATA_NOT_IN_TRAJECTORY_CSV.** El ZIP auxiliar sí incluye **32 TXT originales y 32 CSV equivalentes por nombre, más cuatro hojas de tiempos PDF**. Se inspeccionaron todos los TXT: columnas BG/BY/BR para fases through y, en algunos casos, left. La metadata las define como frames de comienzo de verde/amarillo/rojo. Hay celdas vacías, ceros y eventos por encima de la última frame vehicular; se reportan sin rellenar. No se cuentan CSV+TXT como dos conjuntos independientes.
+
+La existencia de esos archivos permite estudiar un baseline señalizado. Todavía no están certificados la correspondencia B1/B2↔horarios, mapa Int_ID↔cruce ni sincronización de frames/fases, y no se reconstruyó un estado semafórico como si esa unión estuviera validada. Los escenarios de verde/desfase no se consideran listos. Se requieren señales como forzamiento externo del entorno: seguimiento entre vehículos por sí solo no explica por qué se detiene el primero de la cola.
+
+## 11. Estado colectivo y congestión
+
+| component | speed_mean | speed_median | speed_p10 | speed_p90 | active_vehicles_per_frame_mean | exactly_stopped_fraction | creeping_le_1ft_s_fraction | negative_acceleration_fraction |
+|---|---|---|---|---|---|---|---|---|
+| B1 | 16.094 | 12.45 | 0 | 40.02 | 38.382 | 0.24632 | 0.38561 | 0.26192 |
+| B2 | 14.54 | 10.53 | 0 | 36.23 | 46.693 | 0.14594 | 0.38238 | 0.24259 |
+
+Se calcularon ventanas fijas de 30 y 60 s, incluyendo la ventana parcial final con duración explícita. Vehículos activos = conteo medio por frame dentro de la cobertura; no número de IDs distintos en la ventana. La velocidad es ponderada por observaciones vehículo/tiempo, y no se confunde con media por vehículo.
+
+El proxy casi detenido se define como v≤1 pie/s (aprox. 0.305 m/s), una velocidad de avance mínimo. Se publica sensibilidad a 0/0.5/1/2 pies/s, sin usarlo como criterio de viabilidad. Las distribuciones y la fracción exactamente detenida muestran tráfico stop-and-go; no se etiquetan automáticamente todos los ciclos semafóricos como congestión por exceso de demanda.
+
+Las curvas temporales permiten observar reducciones colectivas de velocidad y variación de ocupación. Cola espacial persistente y ondas de frenado propagadas requieren análisis geográfico por aproximación/carril y fase; no se afirma haber demostrado su propagación. La densidad física no se estimó sin longitud/cobertura de carriles verificadas. No se llama free flow a una ventana sólo porque su media sea alta.
+
+## 12. Arrivals
+
+Primeras observaciones: 1115 en B1 y 1222 en B2. Se agruparon en 10/30/60 s por O_Zone y carril inicial. Son entradas al seguimiento; no se presumen conteos de demanda de una frontera física fija. Los vehículos presentes en el borde temporal se marcan censurados.
+
+El proceso de llegada puede estimarse en TRAIN tras fijar entradas del entorno, zonas y regla de censura. Para validar condicionado a demanda, se puede usar demanda exógena observada del periodo de TEST, declarada como input y sin aprender comportamiento de TEST. Eso valida dinámica condicionada, no predicción independiente de la demanda. Llegadas/salidas por primera/última observación son proxies y no throughput verificado.
+
+## 13. Recorrido y completitud
+
+| component | travel_time_candidate_count | travel_time_candidate_pct | observed_journey_time_mean | observed_journey_time_median |
+|---|---|---|---|---|
+| B1 | 1111 | 99.641 | 34.88 | 3.5 |
+| B2 | 1220 | 99.836 | 39.176 | 3.4 |
+
+El 100 % de claves reproduce Total_Frames y tiene continuidad, pero muchas duraciones son inferiores a 5 s: **completo respecto a la transcripción no significa recorrer todo el corredor**. Se distinguen candidatos con O/D interpretables, continuidad y sin tocar el inicio/final de adquisición. last−first mide duración del trayecto observado, validable sólo para las mismas zonas/rutas y cobertura. No se presenta como tiempo de viaje de extremo a extremo.
+
+Se calculó longitud de polilínea en coordenadas globales y velocidad media geométrica descriptiva. El ruido aumenta la polilínea; no se suavizó ni convirtió en distancia de ruta oficial. Viajes entre fronteras geométricas comunes deben definirse antes de validar travel time, flujo y throughput.
+
+## 14–16. Comparación, diseño y transferibilidad
+
+Se comparan B1→B2 (A) y B2→B1 (B). **Se recomienda B: TRAIN=B2, TEST=B1**, como propuesta por la mayor muestra de trayectorias y seguimiento de B2 y por cubrir todas las clases de B1. B1 tiene clases 2/3; B2 además una única motocicleta, insuficiente para una regla específica. El baseline debe centrarse en automóviles/camiones. Se dejan 391646 filas para evaluación. El orden calendario no está confirmado: es validación entre adquisiciones, no pronóstico prospectivo. Si se exige validación hacia el futuro debe resolverse primero la correspondencia histórica. La propuesta no se aprueba ni congela en esta fase.
+
+Se usarían trayectorias completas por clave de adquisición. No se mezclan filas ni se dejan fragmentos de un mismo registro entre TRAIN y TEST. Los 792 IDs repetidos son colisiones de namespace; la verificación de procedencia física y reloj sigue siendo un requisito del diseño. Todo análisis actual es diagnóstico de factibilidad abierto; ninguno de los componentes fue declarado test oculto, congelado o utilizado para ajustar reglas.
+
+| indicator | train_n | test_n | difference_mean_test_minus_train | difference_median_test_minus_train | ks_statistic | wasserstein_distance |
+|---|---|---|---|---|---|---|
+| speed | 482241 | 391646 | 1.5539 | 1.92 | 0.10038 | 1.6145 |
+| acceleration | 482241 | 391646 | 0.055146 | 0 | 0.034985 | 0.38255 |
+| space_headway | 240322 | 153043 | 11.221 | 1.71 | 0.079804 | 11.439 |
+| time_headway | 207196 | 109542 | -27.642 | -1.12 | 0.11113 | 28.158 |
+| observed_journey_time | 1220 | 1111 | -4.2962 | 0.1 | 0.066211 | 4.5132 |
+| lane_changes_per_vehicle | 1222 | 1115 | 0.10709 | 0 | 0.03032 | 0.10709 |
+| lane_change_frequency_per_observed_vehicle_min | 1222 | 1115 | 0.52106 | 0 | 0.03642 | 0.64716 |
+
+La tabla muestra el diagnóstico recomendado B2→B1, diferencias TEST−TRAIN = B1−B2. Hay soporte compartido y diferencias mensurables, sin frontera inventada de aprobación. Esto no prueba que un ABM transfiera. Wasserstein conserva unidad; tasas de cambios usan exposición, que puede ser inestable en fragmentos cortos. Las clases usan proporciones/variación total categórica, no distancias continuas de sus códigos.
+
+En la futura fase de modelado, todos los filtros, reglas, parámetros, rangos y selección de modelo se determinarían con TRAIN y quedarían fijos antes de evaluar TEST. Si se eligen reglas después de ver sus errores en TEST, deja de ser holdout final. No se ha hecho esa calibración.
+
+## 17–18. Parámetros y decisiones latentes
+
+Estimables desde TRAIN: proporciones de clase y dimensiones, distribución de gaps/headways contextualizados, entradas de seguimiento por origen, movimientos, variación de aceleración/frenado, frecuencia/contexto de cambios y asociaciones con el líder. Las distribuciones directamente observables son DATASET_DERIVED; parámetros de una regla autónoma serían CALIBRATED, todavía no ajustados. Desired speed no equivale a velocidad observada y la respuesta a señales exige fases bien alineadas.
+
+No identificables directamente: intención de cambiar de carril, reacción cognitiva, agresividad, percepción y prioridad subjetiva. No son indispensables como atributos personales del modelo mínimo: pueden evitarse con reglas condicionales empíricas, rutas observadas y un control de separación. Si se añaden serían ASSUMPTION con soporte externo. Adopción/cumplimiento y objetivos de intervenciones serían EXPERIMENTAL, no derivados automáticamente de observaciones históricas.
+
+## 19–20. Modelo mínimo y emergencia
+
+**VehicleAgent es defendible**: posición, velocidad, aceleración, carril, clase/dimensiones y líder/seguidor están observados. Un modelo mínimo generaría movimiento por reglas de seguimiento, aceleración/frenado, separación y cambios contextualizados; abandonaría al cruzar una salida geométrica definida. El entorno debe representar rutas, secciones, cruces y señales externas verificadas. Se debe tratar el líder por contexto y no reutilizar índices de otro grupo.
+
+El modelo puede producir colectivamente distribución de velocidad, tiempos de viaje, ocupación, throughput y acumulaciones; su existencia empírica no garantiza que una regla específica los reproduzca. Colas y ondas deben surgir de interacciones/demanda/control y después comprobarse, no inyectarse como posición histórica. No se implementó `position[t]=real_position[t]`, simulador, IDM, Gipps o AgentPy.
+
+## 21. Indicadores de validación
+
+PRIMARY disponibles o definibles con protocolo: velocidad media/distribución; space/time headway en contextos comparables; duración O/D observada. Flujo/throughput y recorrido entre fronteras fijas quedan condicionados a geometría. SECONDARY: aceleración con saturación auditada, tasa de cambios por exposición, activos por frame y proxies de detención. Cola espacial física requiere un protocolo adicional. Definición, unidad y cómo medirlo en TRAIN/TEST/simulador están en peachtree_validation_candidates.csv.
+
+La futura comparación debe estratificar ruta, aproximación, señal y clase cuando cambie la composición; intervalos de incertidumbre deben respetar dependencia por vehículo/ventanas, no asumir que 873887 filas son ensayos independientes.
+
+## 22. Exactamente tres escenarios propuestos
+
+Como la sincronización semafórica no está verificada, se proponen exactamente tres alternativas basadas en reglas observables, sin implementarlas:
+
+1. **E1: armonización de velocidad mediante recomendación/asistencia.** Variable experimental: objetivo de velocidad y fracción participante. Decisión: recorrido, variabilidad, throughput y detención. Hace falta evidencia externa de límites, cumplimiento y operación.
+2. **E2: asistencia longitudinal para seguimiento más suave.** Variables: gap temporal objetivo y respuesta de aceleración/frenado de participantes. Decisión: headway, frenadas, recorrido y colas/throughput. Hace falta evidencia de asistencia, adopción y rangos físicamente seguros.
+3. **E3: gestión de cambios discrecionales de carril.** Variable: propensión/criterio de beneficio, conservando cambios necesarios por ruta. Decisión: tasa de cambios, recorrido, throughput y detención. Hace falta justificar una intervención operacional y distinguir cambios obligatorios.
+
+Todos son contrafactuales EXPERIMENTAL sobre un baseline previamente validado; el dataset no prueba sus efectos causales ni garantiza mejora. Cambios de verde/desfase/combinación podrían sustituir ese conjunto sólo después de verificar señales, cruces y sincronización; no son escenarios adicionales comprometidos en esta fase.
+
+## 23. Pregunta de investigación defendible
+
+¿Cómo afectan la armonización de velocidad, la asistencia longitudinal y la gestión de cambios discrecionales al recorrido observado por ruta, la velocidad y las acumulaciones de automóviles/camiones en un corredor Peachtree, mediante un ABM parametrizado en una adquisición y validado en otra adquisición independiente?
+
+La pregunta es viable con los límites de cobertura explícitos. No se promete causalidad real, optimización semafórica demostrada ni recorridos de extremo a extremo para todos los agentes.
+
+## 24. Decisión y condiciones antes del siguiente paso
+
+**B. VIABLE_WITH_LIMITATIONS — CONTINUAR.** Hay 2337 trayectorias por adquisición, continuidad exacta de 0.1 s, relaciones recíprocas observables y muestras de seguimiento/cambios suficientes para plantear reglas autónomas y validación. Los dos componentes permiten una propuesta de separación completa sin replay.
+
+Limitaciones que deben resolverse antes de aprobar/congelar TEST o calibrar: procedencia/calendario de B1/B2 y reloj; geometría y correspondencia de secciones/zonas; señalización sincronizada para un baseline urbano; protocolo de carriles/códigos y ruido; rutas/censura de viajes; saturación de aceleración y headways sentinela. Si no se logra resolver el reloj/componentes o las fronteras/señales de un alcance elegido, se debe reducir el alcance o revisar la clasificación, no esconder esos supuestos.
+
+No se afirma STRONGLY_VIABLE: la incertidumbre de fuentes auxiliares y reloj impide esa categoría. La conclusión tampoco es una validación del ABM: aún no existe.
+
+## Reproducción, pruebas y desempeño
+
+`python -m scripts.audit_peachtree` regenera los resultados desde el CSV intacto y referencias locales. `python -m unittest discover -s tests -v` ejecuta pruebas de fuentes anteriores y de Peachtree. La suite PEACHTREE verifica separación afín, continuidad, identidad compuesta, relaciones recíprocas, exclusión de ruido/otros contextos, tipos sentinela y conservación de la fuente; las pruebas no entrenan modelos.
+
+Tiempo del análisis numérico: 6.211 s; peak working set aproximado: 1387.03 MB. Excluye inspección documental/red, generación posterior de gráficos y render del reporte. Datos por periodo, eventos, trayectorias, ventanas, arrivals y comparaciones son reproducibles sin muestreo aleatorio.
+
+Resultado de pruebas: outputs/peachtree_test_results.txt y outputs/peachtree_test_summary.json. Gráficos científicos agregados: outputs/figures/peachtree_traffic_over_time.png y peachtree_speed_distribution.png. No se congeló ningún TEST ni se implementaron modelo o escenarios.

@@ -1,0 +1,25 @@
+component,value/rule,classification,source,source_artifact
+dt,0.1,DATASET_DERIVED,NGSIM10Hz; existing dt,outputs/peachtree3u/component_classification.csv
+effective control references,"{'2/2': 649.846, '2/4': 777.245, '3/2': 1184.777, '3/4': 1241.529}",DATASET_DERIVED,3T entry artifact; predeclared before3U SIM,outputs/peachtree3u/component_classification.csv
+signal schedules,Existing B2 RED/YELLOW/GREEN clock; no offsets/splits changes,DATASET_DERIVED,B2 exogenous signal inputs; official afternoon files,outputs/peachtree3u/component_classification.csv
+coordinate semantics,front=Local_Y; longitudinal center/rear projections,DATASET_DERIVED,Official metadata printed p13;3T,outputs/peachtree3u/component_classification.csv
+reduced scope,NB400→1346.452; SB1400→597.878 ft,DATASET_DERIVED,3S frozen directional scope using B2 geometry/body clearance,outputs/peachtree3u/component_classification.csv
+initial snapshot/arrival requests,Existing B2 Through class2/3 cohort,DATASET_DERIVED,B2 exogenous inputs,outputs/peachtree3u/component_classification.csv
+entry speed samples,Existing B2 distributions with paired seeds,DATASET_DERIVED,B2 exogenous inputs,outputs/peachtree3u/component_classification.csv
+IDM v0/T/s0/a/b,"{'v0': 12.511824704049223, 'T': 2.3561828489400907, 's0': 2.086210393921371, 'a': 2.6217268525153132, 'b': 2.625114577727408, 'delta': 4.0}",CALIBRATED,CALIBRATED_B2; original baseline full precision unchanged,outputs/peachtree3u/component_classification.csv
+IDM delta,4.0,LITERATURE_DERIVED,Existing IDM exponent convention,outputs/peachtree3u/component_classification.csv
+IDM acceleration/ballistic integration,Existing gap/speed law; simultaneous feasible acceleration constraint,LITERATURE_DERIVED,Existing VehicleAgent/IDM ballistic implementation,outputs/peachtree3u/component_classification.csv
+numerical feasibility guard,Constrain acceleration to available displacement; no position or speed reset,ASSUMPTION,Existing implementation safety rule,outputs/peachtree3u/component_classification.csv
+yellow handling,Latched comfortable-stop decision,ASSUMPTION,Existing yellow rule; no changes,outputs/peachtree3u/component_classification.csv
+green release delay,1.6,DATASET_DERIVED,B2 pooled simplification; no stratification,outputs/peachtree3u/component_classification.csv
+FIFO safe insertion,Preserve per direction/lane pending order and braking gap,ASSUMPTION,Existing3R correction,outputs/peachtree3u/component_classification.csv
+followers,IDM only; no added propagation delay,ASSUMPTION,Frozen model choice,outputs/peachtree3u/component_classification.csv
+main lanes/bay connector,Two normal lanes; only necessary safe lane11 merge,ASSUMPTION,Existing logical lane handling; sparse B2 lane-change sample,outputs/peachtree3u/component_classification.csv
+stopped,0.1,ASSUMPTION,Frozen external operational threshold in m/s,outputs/peachtree3u/component_classification.csv
+standstill queue gap,4.9414274828549685,DATASET_DERIVED,Existing B2 stoodP90,outputs/peachtree3u/component_classification.csv
+head selection window,100.0,ASSUMPTION,Inherited100ft window; observed-entry measurement,outputs/peachtree3u/component_classification.csv
+queue chain,"First same-lane stopped head, Following where available, positive frozen-gap chain",ASSUMPTION,3T reproducible measurement; observational lane0 recovery,outputs/peachtree3u/component_classification.csv
+observational stop zones,Preserved3T lane/cycle P10–P90 bands; no physical force,DATASET_DERIVED,3T head distributions,outputs/peachtree3u/component_classification.csv
+receiving condition,Free removal at frozen direction-specific cuts,ASSUMPTION,3S reduced boundary implementation,outputs/peachtree3u/component_classification.csv
+target-only population,Through class2/3; no Background Agents,ASSUMPTION,Frozen cohort modelling scope,outputs/peachtree3u/component_classification.csv
+future green split,NOT_IMPLEMENTED; E1/E2/E3 disabled,EXPERIMENTAL,"Future scenario only, outside phase",outputs/peachtree3u/component_classification.csv

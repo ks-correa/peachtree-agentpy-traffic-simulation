@@ -1,0 +1,5 @@
+metric,value,status
+total_changes,,MISSING_VEHICLE_TRAJECTORIES
+vehicles_with_changes,,MISSING_VEHICLE_TRAJECTORIES
+changes_per_vehicle,,MISSING_VEHICLE_TRAJECTORIES
+time_between_changes,,MISSING_VEHICLE_TRAJECTORIES

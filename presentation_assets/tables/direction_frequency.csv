@@ -1,0 +1,5 @@
+Contexto,Dirección,Vehículos,source_artifact
+B2,NB,121,outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json
+B2,SB,153,outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json
+B1,NB,136,outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json
+B1,SB,115,outputs/peachtree3u/final_inputs.json;outputs/peachtree5/b1_exogenous_inputs.json

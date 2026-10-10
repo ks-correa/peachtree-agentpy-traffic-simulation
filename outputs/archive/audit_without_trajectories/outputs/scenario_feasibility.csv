@@ -1,0 +1,4 @@
+scenario,changed_rule,experimental_parameter,indicator,status
+E1,Ramp arrival timing,Meter interval,"Ramp queue, throughput",CONCEPTUAL_ONLY_BASELINE_NOT_VALIDATABLE_LOCALLY
+E2,Speed control,Speed target,"Speed, travel time",CONCEPTUAL_ONLY_BASELINE_NOT_VALIDATABLE_LOCALLY
+E3,Both,Interval and speed target,"Queue, throughput, travel time",CONCEPTUAL_ONLY_BASELINE_NOT_VALIDATABLE_LOCALLY

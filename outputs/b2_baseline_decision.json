@@ -1,0 +1,13 @@
+{
+  "classification": "B. BASELINE_NEEDS_REVISION",
+  "reason": "Engine and conservation pass, but TRAIN stopping is strongly underestimated, mean headway is inflated and temporal throughput/section travel residuals remain. Continuous IDM rest vs source exact-zero measurement, omitted local interactions and simplified lane changes require TRAIN-only revision before B1.",
+  "training_acquisition": "B2",
+  "final_replicates": 30,
+  "B1_LOCKED": true,
+  "next_phase": "Revise stopping/observation model and TRAIN residuals; retain B1 lock. Then reconsider readiness.",
+  "E1_E2_E3": "DISABLED",
+  "ui_checks": "Streamlit AppTest controls/render/pass; Canvas JS mock test pass. Real browser screenshot/playback QA unavailable: browser inventory empty.",
+  "methodological_incident": "One accidental shell header read of legacy mixed quality-filter CSV displayed B1 filter counts. No B1 performance comparison/parameter fitting/UI/optimization used. This means the phase cannot claim absolutely zero B1-derived content was displayed.",
+  "yellow_chronology": "Conservative assumption fixed before search; detailed onset diagnostic completed after search. Not an empirically identified decision model, no subsequent rule fitting.",
+  "validation_description": "TEMPORAL/ACQUISITION HOLDOUT VALIDATION WITH PRIOR FEASIBILITY SUMMARY EXPOSURE"
+}

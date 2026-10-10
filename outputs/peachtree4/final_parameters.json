@@ -1,0 +1,150 @@
+{
+  "training_acquisition": "B2",
+  "values": {
+    "v0": 13.826974853949704,
+    "T": 1.98619700046232,
+    "s0": 2.217577716840254,
+    "a": 3.060404045733389,
+    "b": 2.191487875232387
+  },
+  "delta": 4.0,
+  "objective": 0.08672011005230379,
+  "component_errors": {
+    "component_speed_mean": 0.01775072163320722,
+    "component_speed_KS": 0.09313859310223964,
+    "component_speed_W1": 0.03880890259958154,
+    "component_headway_mean": 0.07967141104477599,
+    "component_headway_KS": 0.09138906038167563,
+    "component_headway_W1": 0.20058151637634625,
+    "component_travel_mean": 0.02351787451742985,
+    "component_travel_W1": 0.10478325633536634,
+    "component_stopped_fraction": 0.06867709639507484,
+    "component_vehicles_stopped": 0.009345794392523324,
+    "component_stop_episodes": 0.21943573667711597,
+    "component_stop_duration_W1": 0.1760688442811323,
+    "component_flow_histogram": 0.15766423357664233,
+    "component_flow_cumulative": 0.003797423110573763,
+    "component_section_mean": 0.08327733022807955,
+    "E_speed": 0.0498994057783428,
+    "E_headway": 0.12388066260093263,
+    "E_travel": 0.0641505654263981,
+    "E_stopping": 0.11838186793646162,
+    "E_temporal_flow": 0.08073082834360806,
+    "E_section_travel": 0.08327733022807955
+  },
+  "selected_candidate": 138,
+  "evaluated_parameter_sets": 139,
+  "bounds": {
+    "v0": [
+      4.81280162560325,
+      13.826974853949704
+    ],
+    "T": [
+      1.55,
+      4.53
+    ],
+    "s0": [
+      1.1277622555245108,
+      4.9414274828549685
+    ],
+    "a": [
+      0.048768097536195,
+      3.4168148336296675
+    ],
+    "b": [
+      0.0335280670561341,
+      3.425958851917704
+    ]
+  },
+  "source": "B2 ONLY; predeclared equal-domain score, mean over five development seeds",
+  "optimizer": {
+    "training_acquisition": "B2",
+    "structural_freeze_sha256": "3794b17b25c4e36eee63995071f327f7e2ecec44a0f32f8c26791d4f82a61830",
+    "development_seeds": [
+      5000,
+      5001,
+      5002,
+      5003,
+      5004
+    ],
+    "final_seeds": [
+      4000,
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026,
+      4027,
+      4028,
+      4029
+    ],
+    "exploration": "40 Latin Hypercube candidates plus unchanged initial baseline",
+    "LHS_seed": 20261010,
+    "LHS_candidates": 40,
+    "local_algorithm": "Bounded Nelder-Mead in unit empirical bounds; two best LHS starts",
+    "local_starts": 2,
+    "local_maxfev_per_start": 50,
+    "total_local_maxfev": 100,
+    "score": "Arithmetic mean of all five development seeds; any invalid rollout disqualifies set",
+    "selection": "Minimum predeclared objective over all valid evaluated sets; no manual override",
+    "frozen_artifact_hashes": {
+      "outputs\\peachtree4\\parameter_bounds.csv": "e4b718f75dc352f846687248c54017cacedd27a006d2a046766d3f082badf41d",
+      "outputs\\peachtree4\\development_seeds.json": "b563ab54cfb4e568e1b74081ebacee6e8998a55d3525dfe360d7b6b350c31aca",
+      "outputs\\peachtree4\\final_replication_seeds.json": "6089757ffda244b8b23c21c5e4be13b9f8a445b8195a7aa47618e70e59eb4f40",
+      "outputs\\peachtree4\\objective_definition.json": "3477f11400c23c8f2a0484bfccefbb889a30d986cf0739f9cbc8d619bc787ad4"
+    },
+    "created_at": "2026-10-10T15:09:33.880611+00:00"
+  },
+  "local_termination": [
+    {
+      "start_candidate": 17,
+      "calls": 50,
+      "terminated": true,
+      "converged": false,
+      "message": "Maximum number of function evaluations has been exceeded."
+    },
+    {
+      "start_candidate": 24,
+      "calls": 50,
+      "terminated": true,
+      "converged": false,
+      "message": "Maximum number of function evaluations has been exceeded."
+    }
+  ],
+  "seed_set": [
+    5000,
+    5001,
+    5002,
+    5003,
+    5004
+  ],
+  "timestamp": "2026-10-10T15:29:55.452755+00:00",
+  "hashes": {
+    "structural_freeze_sha256": "3794b17b25c4e36eee63995071f327f7e2ecec44a0f32f8c26791d4f82a61830",
+    "outputs\\peachtree4\\parameter_bounds.csv": "e4b718f75dc352f846687248c54017cacedd27a006d2a046766d3f082badf41d",
+    "outputs\\peachtree4\\development_seeds.json": "b563ab54cfb4e568e1b74081ebacee6e8998a55d3525dfe360d7b6b350c31aca",
+    "outputs\\peachtree4\\final_replication_seeds.json": "6089757ffda244b8b23c21c5e4be13b9f8a445b8195a7aa47618e70e59eb4f40",
+    "outputs\\peachtree4\\objective_definition.json": "3477f11400c23c8f2a0484bfccefbb889a30d986cf0739f9cbc8d619bc787ad4"
+  }
+}

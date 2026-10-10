@@ -1,0 +1,79 @@
+{
+  "sections": [
+    {
+      "section": "Proyecto",
+      "plotly_charts": 1,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Datos",
+      "plotly_charts": 7,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Modelo",
+      "plotly_charts": 3,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Simulación",
+      "plotly_charts": 0,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Calibración",
+      "plotly_charts": 1,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Validación",
+      "plotly_charts": 6,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Escenarios",
+      "plotly_charts": 2,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Resultados",
+      "plotly_charts": 7,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Comportamiento emergente",
+      "plotly_charts": 2,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Decisión",
+      "plotly_charts": 5,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Limitaciones",
+      "plotly_charts": 1,
+      "no_exception": true,
+      "no_toolbar": true
+    },
+    {
+      "section": "Material para presentación",
+      "plotly_charts": 0,
+      "no_exception": true,
+      "no_toolbar": true
+    }
+  ],
+  "technical_mode_rendered": true,
+  "page_errors": [],
+  "scientific_controls_used": false
+}

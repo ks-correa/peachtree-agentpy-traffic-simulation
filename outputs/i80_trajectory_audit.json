@@ -1,0 +1,584 @@
+{
+  "audit_scope": "LOCAL_EXPORT_REOPENED_I80",
+  "classification": "NOT_VIABLE_FOR_AGENTPY",
+  "reason": "NO_I80_ROWS_IN_EXPORT",
+  "source": "data/export.csv",
+  "source_sha256": "565945bc482de02ea6857b9f8aab7c87a319dfdc0d5e953d0e6a9b36ede09a40",
+  "source_unchanged": true,
+  "supporting_zip_unchanged": true,
+  "previous_audit_archive": "outputs/archive/audit_without_trajectories",
+  "export": {
+    "file_bytes": 137010173,
+    "delimiter": ";",
+    "rows": 1048575,
+    "column_count": 25,
+    "columns_exact": [
+      "Vehicle_ID",
+      "Frame_ID",
+      "Total_Frames",
+      "Global_Time",
+      "Local_X",
+      "Local_Y",
+      "Global_X",
+      "Global_Y",
+      "v_length",
+      "v_Width",
+      "v_Class",
+      "v_Vel",
+      "v_Acc",
+      "Lane_ID",
+      "O_Zone",
+      "D_Zone",
+      "Int_ID",
+      "Section_ID",
+      "Direction",
+      "Movement",
+      "Preceding",
+      "Following",
+      "Space_Headway",
+      "Time_Headway",
+      "Location"
+    ],
+    "malformed_rows": 0,
+    "missing_token_policy": [
+      "",
+      "N/A",
+      "NA",
+      "NAN",
+      "NULL"
+    ],
+    "column_profiles": {
+      "Vehicle_ID": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 1048575
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "352"
+        }
+      },
+      "Frame_ID": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 1048575
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "3380"
+        }
+      },
+      "Total_Frames": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "comma_grouped_candidate": 510392,
+          "integer_literal": 481939,
+          "text_or_other": 56244
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "comma_grouped_candidate": "1,156",
+          "integer_literal": "712",
+          "text_or_other": "1,48"
+        }
+      },
+      "Global_Time": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "comma_decimal_scientific": 174688
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "1163368300",
+          "comma_decimal_scientific": "1,11885E+12"
+        }
+      },
+      "Local_X": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "dot_decimal_literal": 1047664,
+          "integer_literal": 911
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "dot_decimal_literal": "-5.359",
+          "integer_literal": "15"
+        }
+      },
+      "Local_Y": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 393,
+          "dot_decimal_literal": 473775,
+          "comma_grouped_candidate": 574357,
+          "text_or_other": 50
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "dot_decimal_literal": "4.566",
+          "comma_grouped_candidate": "1,001.166",
+          "text_or_other": "1,07"
+        }
+      },
+      "Global_X": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "multiple_dot_groups_ambiguous": 942629,
+          "dot_decimal_literal": 104900,
+          "integer_literal": 1046
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "multiple_dot_groups_ambiguous": "2.230.502.921",
+          "dot_decimal_literal": "2230529.09",
+          "integer_literal": "2230523"
+        }
+      },
+      "Global_Y": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "multiple_dot_groups_ambiguous": 944335,
+          "dot_decimal_literal": 102259,
+          "integer_literal": 1981
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "multiple_dot_groups_ambiguous": "1.375.532.938",
+          "dot_decimal_literal": "1375548.79",
+          "integer_literal": "1375589"
+        }
+      },
+      "v_length": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 486152,
+          "dot_decimal_literal": 562423
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "15",
+          "dot_decimal_literal": "16.6"
+        }
+      },
+      "v_Width": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "dot_decimal_literal": 482349,
+          "integer_literal": 566226
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "dot_decimal_literal": "6.5",
+          "integer_literal": "7"
+        }
+      },
+      "v_Class": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 1048575
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "2"
+        }
+      },
+      "v_Vel": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "dot_decimal_literal": 842785,
+          "integer_literal": 205790
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "dot_decimal_literal": "33.96",
+          "integer_literal": "0"
+        }
+      },
+      "v_Acc": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 521993,
+          "dot_decimal_literal": 526582
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "dot_decimal_literal": "10.82"
+        }
+      },
+      "Lane_ID": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 1047434,
+          "comma_grouped_candidate": 1141
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "1",
+          "comma_grouped_candidate": "9,999"
+        }
+      },
+      "O_Zone": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "121",
+          "missing": "NA"
+        }
+      },
+      "D_Zone": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "201",
+          "missing": "NA"
+        }
+      },
+      "Int_ID": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "missing": "NA"
+        }
+      },
+      "Section_ID": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "1",
+          "missing": "NA"
+        }
+      },
+      "Direction": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "4",
+          "missing": "NA"
+        }
+      },
+      "Movement": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 873887,
+          "missing": 174688
+        },
+        "missing_count": 174688,
+        "examples_by_type": {
+          "integer_literal": "1",
+          "missing": "NA"
+        }
+      },
+      "Preceding": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 834437,
+          "comma_grouped_candidate": 192056,
+          "text_or_other": 22082
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "comma_grouped_candidate": "1,309",
+          "text_or_other": "1,21"
+        }
+      },
+      "Following": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 753132,
+          "comma_grouped_candidate": 266826,
+          "text_or_other": 28617
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "455",
+          "comma_grouped_candidate": "1,128",
+          "text_or_other": "1,14"
+        }
+      },
+      "Space_Headway": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 513868,
+          "dot_decimal_literal": 526744,
+          "comma_grouped_candidate": 7951,
+          "text_or_other": 12
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "dot_decimal_literal": "28.27",
+          "comma_grouped_candidate": "1,066.52",
+          "text_or_other": "1,33"
+        }
+      },
+      "Time_Headway": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "integer_literal": 514413,
+          "dot_decimal_literal": 449675,
+          "comma_grouped_candidate": 84482,
+          "text_or_other": 5
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "integer_literal": "0",
+          "dot_decimal_literal": "113.1",
+          "comma_grouped_candidate": "9,999.99",
+          "text_or_other": "3,14"
+        }
+      },
+      "Location": {
+        "storage_type": "CSV_TEXT",
+        "lexical_types": {
+          "text_or_other": 1048575
+        },
+        "missing_count": 0,
+        "examples_by_type": {
+          "text_or_other": "peachtree"
+        }
+      }
+    },
+    "locations_exact": {
+      "peachtree": 873887,
+      "us-101": 174688
+    },
+    "site_profiles": {
+      "peachtree": {
+        "rows": 873887,
+        "unique_vehicle_id_literals": 1545,
+        "unique_frame_id_literals": 10328,
+        "frame_id_integer_literal_min": 2,
+        "frame_id_integer_literal_max": 10329,
+        "frame_id_noninteger_literals": [],
+        "unique_global_time_literals": 10442,
+        "global_time_most_common_literals": [
+          [
+            "1163327500",
+            122
+          ],
+          [
+            "1163347600",
+            121
+          ],
+          [
+            "1163347700",
+            121
+          ],
+          [
+            "1163326900",
+            121
+          ],
+          [
+            "1163327000",
+            121
+          ]
+        ],
+        "global_time_integer_literal_min": 1163019100,
+        "global_time_integer_literal_max": 1164063200,
+        "global_time_unique_integer_delta_modes": [
+          [
+            100,
+            10441
+          ]
+        ],
+        "global_time_other_examples": [],
+        "lane_id_literals": [
+          "0",
+          "1",
+          "1,061",
+          "1,131",
+          "1,201",
+          "11",
+          "2",
+          "2,081",
+          "3",
+          "4",
+          "9,999"
+        ],
+        "calendar_time_and_sampling_hz": "NOT_CERTIFIABLE_FROM_THIS_TRANSFORMED_EXPORT"
+      },
+      "us-101": {
+        "rows": 174688,
+        "unique_vehicle_id_literals": 2827,
+        "unique_frame_id_literals": 9568,
+        "frame_id_integer_literal_min": 433,
+        "frame_id_integer_literal_max": 10000,
+        "frame_id_noninteger_literals": [],
+        "unique_global_time_literals": 1,
+        "global_time_most_common_literals": [
+          [
+            "1,11885E+12",
+            174688
+          ]
+        ],
+        "global_time_integer_literal_min": null,
+        "global_time_integer_literal_max": null,
+        "global_time_unique_integer_delta_modes": [],
+        "global_time_other_examples": [
+          "1,11885E+12"
+        ],
+        "lane_id_literals": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "calendar_time_and_sampling_hz": "NOT_CERTIFIABLE_FROM_THIS_TRANSFORMED_EXPORT"
+      }
+    },
+    "equivalent_columns": {
+      "Vehicle_ID": "Vehicle_ID",
+      "Frame_ID": "Frame_ID",
+      "Total_Frames": "Total_Frames",
+      "Global_Time": "Global_Time",
+      "Local_X": "Local_X",
+      "Local_Y": "Local_Y",
+      "Global_X": "Global_X",
+      "Global_Y": "Global_Y",
+      "Vehicle_Length": "v_length",
+      "Vehicle_Width": "v_Width",
+      "Vehicle_Class": "v_Class",
+      "Velocity": "v_Vel",
+      "Acceleration": "v_Acc",
+      "Lane_ID": "Lane_ID",
+      "Preceding": "Preceding",
+      "Following": "Following",
+      "Space_Headway": "Space_Headway",
+      "Time_Headway": "Time_Headway"
+    },
+    "i80_rows": 0,
+    "i80_vehicle_ids": 0,
+    "rows_plus_header_equals_1048576": true
+  },
+  "i80_periods": [],
+  "i80_metadata_status": "MISSING",
+  "ramp_metadata_status": "PENDING_I80_METADATA",
+  "i80_checks": {
+    "vehicle_frame_duplicates": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "vehicle_time_monotonicity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "temporal_continuity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "position_monotonicity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "trajectory_duration": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "observations_per_vehicle": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "trajectories_with_gaps": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "velocity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "acceleration": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "lane_id": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "leader_validity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "follower_validity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "reciprocity": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "headways": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "car_following_correlations": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "lane_changes": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "congestion": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "train_test_isolation": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    },
+    "physical_vehicle_overlap": {
+      "status": "NOT_EVALUABLE",
+      "value": null,
+      "reason": "NO_I80_ROWS_IN_EXPORT"
+    }
+  },
+  "transferability_status": "NOT_RUN",
+  "performance": {
+    "elapsed_seconds": 14.587,
+    "peak_process_working_set_mb": 23.44
+  }
+}

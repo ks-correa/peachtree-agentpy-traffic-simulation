@@ -1,0 +1,9 @@
+intersection,direction,lane,effective_reference_ft,red_no_cross,stopped_before_reference,green_release,correct_sign,no_overlap,minimum_gap_ft,conservation
+2,2,1,649.846,True,True,True,True,True,6.853203147289946,True
+2,2,2,649.846,True,True,True,True,True,6.853203147289946,True
+2,4,1,777.245,True,True,True,True,True,6.853203147289719,True
+2,4,2,777.245,True,True,True,True,True,6.853203147289719,True
+3,2,1,1184.777,True,True,True,True,True,6.853203147289946,True
+3,2,2,1184.777,True,True,True,True,True,6.853203147289946,True
+3,4,1,1241.529,True,True,True,True,True,6.8532031472901735,True
+3,4,2,1241.529,True,True,True,True,True,6.8532031472901735,True

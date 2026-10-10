@@ -1,0 +1,4 @@
+direction,physical_discharge_buffer_ft,candidate_exit_ft,maximum_observed_receiving_stopped_rear_ft,clearance_ft,required_standstill_gap_plus_position_allowance_ft,passes_physical_clearance,rule
+4,25.0,622.878,558.089,64.78899999999999,20.21200000000001,True,largest predeclared buffer with receiving stopped vehicle BODY separated by existing B2 gapP90 + official nominal longitudinal4ft allowance; no SIM fit
+4,50.0,597.878,558.089,39.78899999999999,20.21200000000001,True,largest predeclared buffer with receiving stopped vehicle BODY separated by existing B2 gapP90 + official nominal longitudinal4ft allowance; no SIM fit
+4,100.0,547.878,558.089,-10.211000000000013,20.21200000000001,False,largest predeclared buffer with receiving stopped vehicle BODY separated by existing B2 gapP90 + official nominal longitudinal4ft allowance; no SIM fit

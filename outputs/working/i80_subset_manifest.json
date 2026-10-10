@@ -1,0 +1,7 @@
+{
+  "source_sha256": "565945bc482de02ea6857b9f8aab7c87a319dfdc0d5e953d0e6a9b36ede09a40",
+  "filter": "Location.strip().casefold() == i-80",
+  "rows": 0,
+  "status": "NO_I80_ROWS_IN_EXPORT",
+  "subset_sha256": "056baee8062be477988432bd2b8ff8eb69b677ad1f1bf9aa9e847ac4653454e2"
+}

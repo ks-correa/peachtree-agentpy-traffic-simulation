@@ -1,0 +1,4 @@
+series,bin_s,maximum_cumulative_departure_deviation,maximum_cumulative_departure_deviation_event_times,MAE_per_bin,timing_bias_s,real_total,simulated_total,timing_bias_definition,seed
+VALIDATION_B1,10.0,4,5.0,0.865979381443299,-0.5684424838452283,251,251,"sorted departures, not paired vehicle trajectories",6023
+VALIDATION_B1,30.0,4,5.0,1.6363636363636365,-0.5684424838452283,251,251,"sorted departures, not paired vehicle trajectories",6023
+VALIDATION_B1,60.0,4,5.0,1.8823529411764706,-0.5684424838452283,251,251,"sorted departures, not paired vehicle trajectories",6023

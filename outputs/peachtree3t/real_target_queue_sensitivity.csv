@@ -1,0 +1,2 @@
+queue_mean,queue_P90,queue_max,queue_spatial_mean_ft,queue_spatial_P90_ft,head_mean_y_ft,release_mean_s,clearance_mean_s,clearance_observed_n,residual_5s_mean,residual_10s_mean,propagation_mean_s,propagation_observed_n,series
+0.578239695925882,2.0,9,11.400765316545906,39.13759999999993,946.7931129032258,1.7459999999999918,10.065999999999992,50,0.18,0.0625,0.6947368421052621,57,REAL_B2_TARGET_ONLY_SENSITIVITY

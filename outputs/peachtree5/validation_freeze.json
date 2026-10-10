@@ -1,0 +1,459 @@
+{
+  "status": "FROZEN",
+  "validation_name": "TEMPORAL/ACQUISITION HOLDOUT VALIDATION WITH PRIOR FEASIBILITY SUMMARY EXPOSURE",
+  "classification": "B. BASELINE_VALIDATED_WITH_LIMITATIONS",
+  "reason": "Useful speed/travel/operational-stop and signal/queue patterns generalize, with relevant systematic headway and stopping-duration/episode discrepancies; no qualitative physical failure. Suitable for bounded comparative experimentation with limitations, not perfect absolute prediction.",
+  "structural_freeze_hash": "3794b17b25c4e36eee63995071f327f7e2ecec44a0f32f8c26791d4f82a61830",
+  "calibration_freeze_hash": "a2db1ea6f3b0b489181e2c913320c6360f9517f70594f60d9c4c81f83ae75e93",
+  "B1_source_hash": "c52239f2d47889643be6913ad77aaff59a0c4bc63c854144d59512ad65ee27d6",
+  "raw_dataset_sha256": "9769b819a1c0a010fa16cafa06a50bc7bc352f8e14303222f64a00c5e65b6702",
+  "validation_seeds": [
+    6000,
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010,
+    6011,
+    6012,
+    6013,
+    6014,
+    6015,
+    6016,
+    6017,
+    6018,
+    6019,
+    6020,
+    6021,
+    6022,
+    6023,
+    6024,
+    6025,
+    6026,
+    6027,
+    6028,
+    6029
+  ],
+  "illustrative_seed": 6000,
+  "illustrative_seed_role": "ILLUSTRATIVE PREDECLARED SEED",
+  "parameters": {
+    "v0": 13.826974853949704,
+    "T": 1.98619700046232,
+    "s0": 2.217577716840254,
+    "a": 3.060404045733389,
+    "b": 2.191487875232387
+  },
+  "delta": 4,
+  "scope": {
+    "entry_ft": {
+      "2": 400.0,
+      "4": 1400.0
+    },
+    "exit_ft": {
+      "2": 1346.452,
+      "4": 597.878
+    }
+  },
+  "metric_definitions": {
+    "speed": "Vehicle-time speed including stopped",
+    "headway": "Existing cleaned same-lane/same-road CF observations; front-to-front, leader inside scope",
+    "travel": "Complete entry-to-directional-exit journeys; initial vehicles excluded",
+    "stopping": "Operational <=0.1m/s; contiguous0.1s episodes; durations exclude left/right censoring",
+    "flow": "All TARGET departures incl initial;30s histogram L1 and full0.1s-clock mean cumulative departure deviation",
+    "section": "Complete pair of same effective controls, same linear crossing interpolation REAL/SIM",
+    "queue": "SECONDARY_DIAGNOSTIC only: REAL all-observed context differs from SIM TARGET"
+  },
+  "results": [
+    {
+      "metric": "speed_mean_ft_s",
+      "n": 30,
+      "mean": 19.350854578080657,
+      "SD": 0.13356583337164388,
+      "CI95_low": 19.300980276238477,
+      "CI95_high": 19.400728879922838
+    },
+    {
+      "metric": "speed_median_ft_s",
+      "n": 30,
+      "mean": 17.536001122098707,
+      "SD": 0.5140559964834273,
+      "CI95_low": 17.344049458374496,
+      "CI95_high": 17.727952785822918
+    },
+    {
+      "metric": "speed_KS",
+      "n": 30,
+      "mean": 0.233661036301718,
+      "SD": 0.00011887102589121085,
+      "CI95_low": 0.2336166491311675,
+      "CI95_high": 0.2337054234722685
+    },
+    {
+      "metric": "speed_W1_ft_s",
+      "n": 30,
+      "mean": 1.0501702266351343,
+      "SD": 0.04216040497458577,
+      "CI95_low": 1.0344272726894173,
+      "CI95_high": 1.0659131805808513
+    },
+    {
+      "metric": "headway_mean_ft",
+      "n": 30,
+      "mean": 74.7738620221369,
+      "SD": 0.730219667099552,
+      "CI95_low": 74.50119351726046,
+      "CI95_high": 75.04653052701333
+    },
+    {
+      "metric": "headway_median_ft",
+      "n": 30,
+      "mean": 50.87966987463665,
+      "SD": 1.6187213862526033,
+      "CI95_low": 50.27522937530835,
+      "CI95_high": 51.484110373964945
+    },
+    {
+      "metric": "headway_KS",
+      "n": 30,
+      "mean": 0.15637119432875987,
+      "SD": 0.006341674130334152,
+      "CI95_low": 0.15400317429117302,
+      "CI95_high": 0.15873921436634672
+    },
+    {
+      "metric": "headway_W1_ft",
+      "n": 30,
+      "mean": 15.361368731790101,
+      "SD": 0.7017851251632807,
+      "CI95_low": 15.09931785936858,
+      "CI95_high": 15.623419604211621
+    },
+    {
+      "metric": "travel_mean_s",
+      "n": 30,
+      "mean": 45.522383508632416,
+      "SD": 0.31393042955645933,
+      "CI95_low": 45.405159959720926,
+      "CI95_high": 45.639607057543905
+    },
+    {
+      "metric": "travel_median_s",
+      "n": 30,
+      "mean": 44.452408438689055,
+      "SD": 1.0285761762964098,
+      "CI95_low": 44.06833178233679,
+      "CI95_high": 44.83648509504132
+    },
+    {
+      "metric": "travel_KS",
+      "n": 30,
+      "mean": 0.07510040160642568,
+      "SD": 0.003676247911197158,
+      "CI95_low": 0.07372766807614052,
+      "CI95_high": 0.07647313513671085
+    },
+    {
+      "metric": "travel_W1_s",
+      "n": 30,
+      "mean": 1.4213149948916588,
+      "SD": 0.15499322882863273,
+      "CI95_low": 1.3634395720910948,
+      "CI95_high": 1.4791904176922228
+    },
+    {
+      "metric": "operational_stopped",
+      "n": 30,
+      "mean": 0.3169566340596674,
+      "SD": 0.0025840903294909396,
+      "CI95_low": 0.3159917188726982,
+      "CI95_high": 0.31792154924663657
+    },
+    {
+      "metric": "vehicles_stopped_fraction",
+      "n": 30,
+      "mean": 0.5224435590969455,
+      "SD": 0.007525363948221896,
+      "CI95_low": 0.5196335420173412,
+      "CI95_high": 0.5252535761765498
+    },
+    {
+      "metric": "stop_episodes",
+      "n": 30,
+      "mean": 141.9,
+      "SD": 2.1869519017778267,
+      "CI95_low": 141.08337873908135,
+      "CI95_high": 142.71662126091866
+    },
+    {
+      "metric": "complete_stop_duration_mean_s",
+      "n": 30,
+      "mean": 25.554697177022447,
+      "SD": 0.31904470399278995,
+      "CI95_low": 25.43556392665137,
+      "CI95_high": 25.673830427393526
+    },
+    {
+      "metric": "stop_duration_W1_s",
+      "n": 30,
+      "mean": 7.049736969857685,
+      "SD": 0.29816873817167455,
+      "CI95_low": 6.9383989332349625,
+      "CI95_high": 7.161075006480408
+    },
+    {
+      "metric": "section_travel_mean_s",
+      "n": 30,
+      "mean": 25.459235511949547,
+      "SD": 0.2852810923073105,
+      "CI95_low": 25.352709801380943,
+      "CI95_high": 25.56576122251815
+    },
+    {
+      "metric": "exact_zero_fraction",
+      "n": 30,
+      "mean": 0.00734217868773811,
+      "SD": 0.00011887102589120977,
+      "CI95_low": 0.007297791517187601,
+      "CI95_high": 0.0073865658582886184
+    },
+    {
+      "metric": "throughput_total",
+      "n": 30,
+      "mean": 251.0,
+      "SD": 0.0,
+      "CI95_low": 251.0,
+      "CI95_high": 251.0
+    },
+    {
+      "metric": "throughput_temporal_L1_normalized",
+      "n": 30,
+      "mean": 0.21301460823373167,
+      "SD": 0.007525363948221906,
+      "CI95_low": 0.21020459115412743,
+      "CI95_high": 0.2158246253133359
+    },
+    {
+      "metric": "cumulative_departure_mean_abs_normalized",
+      "n": 30,
+      "mean": 0.005844403145275943,
+      "SD": 0.0002130118629610914,
+      "CI95_low": 0.005764863208443996,
+      "CI95_high": 0.00592394308210789
+    },
+    {
+      "metric": "E_speed",
+      "n": 30,
+      "mean": 0.09677870060946496,
+      "SD": 0.0031648570225725637,
+      "CI95_low": 0.0955969235752744,
+      "CI95_high": 0.09796047764365552
+    },
+    {
+      "metric": "E_headway",
+      "n": 30,
+      "mean": 0.323176456421748,
+      "SD": 0.01456523695489335,
+      "CI95_low": 0.31773770755945496,
+      "CI95_high": 0.3286152052840411
+    },
+    {
+      "metric": "E_travel",
+      "n": 30,
+      "mean": 0.04197494240471485,
+      "SD": 0.006385318047577895,
+      "CI95_low": 0.039590625460597016,
+      "CI95_high": 0.04435925934883269
+    },
+    {
+      "metric": "E_stopping",
+      "n": 30,
+      "mean": 0.174811807886822,
+      "SD": 0.003980354590293112,
+      "CI95_low": 0.17332551905633328,
+      "CI95_high": 0.1762980967173107
+    },
+    {
+      "metric": "E_temporal_flow",
+      "n": 30,
+      "mean": 0.10942950568950384,
+      "SD": 0.00384673824419024,
+      "CI95_low": 0.10799311002262113,
+      "CI95_high": 0.11086590135638655
+    },
+    {
+      "metric": "E_section_travel",
+      "n": 30,
+      "mean": 0.09308509614551186,
+      "SD": 0.008546996069394902,
+      "CI95_low": 0.08989359536235245,
+      "CI95_high": 0.09627659692867127
+    },
+    {
+      "metric": "validation_summary_score",
+      "n": 30,
+      "mean": 0.13987608485962758,
+      "SD": 0.0038721683740632396,
+      "CI95_low": 0.13843019342619173,
+      "CI95_high": 0.14132197629306342
+    },
+    {
+      "metric": "remaining",
+      "n": 30,
+      "mean": 0.0,
+      "SD": 0.0,
+      "CI95_low": 0.0,
+      "CI95_high": 0.0
+    },
+    {
+      "metric": "pending",
+      "n": 30,
+      "mean": 0.0,
+      "SD": 0.0,
+      "CI95_low": 0.0,
+      "CI95_high": 0.0
+    },
+    {
+      "metric": "queue_mean",
+      "n": 30,
+      "mean": 0.7073564170792394,
+      "SD": 0.010819258937948707,
+      "CI95_low": 0.7033164393966344,
+      "CI95_high": 0.7113963947618444
+    },
+    {
+      "metric": "queue_P90",
+      "n": 30,
+      "mean": 2.0,
+      "SD": 0.0,
+      "CI95_low": 2.0,
+      "CI95_high": 2.0
+    },
+    {
+      "metric": "queue_max",
+      "n": 30,
+      "mean": 5.866666666666666,
+      "SD": 0.3457459036417604,
+      "CI95_low": 5.737563024487859,
+      "CI95_high": 5.995770308845474
+    },
+    {
+      "metric": "queue_spatial_mean_ft",
+      "n": 30,
+      "mean": 14.318781803380597,
+      "SD": 0.24893270297215347,
+      "CI95_low": 14.225828804451014,
+      "CI95_high": 14.41173480231018
+    },
+    {
+      "metric": "queue_at_green_onset_mean",
+      "n": 30,
+      "mean": 2.4004676463886994,
+      "SD": 0.041622361345243594,
+      "CI95_low": 2.3849256012360223,
+      "CI95_high": 2.4160096915413765
+    },
+    {
+      "metric": "stopped_queue_clearance_mean_s",
+      "n": 30,
+      "mean": 2.5318667164544095,
+      "SD": 0.028813041387304172,
+      "CI95_low": 2.521107749981725,
+      "CI95_high": 2.542625682927094
+    },
+    {
+      "metric": "clearance_mean_s",
+      "n": 30,
+      "mean": 9.977626420850113,
+      "SD": 0.12076563385578243,
+      "CI95_low": 9.932531792058882,
+      "CI95_high": 10.022721049641344
+    },
+    {
+      "metric": "residual_5s_mean",
+      "n": 30,
+      "mean": 0.015542665586525185,
+      "SD": 0.006204213830358032,
+      "CI95_low": 0.013225974068510019,
+      "CI95_high": 0.01785935710454035
+    },
+    {
+      "metric": "residual_10s_mean",
+      "n": 30,
+      "mean": 0.0,
+      "SD": 0.0,
+      "CI95_low": 0.0,
+      "CI95_high": 0.0
+    },
+    {
+      "metric": "propagation_mean_s",
+      "n": 30,
+      "mean": 0.6653875307864647,
+      "SD": 0.00430934374740984,
+      "CI95_low": 0.6637783953857818,
+      "CI95_high": 0.6669966661871477
+    }
+  ],
+  "limitations": [
+    "Headway too high in TRAIN and holdout; long-gap tail remains inaccurate",
+    "Too few stopping episodes and overly long complete stops in both acquisitions",
+    "B1 speed KS is affected by real exact-zero mass versus positive near-zero IDM speeds; operational threshold not changed",
+    "Temporal flow useful but bin discrepancies remain; equal total throughput is demand closure, not capacity validation",
+    "REAL queue context includes non-target arterial vehicles; secondary only",
+    "Restricted Through class2/3 population, omitted turning/local streams and free receiving cuts",
+    "Entry speeds use frozen B2 boundary pool, not newly estimated B1 speeds",
+    "Prior feasibility-summary exposure; no blind or fully-unseen claim",
+    "Comparative experiments only within frozen scope and stated assumptions; no full-network or absolute-capacity claim"
+  ],
+  "no_optimizer": true,
+  "no_recalibration": true,
+  "parameters_modified": false,
+  "B1_use": "VALIDATION AND EXOGENOUS ACQUISITION INPUTS ONLY",
+  "B1_calibration_locked": true,
+  "NO_REPLAY": true,
+  "signal_schedule_source": "B1 OBSERVED EXOGENOUS INPUT",
+  "entry_speed_source": "Frozen TRAIN B2 boundary distributions; no B1 speed sample fit",
+  "constructor_adapter": "Private B2 constructor token for frozen TRAIN-only DemandStream guard; payload is B1 exogenous only, public model provenance restored B1 immediately. Frozen demand methods and physics unchanged.",
+  "queue_adapter": "Exact frozen measurement code bound to B1 signals; private ID aliases only for literal Following namespace, restored on outputs. No geometry/threshold changes.",
+  "invariants_passed": true,
+  "completed_replicas": 30,
+  "next_phase": "PEACHTREE-6 SCENARIO EXPERIMENTATION",
+  "E1_E2_E3": "READY FOR NEXT PHASE; DISABLED AND NOT IMPLEMENTED",
+  "UI_status": "UI_IMPLEMENTED_NOT_BROWSER_VALIDATED",
+  "source_hashes": {
+    "data\\peachtree_full.csv": "9769b819a1c0a010fa16cafa06a50bc7bc352f8e14303222f64a00c5e65b6702",
+    "outputs\\peachtree_fixed_gate_travel_times.csv": "3d1b06ca73e503d1bff8abc032ae3bcfce3563c6f16d177bac366fe84b8d2177",
+    "outputs\\peachtree_physical_gate_events.csv": "1b5d36e449297c77c3840c10e20e64b94597471fe9d683137f5799617ee2b219",
+    "outputs\\peachtree_signal_timeline.csv": "449af3a4aeb8ab158f31f244802f00f7c77f97d64b8863f77f0f8ffd3dda8a6a",
+    "outputs\\working\\peachtree_cf_preparation_B1.parquet": "480b88a1c6ecb7b6f5981ce00973ec56fe4b7952e1fb7e74854437ebda689d91",
+    "data\\reference\\auxiliary\\signal-timing\\signal-change\\Original Text files\\Peachtree_11th_NB_1245-0100.txt": "71948f2435c12e05ed804eb90f54937c4e65dfd76239c53b8d76c5bf67333637",
+    "data\\reference\\auxiliary\\signal-timing\\signal-change\\Original Text files\\Peachtree_11th_SB_1245-0100.txt": "71948f2435c12e05ed804eb90f54937c4e65dfd76239c53b8d76c5bf67333637",
+    "data\\reference\\auxiliary\\signal-timing\\signal-change\\Original Text files\\Peachtree_12th_NB_1245-0100.txt": "73d3e9b9197368ef34a05493057622ceaa8ae33e2d8ff6bbf03195895f101f48",
+    "data\\reference\\auxiliary\\signal-timing\\signal-change\\Original Text files\\Peachtree_12th_SB_1245-0100.txt": "285bf3296bc6e848c6630933058f6f13b3ff412d9ad0d49b17c45c842cd42c5e"
+  },
+  "validation_code_hashes": {
+    "calibration\\holdout_validation.py": "19c8cd6a534b81c231176287287eeffc07255b3bd435eca32c5c5e5931477be4",
+    "scripts\\run_peachtree5.py": "f536037c761fb81eacd95e8adefbcd20b37cf73b4af8304a086e1110d7c33500",
+    "scripts\\finish_peachtree5.py": "d71f935f73496d7e5c256fc4c36984198d61c7f5bdcabe6a9ce10e6c212a8c23",
+    "scripts\\run_validation_tests.py": "9be486a207d6f2f2f5382caf4a980f462311b122ad5f356d59d38cf11abf9072",
+    "scripts\\qa_peachtree5.py": "b42f5fd684d5d4157ab1e60d5affa5ca831fe0850532848ae97002f5c143210b",
+    "tests\\test_holdout_validation.py": "ab96468c9131dc9c65a8a1ec2115cce4529402d610a492651c1d13a0f3c78d61"
+  },
+  "date_time": "2026-10-10T16:00:08.784927+00:00",
+  "test_suite": {
+    "tests_total": 205,
+    "passed": 179,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0
+  },
+  "test_report_sha256": "a6ea4b7ef9ef6ceb437b9deb62a0fad94af4dd3060b8e998452a850ce2ebdec4",
+  "UI_code_hashes": {
+    "ui\\streamlit_app.py": "9225f089f409a66a99b855cdd862628a5cc55ab75e8a6edb565771c913b42947",
+    "ui\\canvas_renderer.py": "a344bb6f8a33f24716d77da9c90fd883ed241552a11ba07e7e643ac1475700c6"
+  }
+}

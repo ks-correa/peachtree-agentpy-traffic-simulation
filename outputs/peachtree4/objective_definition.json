@@ -1,0 +1,67 @@
+{
+  "training_acquisition": "B2",
+  "weights": {
+    "speed": 0.16666666666666666,
+    "headway": 0.16666666666666666,
+    "travel": 0.16666666666666666,
+    "stopping": 0.16666666666666666,
+    "temporal_flow": 0.16666666666666666,
+    "section_travel": 0.16666666666666666
+  },
+  "scales": {
+    "speed": 29.1175,
+    "headway": 30.740000000000002,
+    "travel": 20.838959262294495,
+    "duration": 17.5
+  },
+  "real_scalars": {
+    "speed_mean": 15.91885963695866,
+    "headway_mean": 48.56369782590305,
+    "travel_mean": 54.161879173369364,
+    "stopped": 0.2735429118189508,
+    "vehicles_stopped": 0.781021897810219,
+    "episodes": 319,
+    "section_mean": 33.3779365277639
+  },
+  "components": {
+    "speed": [
+      "speed_mean",
+      "speed_KS",
+      "speed_W1"
+    ],
+    "headway": [
+      "headway_mean",
+      "headway_KS",
+      "headway_W1"
+    ],
+    "travel": [
+      "travel_mean",
+      "travel_W1"
+    ],
+    "stopping": [
+      "stopped_fraction",
+      "vehicles_stopped",
+      "stop_episodes",
+      "stop_duration_W1"
+    ],
+    "temporal_flow": [
+      "flow_histogram",
+      "flow_cumulative"
+    ],
+    "section_travel": [
+      "section_mean"
+    ]
+  },
+  "normalization": "Means relative to REAL positive means; W1 by REAL IQR; KS by1; stopped/incidence/count errors relative to REAL; flow by REAL departures. Mean within domain, equal mean of six domains.",
+  "population": "Frozen B2 Through class2/3 target cohort; same directional scope and window",
+  "definitions": {
+    "speed": "Vehicle-time speed including stopped",
+    "headway": "Existing cleaned same-lane/same-road CF observations; front-to-front, leader inside scope",
+    "travel": "Complete entry-to-directional-exit journeys; initial vehicles excluded",
+    "stopping": "Operational <=0.1m/s; contiguous0.1s episodes; durations exclude left/right censoring",
+    "flow": "All TARGET departures incl initial;30s histogram L1 and full0.1s-clock mean cumulative departure deviation",
+    "section": "Complete pair of same effective controls, same linear crossing interpolation REAL/SIM",
+    "queue": "SECONDARY_DIAGNOSTIC only: REAL all-observed context differs from SIM TARGET"
+  },
+  "frozen_at": "2026-10-10T15:09:33.876490+00:00"
+}

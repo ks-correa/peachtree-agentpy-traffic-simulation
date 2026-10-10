@@ -1,0 +1,2 @@
+context,scenario,seed,peak_active,speed_frame_SD,RED_queue_mean,GREEN_queue_mean,vehicles_multiple_stops,green_clearance_s
+B1,BASE,7004,23,15.731268194523683,1.2954091018155642,0.09588435524512622,11,9.937500000000005

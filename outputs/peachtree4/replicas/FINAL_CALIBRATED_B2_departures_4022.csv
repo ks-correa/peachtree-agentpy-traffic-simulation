@@ -1,0 +1,4 @@
+series,bin_s,maximum_cumulative_departure_deviation,maximum_cumulative_departure_deviation_event_times,MAE_per_bin,timing_bias_s,real_total,simulated_total,timing_bias_definition,seed
+FINAL_CALIBRATED_B2,10.0,4,6.0,0.7872340425531915,-0.3300622544656013,274,274,"sorted departures, not paired vehicle trajectories",4022
+FINAL_CALIBRATED_B2,30.0,4,6.0,1.3125,-0.3300622544656013,274,274,"sorted departures, not paired vehicle trajectories",4022
+FINAL_CALIBRATED_B2,60.0,4,6.0,1.625,-0.3300622544656013,274,274,"sorted departures, not paired vehicle trajectories",4022

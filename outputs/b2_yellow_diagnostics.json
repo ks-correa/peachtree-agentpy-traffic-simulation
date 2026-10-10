@@ -1,0 +1,10 @@
+{
+  "training_acquisition": "B2",
+  "yellow_onset_observations": 63,
+  "unique_vehicles": 63,
+  "yellow_crossings": 18,
+  "both_stopped_and_crossed_in_interval": 0,
+  "classification": "ASSUMPTION",
+  "implemented_rule": "Stop if remaining distance >= s0+v^2/(2*b); latch until yellow ends. No wall-clock, B1, or offset fitting.",
+  "reason": "Sparse conditional per-approach sample, leader/censoring confounding, no identifiable driver intention or stable decision boundary. Onset rows may repeat a vehicle; not independent trials."
+}

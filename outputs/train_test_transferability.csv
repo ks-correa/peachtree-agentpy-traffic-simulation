@@ -1,0 +1,6 @@
+indicator,difference_mean,difference_median,ks_statistic,wasserstein_distance,status
+speed,,,,,NOT_RUN_NO_TRAIN_TEST_TRAJECTORIES
+acceleration,,,,,NOT_RUN_NO_TRAIN_TEST_TRAJECTORIES
+headway,,,,,NOT_RUN_NO_TRAIN_TEST_TRAJECTORIES
+vehicle_class,,,,,NOT_RUN_NO_TRAIN_TEST_TRAJECTORIES
+lane_change_frequency,,,,,NOT_RUN_NO_TRAIN_TEST_TRAJECTORIES

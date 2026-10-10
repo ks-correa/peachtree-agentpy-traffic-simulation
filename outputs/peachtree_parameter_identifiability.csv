@@ -1,0 +1,18 @@
+parameter,classification,source,method,identifiable,status
+vehicle_class_proportions,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,"Per (component,ID), not row weighted",YES,NO_PARAMETER_FITTED_IN_PEACHTREE1
+vehicle_dimensions,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,Length/width distribution by class; check within-trajectory consistency,YES,NO_PARAMETER_FITTED_IN_PEACHTREE1
+arrival_process,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,First observations by O_Zone; remove boundary censoring and define modeled entrances,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+desired_free_speed,CALIBRATED,Candidate B2 TRAIN only after approved design,Free-flow candidate observations; signal constraints prevent direct desired-speed inference,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+acceleration_behavior,CALIBRATED,Candidate B2 TRAIN only after approved design,Conditional response with clipping/noise audit,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+braking_behavior,CALIBRATED,Candidate B2 TRAIN only after approved design,Conditional negative acceleration; censoring/clipping must be explicit,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+headway_behavior,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,Valid same-context positive gaps; separate stopped and moving,YES,NO_PARAMETER_FITTED_IN_PEACHTREE1
+response_to_leader,CALIBRATED,Candidate B2 TRAIN only after approved design,Use contemporaneous leader matches and evaluate time response on TRAIN only,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+relative_speed_response,CALIBRATED,Candidate B2 TRAIN only after approved design,Conditional acceleration vs leader_speed - ego_speed,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+lane_change_frequency,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,Same direction/section regular labels; document excursions and pocket entries,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+lane_change_context,CALIBRATED,Candidate B2 TRAIN only after approved design,Pre-event gap/speed/route associations; no latent intention,PARTIAL,NO_PARAMETER_FITTED_IN_PEACHTREE1
+movement_proportions,DATASET_DERIVED,Candidate B2 TRAIN only after approved design,"Movement by approach and vehicle, accounting for direction changes",YES,NO_PARAMETER_FITTED_IN_PEACHTREE1
+intersection_approach_behavior,CALIBRATED,Candidate B2 TRAIN only after approved design,Stopping/braking by approach conditional on correctly aligned signals,PENDING_SIGNAL_ALIGNMENT,NO_PARAMETER_FITTED_IN_PEACHTREE1
+cognitive_reaction_time,ASSUMPTION,Candidate B2 TRAIN only after approved design,Not a column and not identifiable from headway,NO,NO_PARAMETER_FITTED_IN_PEACHTREE1
+aggressiveness_perception_priority,ASSUMPTION,Candidate B2 TRAIN only after approved design,Latent attributes; avoid unless independently supported,NO,NO_PARAMETER_FITTED_IN_PEACHTREE1
+lane_change_intention,ASSUMPTION,Candidate B2 TRAIN only after approved design,Not observed; use empirical conditional probabilities instead,NO,NO_PARAMETER_FITTED_IN_PEACHTREE1
+intervention_compliance,EXPERIMENTAL,Candidate B2 TRAIN only after approved design,External evidence/ranges required,NO_BASELINE_ESTIMATE,NO_PARAMETER_FITTED_IN_PEACHTREE1

@@ -1,0 +1,10 @@
+{
+  "tests_run": 24,
+  "passed": 18,
+  "skipped": 6,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 2.504,
+  "status": "PASS",
+  "scope": "11 new export tests plus 13 historical tests; 6 historical trajectory tests skipped"
+}

@@ -1,0 +1,35 @@
+{
+  "outputs_checked": 7,
+  "all_match": true,
+  "files": {
+    "peachtree_acquisition_timing.csv": {
+      "sha256": "bd51f698506e9221764fc91e20df7b70597ed26a4a2fc117e19d7964bfa0d499",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "peachtree_sections.csv": {
+      "sha256": "613ef9e7a61b0bd3cb4e9a2ce603dd94cc7ffbec20579ca6ba6f8bdfcb775998",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "peachtree_signal_sync.csv": {
+      "sha256": "9fb5edb8e9a53bb1863dd44ba79dd561054e9479ebadb54be80284739f4f1a8e",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "peachtree_fixed_gate_travel_times.csv": {
+      "sha256": "3d1b06ca73e503d1bff8abc032ae3bcfce3563c6f16d177bac366fe84b8d2177",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "peachtree_confirmed_lane_changes.csv": {
+      "sha256": "a03cc4fa348b0aa5d8ec919cb9512e968f4f4ab2845a789cf1455bec83db8918",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "working/peachtree_cf_preparation_B1.parquet": {
+      "sha256": "480b88a1c6ecb7b6f5981ce00973ec56fe4b7952e1fb7e74854437ebda689d91",
+      "unchanged_on_repeated_preprocessing": true
+    },
+    "working/peachtree_cf_preparation_B2.parquet": {
+      "sha256": "14f198a2aa692bbc2807e0ed2816ad6bafd9431e285385e814da028b61ee9beb",
+      "unchanged_on_repeated_preprocessing": true
+    }
+  },
+  "scope": "Numerical timing, geometry, phase-sync, physical gates, confirmed events and both Parquet preparations; performance/draft prose excluded"
+}

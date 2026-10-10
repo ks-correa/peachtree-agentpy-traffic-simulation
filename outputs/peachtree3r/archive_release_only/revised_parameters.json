@@ -1,0 +1,146 @@
+{
+  "training_acquisition": "B2",
+  "parameters": {
+    "v0": 12.511824704049223,
+    "T": 2.3561828489400907,
+    "s0": 2.086210393921371,
+    "a": 2.6217268525153132,
+    "b": 2.625114577727408,
+    "delta": 4.0
+  },
+  "queue_gap_m": 4.9414274828549685,
+  "bounds": {
+    "v0": [
+      4.81280162560325,
+      13.826974853949705
+    ],
+    "T": [
+      1.55,
+      4.53
+    ],
+    "s0": [
+      1.1277622555245108,
+      4.9414274828549685
+    ],
+    "a": [
+      0.04876809753619507,
+      3.4168148336296675
+    ],
+    "b": [
+      0.03352806705613411,
+      3.4259588519177036
+    ]
+  },
+  "development_objective": 0.0903817422301365,
+  "code_sha256": "9682e871d780df3a25c17ae06d71c81c05f1e8f41c6df03f7202cb0d68128cd6",
+  "search_plan": {
+    "training_acquisition": "B2",
+    "development_seeds": [
+      10,
+      11,
+      12
+    ],
+    "final_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029
+    ],
+    "latin_hypercube_candidates": 16,
+    "search_seed": 20261009,
+    "powell_maxfev": 40,
+    "coordinate_scale": "unit empirical bounds",
+    "selection": "minimum fixed-seed mean objective; no seed selection",
+    "code_sha256": "9682e871d780df3a25c17ae06d71c81c05f1e8f41c6df03f7202cb0d68128cd6",
+    "B1_LOCKED": true
+  },
+  "optimizer_message": "Maximum number of function evaluations has been exceeded.",
+  "reference_seed": 10,
+  "reference_seed_selection": "fixed before search, never selected for fit",
+  "B1_LOCKED": true,
+  "revision": {
+    "phase": "PEACHTREE-3R",
+    "B1_LOCKED": true,
+    "cause_classification": "G: measurement semantics + missing release + unmodeled downstream receiving context; background contribution uncertain",
+    "corrections": [
+      "Shared operational0.1m/s metric + literal EXACT_ZERO secondary",
+      "Pooled B2 first-queue-head SIGNAL_RELEASE_DELAY"
+    ],
+    "signal_release_delay_s": 1.599999999999966,
+    "release_sample_n": 37,
+    "release_source": "release_estimation_sample.csv",
+    "release_criterion": "Median complete first-queue-head green onset to operational movement for constant Through arterial within band; pooled without fit, one timing parameter",
+    "integration_accounting": "Hold for max(0, observed median -dt); motion threshold crossed on subsequent physical tick. Braking to rest uses acceleration, no position overwrite.",
+    "scope_unchanged": true,
+    "stoplines_changed": false,
+    "offsets_changed": false,
+    "background_added": false,
+    "background_reason": "Actual physical following omitted8.11%; cause-effect confidence MEDIUM, no complete supported movement/conflict topology for excluded streams. Do not invent turns or replay routes to remedy downstream receiving restriction.",
+    "IDM_recalibration": "DEFERRED: unresolved structural receiving-context gap; retain five existing calibrated B2 parameters to isolate observable release effect, rather than compensate with T/a/b.",
+    "development_seeds": [
+      210,
+      211,
+      212
+    ],
+    "final_seeds": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008,
+      3009,
+      3010,
+      3011,
+      3012,
+      3013,
+      3014,
+      3015,
+      3016,
+      3017,
+      3018,
+      3019,
+      3020,
+      3021,
+      3022,
+      3023,
+      3024,
+      3025,
+      3026,
+      3027,
+      3028,
+      3029
+    ],
+    "selection": "No best-seed choice; reference210 predefined",
+    "UI_status": "UI_IMPLEMENTED_NOT_BROWSER_VALIDATED"
+  }
+}

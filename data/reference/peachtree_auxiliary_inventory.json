@@ -1,0 +1,488 @@
+[
+  {
+    "archive": "peachtree-street-cad-diagram.zip",
+    "name": "cad-diagram/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-cad-diagram.zip",
+    "name": "cad-diagram/Atlanta-Peachtree.dwg",
+    "size": 80841,
+    "compressed": 41013
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/camera-coverage.dbf",
+    "size": 122,
+    "compressed": 63
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/camera-coverage.sbn",
+    "size": 220,
+    "compressed": 153
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/camera-coverage.sbx",
+    "size": 132,
+    "compressed": 86
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/camera-coverage.shp",
+    "size": 1204,
+    "compressed": 578
+  },
+  {
+    "archive": "peachtree-street-gis-files.zip",
+    "name": "gis-files/camera-coverage.shx",
+    "size": 164,
+    "compressed": 102
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_EB_0400-0415.csv",
+    "size": 539,
+    "compressed": 272
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_EB_1245-0100.csv",
+    "size": 555,
+    "compressed": 282
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_NB_0400-0415.csv",
+    "size": 684,
+    "compressed": 334
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_NB_1245-0100.csv",
+    "size": 684,
+    "compressed": 325
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_SB_0400-0415.csv",
+    "size": 684,
+    "compressed": 334
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_SB_1245-0100.csv",
+    "size": 684,
+    "compressed": 325
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_WB_0400-0415.csv",
+    "size": 543,
+    "compressed": 265
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_10th_WB_1245-0100.csv",
+    "size": 555,
+    "compressed": 271
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_EB_0400-0415.csv",
+    "size": 276,
+    "compressed": 132
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_EB_1245-0100.csv",
+    "size": 293,
+    "compressed": 170
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_NB_0400-0415.csv",
+    "size": 277,
+    "compressed": 149
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_NB_1245-0100.csv",
+    "size": 286,
+    "compressed": 164
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_SB_0400-0415.csv",
+    "size": 277,
+    "compressed": 149
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_SB_1245-0100.csv",
+    "size": 286,
+    "compressed": 164
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_WB_0400-0415.csv",
+    "size": 346,
+    "compressed": 186
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_11th_WB_1245-0100.csv",
+    "size": 251,
+    "compressed": 153
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_EB_0400-0415.csv",
+    "size": 277,
+    "compressed": 148
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_EB_1245-0100.csv",
+    "size": 290,
+    "compressed": 164
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_NB_0400-0415.csv",
+    "size": 281,
+    "compressed": 162
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_NB_1245-0100.csv",
+    "size": 285,
+    "compressed": 164
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_SB_0400-0415.csv",
+    "size": 319,
+    "compressed": 173
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_SB_1245-0100.csv",
+    "size": 295,
+    "compressed": 171
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_WB_0400-0415.csv",
+    "size": 239,
+    "compressed": 148
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_12th_WB_1245-0100.csv",
+    "size": 365,
+    "compressed": 205
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_EB_0400-0415.csv",
+    "size": 647,
+    "compressed": 275
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_EB_1245-0100.csv",
+    "size": 689,
+    "compressed": 329
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_NB_0400-0415.csv",
+    "size": 517,
+    "compressed": 262
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_NB_1245-0100.csv",
+    "size": 559,
+    "compressed": 284
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_SB_0400-0415.csv",
+    "size": 538,
+    "compressed": 266
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_SB_1245-0100.csv",
+    "size": 571,
+    "compressed": 291
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_WB_0400-0415.csv",
+    "size": 277,
+    "compressed": 156
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Converted CSV files/Peachtree_14th_WB_1245-0100.csv",
+    "size": 289,
+    "compressed": 169
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_EB_0400-0415.txt",
+    "size": 539,
+    "compressed": 272
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_EB_1245-0100.txt",
+    "size": 555,
+    "compressed": 281
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_NB_0400-0415.txt",
+    "size": 684,
+    "compressed": 333
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_NB_1245-0100.txt",
+    "size": 684,
+    "compressed": 325
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_SB_0400-0415.txt",
+    "size": 684,
+    "compressed": 333
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_SB_1245-0100.txt",
+    "size": 684,
+    "compressed": 325
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_WB_0400-0415.txt",
+    "size": 543,
+    "compressed": 264
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_10th_WB_1245-0100.txt",
+    "size": 555,
+    "compressed": 270
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_EB_0400-0415.txt",
+    "size": 276,
+    "compressed": 131
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_EB_1245-0100.txt",
+    "size": 293,
+    "compressed": 169
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_NB_0400-0415.txt",
+    "size": 277,
+    "compressed": 149
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_NB_1245-0100.txt",
+    "size": 286,
+    "compressed": 163
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_SB_0400-0415.txt",
+    "size": 277,
+    "compressed": 149
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_SB_1245-0100.txt",
+    "size": 286,
+    "compressed": 163
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_WB_0400-0415.txt",
+    "size": 346,
+    "compressed": 185
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_11th_WB_1245-0100.txt",
+    "size": 251,
+    "compressed": 152
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_EB_0400-0415.txt",
+    "size": 277,
+    "compressed": 147
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_EB_1245-0100.txt",
+    "size": 290,
+    "compressed": 163
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_NB_0400-0415.txt",
+    "size": 281,
+    "compressed": 161
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_NB_1245-0100.txt",
+    "size": 285,
+    "compressed": 164
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_SB_0400-0415.txt",
+    "size": 319,
+    "compressed": 173
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_SB_1245-0100.txt",
+    "size": 295,
+    "compressed": 170
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_WB_0400-0415.txt",
+    "size": 239,
+    "compressed": 147
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_12th_WB_1245-0100.txt",
+    "size": 365,
+    "compressed": 204
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_EB_0400-0415.txt",
+    "size": 647,
+    "compressed": 275
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_EB_1245-0100.txt",
+    "size": 689,
+    "compressed": 328
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_NB_0400-0415.txt",
+    "size": 517,
+    "compressed": 261
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_NB_1245-0100.txt",
+    "size": 559,
+    "compressed": 283
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_SB_0400-0415.txt",
+    "size": 538,
+    "compressed": 265
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_SB_1245-0100.txt",
+    "size": 571,
+    "compressed": 290
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_WB_0400-0415.txt",
+    "size": 277,
+    "compressed": 155
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-change/Original Text files/Peachtree_14th_WB_1245-0100.txt",
+    "size": 289,
+    "compressed": 168
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-timing-sheets/",
+    "size": 0,
+    "compressed": 0
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-timing-sheets/int51.pdf",
+    "size": 89478,
+    "compressed": 87849
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-timing-sheets/int52.pdf",
+    "size": 90079,
+    "compressed": 88386
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-timing-sheets/int53.pdf",
+    "size": 88720,
+    "compressed": 87068
+  },
+  {
+    "archive": "peachtree-street-signal-timing.zip",
+    "name": "signal-timing/signal-timing-sheets/int73.pdf",
+    "size": 91361,
+    "compressed": 89667
+  }
+]

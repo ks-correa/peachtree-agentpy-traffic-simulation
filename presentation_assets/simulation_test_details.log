@@ -1,0 +1,29 @@
+test_all12_sections_render_without_model_runs (test_presentation_dashboard.PresentationDashboardTests.test_all12_sections_render_without_model_runs) ... ok
+test_all17_manifest_entries (test_presentation_dashboard.PresentationDashboardTests.test_all17_manifest_entries) ... ok
+test_export_center_downloads (test_presentation_dashboard.PresentationDashboardTests.test_export_center_downloads) ... ok
+test_no_experiment_calls_in_presentation (test_presentation_dashboard.PresentationDashboardTests.test_no_experiment_calls_in_presentation) ... ok
+test_presentation_default (test_presentation_dashboard.PresentationDashboardTests.test_presentation_default) ... ok
+test_required_assets (test_presentation_dashboard.PresentationDashboardTests.test_required_assets) ... ok
+test_scenario_table_uses_official_values (test_presentation_dashboard.PresentationDashboardTests.test_scenario_table_uses_official_values) ... ok
+test_scientific_results_and_engine_unchanged (test_presentation_dashboard.PresentationDashboardTests.test_scientific_results_and_engine_unchanged) ... ok
+test_simulation_controls_only_playback (test_presentation_dashboard.PresentationDashboardTests.test_simulation_controls_only_playback) ... ok
+test_statistics_reconcile_official_means (test_presentation_dashboard.PresentationDashboardTests.test_statistics_reconcile_official_means) ... ok
+test_table_sources_and_numeric_statistics (test_presentation_dashboard.PresentationDashboardTests.test_table_sources_and_numeric_statistics) ... ok
+test_technical_mode_available (test_presentation_dashboard.PresentationDashboardTests.test_technical_mode_available) ... ok
+test_all_exports_and_audit (test_presentation_chart_labels.StaticChartTests.test_all_exports_and_audit) ... ok
+test_boxplots_have_separate_context_positions (test_presentation_chart_labels.StaticChartTests.test_boxplots_have_separate_context_positions) ... ok
+test_departure_quantiles_are_not_inferred_from_30s_bins (test_presentation_chart_labels.StaticChartTests.test_departure_quantiles_are_not_inferred_from_30s_bins) ... ok
+test_paired_labels_use_exact_official_intervals_and_units (test_presentation_chart_labels.StaticChartTests.test_paired_labels_use_exact_official_intervals_and_units) ... ok
+test_scenario_labels_and_bars_reconcile (test_presentation_chart_labels.StaticChartTests.test_scenario_labels_and_bars_reconcile) ... ok
+test_scientific_hashes (test_presentation_chart_labels.StaticChartTests.test_scientific_hashes) ... ok
+test_all_eight_context_scenario_views_without_physics (test_simulation_view.SimulationViewTests.test_all_eight_context_scenario_views_without_physics) ... ok
+test_export_dimensions_sources_and_read_only_code (test_simulation_view.SimulationViewTests.test_export_dimensions_sources_and_read_only_code) ... ok
+test_horizon_and_population_are_artifact_values (test_simulation_view.SimulationViewTests.test_horizon_and_population_are_artifact_values) ... ok
+test_scientific_hashes_intact (test_simulation_view.SimulationViewTests.test_scientific_hashes_intact) ... ok
+test_temporal_series_and_official_means_are_distinct (test_simulation_view.SimulationViewTests.test_temporal_series_and_official_means_are_distinct) ... ok
+test_window_change_resets_visual_identity_only (test_simulation_view.SimulationViewTests.test_window_change_resets_visual_identity_only) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 19.831s
+
+OK

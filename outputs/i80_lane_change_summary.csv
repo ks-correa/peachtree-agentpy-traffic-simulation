@@ -1,0 +1,9 @@
+metric,value,status
+total_changes,,NO_I80_ROWS_IN_EXPORT
+vehicles_with_changes,,NO_I80_ROWS_IN_EXPORT
+changes_per_vehicle,,NO_I80_ROWS_IN_EXPORT
+origin_destination,,NO_I80_ROWS_IN_EXPORT
+speed_at_change,,NO_I80_ROWS_IN_EXPORT
+headway_before,,NO_I80_ROWS_IN_EXPORT
+headway_after,,NO_I80_ROWS_IN_EXPORT
+event_time,,NO_I80_ROWS_IN_EXPORT

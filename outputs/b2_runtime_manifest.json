@@ -1,0 +1,53 @@
+{
+  "freeze_integrity": {
+    "data\\peachtree_full.csv": true,
+    "data\\b2_baseline_source.parquet": true,
+    "data\\b2_exogenous_inputs.json": true,
+    "docs\\b2_estimation_criteria.json": true,
+    "outputs\\working\\peachtree_cf_preparation_B2.parquet": true,
+    "outputs\\peachtree_signal_timeline.csv": true,
+    "outputs\\peachtree_intersection_mouths.csv": true,
+    "simulation\\training_data.py": true
+  },
+  "B1_LOCKED": true,
+  "calibration_code_sha256": "9682e871d780df3a25c17ae06d71c81c05f1e8f41c6df03f7202cb0d68128cd6",
+  "current_code_sha256": "d60ffa1abcab2b761597458b0ec5b7db452d1362c099d869845049bc5fa83b25",
+  "post_search_code_change": "Plot title encoding corrected and recorder instrumentation columns added: per-boundary exit counts, braking count, signal-stopped count. No physics/parameters changed; reference exporter rerun, final replicate summaries unchanged.",
+  "physics_files_sha256": {
+    "simulation\\agents.py": "7d632d772739915ff458b7173dffc62d67c0717e3b7fe26b1ac1cb29b28d9b57",
+    "simulation\\model.py": "a4c0048e6decda9be4043582a506cf3a044257b3364ef02d7a54f80bb796ad0d",
+    "simulation\\network.py": "486592ed82c29712766e2821c857c247938580264377b15501d19065c2098a82",
+    "simulation\\signals.py": "c27766a8dfb1328b77188ebd053c2869d735c67e53b8ea684c26c5eeab26541b",
+    "simulation\\demand.py": "cccd3dac1bc7fac7b4e383aa9d7f7fcca43b135d3281aa1f6ff5bb844663bffa",
+    "simulation\\parameters.py": "d28df4b7cd77a843d2683c39abd6cfe95a6292af1034189988338edba0c5ae19"
+  },
+  "outputs_sha256": {
+    "outputs\\b2_baseline_decision.json": "257abefe5e0bff33db4286d8c65eee44cf088110959eef5e5b39fffd60a3d7a8",
+    "outputs\\b2_baseline_timeseries.csv": "5978281d7920d68004ed2ae12a32aace29d8282724c0588d52601b30c68f6051",
+    "outputs\\b2_calibrated_parameters.json": "982caf06bd58f1f328679461c53623bcae15939b75ca45090bb39bf93a65ce86",
+    "outputs\\b2_calibration_runs.csv": "d973c209d88647d4aebef1090b07c27b64c729e601ffafec82b068bbf0b04bb8",
+    "outputs\\b2_calibration_summary.csv": "52e56215fac647ea9298d5d32f9a640535cae1b6741c8cec69f73ef42d69d8bc",
+    "outputs\\b2_distributions.csv": "c1b2d0f77fc4cc43b39913c9efa853b106970520ca7b3336adf84b9d5e2be8d1",
+    "outputs\\b2_emergent_diagnostics.json": "5759e9d342ed73378507ba8dc010253aadec3e2fadbcb7a82fc0e8a10948baee",
+    "outputs\\b2_final_replicates.csv": "28888d5a05d400ac02c07fb9f1f6b894bee4fa3b4024b0f90ae88f437346654f",
+    "outputs\\b2_initial_parameters.json": "c905c909f2ce50bda0c5a59e377ff15e4839e34da56bd4ee32e5fe50e6366355",
+    "outputs\\b2_initial_rollout.json": "eae9e10a9f1193d513fe850c0fb7c8e5f2f53b59e2634dc5f4b4cba3e7b91ac1",
+    "outputs\\b2_lane_change_diagnostics.json": "7d561de74e6436d807f8804194f2712c9efbab0b786a9d6b82d430b14a5303ca",
+    "outputs\\b2_observed_section_times.csv": "e14559f0ad35ee84260f39bd8b1dad97f4d9abc6cbbe8aa7b27160bb29ffa680",
+    "outputs\\b2_observed_signal_crossings.csv": "50dabf9c4169a90a8d805a220f3f822c9136d1835c3f56e1013e8e31f7cf36cb",
+    "outputs\\b2_observed_timeseries.csv": "a0efc8b1e80a1fa2778ff2d8e0843838c9fff437914a661473ee263a2af865be",
+    "outputs\\b2_parameter_estimates.csv": "352305fe3f9709d861260953a913c64db8e11e2c0881f0b3824b8c0e5d391ace",
+    "outputs\\b2_quality_correction.json": "fafb8ee78aee50b68af15e1edb2bda7eea7b2c3c0b3d2a485d2d0cb1af30aadc",
+    "outputs\\b2_real_vs_simulated.csv": "853feafb35d437531644978daa131ca0b5ca19c9bc568a1cefa33f681daeb555",
+    "outputs\\b2_reference_trace.json": "91a0d0807fea83a4c77a3a7c4ff9e97eb824d41289b439685e91b0c53ba9cf81",
+    "outputs\\b2_search_plan.json": "09bdd7991c8ebdbe53c28432b62965e728211b5eaa54af3882d48ebd7111e94e",
+    "outputs\\b2_simulated_exits.csv": "78fbf3f056449c49a37195885a6499cf00d76861175e8ba6168226780cc6d437",
+    "outputs\\b2_simulated_section_times.csv": "5c7846bb017fe6c9bb88198be709a9ecb7b2f4eb1e339d7bf6b2f5e127276222",
+    "outputs\\b2_simulated_travel_times.csv": "f711d3a419f303f11e3a348a7e012fedef0292e274399c5873c652434efb3553",
+    "outputs\\b2_test_report.json": "ff6e64451007b99694ba0aef5675450be79673b207750695abe1ac2a0501a1e7",
+    "outputs\\b2_throughput_bins.csv": "ee76e648fb2ed59de93641cbc5351fc401b7729d682df5c9d750243ce22de691",
+    "outputs\\b2_throughput_residuals.csv": "44e86db7e77ee9e91583c930812f7d0e58e28f97d29627d89813630673d93bf1",
+    "outputs\\b2_yellow_diagnostics.json": "c83bb5744999d8b270bea4131c28ad279613e05500469f615e2ce51df9798699",
+    "outputs\\b2_yellow_onsets.csv": "a9244608ec1a27989f76b45f06cc8577de0b041db9c1db1e72cbd393fa4fa966"
+  }
+}

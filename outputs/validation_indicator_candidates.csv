@@ -1,0 +1,13 @@
+indicator,classification,local_status,requirement
+mean_speed,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+speed_distribution,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+acceleration,SECONDARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+Space_Headway,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+Time_Headway,SECONDARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+flow,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+density,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+travel_time,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+lane_changes,SECONDARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+queue,SECONDARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+braking_waves,SECONDARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"
+throughput,PRIMARY_VALIDATION,NOT_EVALUABLE_FOR_RESERVED_TRAJECTORIES,"Classification conditional on obtaining trajectories, geometry and independent TEST"

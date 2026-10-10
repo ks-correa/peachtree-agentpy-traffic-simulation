@@ -1,0 +1,16 @@
+{
+  "prior_artifacts_unchanged": true,
+  "structure_unchanged": true,
+  "calibration_unchanged": true,
+  "parameters_modified": false,
+  "intentional_UI_changes": [
+    "ui\\streamlit_app.py"
+  ],
+  "test_suite": {
+    "tests_total": 205,
+    "passed": 179,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0
+  }
+}

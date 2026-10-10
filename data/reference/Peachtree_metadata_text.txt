@@ -1,0 +1,738 @@
+PAGE 1
+ 
+Next Generation Simul ation (NGSIM) Peachtree St reet 
+Dat aset 
+Id entification Information  
+Citation    
+Cit ation Information  
+Originator: FHWA 
+Publication Date: 2016 
+Title: NGSIM Program Peachtree Street data 
+Edition: Version 1 
+Geospatial Data Presentation Form: NAD83 – Georgia State Plane Coordinate System, Georgia 
+West 
+Publication Information  
+Publication Place: Washington, D.C.  
+Publisher: U.S. Department of Transportation Intelligent Transportation Systems Joint Program 
+Office (JPO) 
+Online Linkage: https://www.its-rde.net/  
+Description 
+ 
+Abstract: The Next Generation Simulation (NGSIM) program was initiated by the United States Department of 
+Transportation (US DOT) Federal Highway Administration (FHWA) in the early 2000's. The program developed 
+a core of open behavioral algorithms in support of traffic simulation with a primary focus on microscopic 
+modeling, including supporting documentation and validation data sets that describe the interactions of 
+multimodal travelers, vehicles and highway systems, and interactions presented to them from traffic control 
+devices, delineation, congestion, and other features of the environment. NGSIM stakeholder groups identified 
+the collection of real-world vehicle trajectory data as important to understanding and researching driver 
+behavior. The Peachtree Street dataset was one of several detailed, high-quality datasets collected under the 
+NGSIM effort that supported the development of algorithms for driver behavior at microscopic levels.  
+ 
+NGSIM program researchers collected detailed vehicle trajectory data on an arterial segment on Peachtree 
+Street in Atlanta, GA, on November 8, 2006. This data was collected using eight video cameras mounted on a 
+30-story building, which is located at 1100 Peachtree Street NE, Atlanta, GA. NG-VIDEO, a customized 
+software application developed for the NGSIM program, transcribed the vehicle trajectory data from the video. 
+This vehicle trajectory data provided the precise location of each vehicle within the study area every one-tenth 
+of a second, resulting in detailed lane positions and locations relative to other vehicles. A total of 30 minutes of 
+data are available in the full dataset, which are segmented into two 15-minute periods (12:45 p.m. to 1:00 p.m. 
+and 4:00 p.m. to 4:15 p.m.). In addition to the vehicle trajectory data, the Peachtree Street dataset also 
+contains computer-aided design and geographic information system files, aerial ortho-rectified photos, detector 
+tube data, signal timings, processed videos, and aggregate data analysis reports. 
+ 
+Purpose: The NGSIM program developed a core of open behavioral algorithms in support of traffic simulation 
+with a primary focus on microscopic modeling, and collected high-quality primary traffic and trajectory data 
+from Peachtree Street to support the research and testing of the new algorithms. 
+ 
+PAGE 2
+ 
+Time Period of Content   
+Time Period Information 
+Range of Dates:  
+Beginning Date: 20061107 
+Ending Date: 20061109 
+Currentness Reference:  
+Ground condition (i.e., the previous dates refer to the time the information was collected) 
+ 
+St atus   
+Progress: Complete 
+Maintenance and Update Frequency: None planned 
+ 
+Spatial Domain   
+ 
+Bounding Coordinates (Peachtree Street) 
+West Bounding Coordinate: 33.7820148 
+East Bounding Coordinate: 33.7863572 
+North Bounding Coordinate: -84.3832206 
+South Bounding Coordinate: -84.3841482 
+ 
+Keyword s  
+Theme  
+Theme Keyword: NGSIM 
+Theme Keyword: Arterial data 
+Theme Keyword: Simulation data  
+Theme Keyword: Behavioral algorithm 
+Pl ace  
+Place Keyword: Atlanta 
+Temporal  
+Temporal Keyword: 2006 
+ 
+Access Constraint s:  
+To access the data set, users must register through the USDOT Research Data Exchange (RDE) portal 
+(https://www.its-rde.net/). The registration process will include a request for contact information and 
+agreement to terms of use for the data  What information is optional versus mandatory for registration 
+has not been finalized ; however in order to encourage broad access and use, mandatory information 
+will be kept to a minimum and ease of use maximized. See the RDE Terms of Use and Data Privacy 
+Policy on how registration information is kept secure and for uses only applicable to the RDE 
+administration.  
+ 
+PAGE 3
+ 
+User Constraint s:  
+Those who use data and data processing tools distributed by the Research Data Exchange have the 
+following responsibilities: 
+1. Where the contributed materials have been utilized to any extent to enable, verify, supplement or 
+validate performance measurement, analysis, research or software development, to fully 
+reference the Research Data Exchange Program and the contributions of the individuals in all 
+subsequent and related publications or public events, specifically: 
+a. In publications, reference the Research Data Exchange website and the date accessed, 
+data and/or data processing tools (by name and version number), and the individual 
+contributors identified on the reference template associated with each data and/or data 
+processing tool. 
+b. In presentations or other oral communication, by noting the data and/or data processing 
+tool by name and version number, and communicating the address of the Research Data 
+Exchange website. 
+2. Users are encouraged to accurately post and update within the Research Data Exchange website 
+a description of the project utilizing the data and/or the data processing tools, including: 
+a. A description of the project, including a brief statement of the project goals. 
+b. A summary of the hypotheses and findings (when available) of the project. 
+c. Individuals directing and/or substantively participating in the project. 
+d. The name and version number of the data and/or data processing tools downloaded and 
+utilized in the project. 
+e. The current state of the project (upcoming, underway, completed). 
+f. References to published materials (if any). 
+3. Users are encouraged to report anomalies, errors or other questionable data elements using the 
+Data Forum of the Research Data Exchange website, referencing the specific data or data 
+processing tool by name and version number. 
+4. To refrain from duplication and dissemination of the data and data processing tools to third 
+parties. 
+Publication of certain derived information such as location of residence, specific stores visited, 
+purpose of trips, etc. must be cleared with the data set originator prior to publication. 
+Point of Cont act  
+Contact Information  
+Cont act Organization Primary 
+Contact Organization: FHWA 
+Contact Person: James Colyar 
+Contact Electronic Mail Address: james.colyar@dot.gov 
+Cont act Organization Second ary 
+Contact Organization: Cambridge Systematics, Inc.  
+Contact Person: Vassili Alexiadis  
+Contact Electronic Mail Address: valexiadis@camsys.com 
+  
+ 
+ 
+PAGE 4
+ 
+National Highway Traffic Safety Administration (NHTSA) Security 
+Information 
+Security Classification: Unclassified 
+ 
+Native Dat a Set Environment: 
+Documentation: The data are contained in eight data sets on the RDE, as follows: 
+ 
+1. Aerial Ortho photos (2 files in TFW and TIF formats) 
+2. CAD diagrams (1 file in DWG format) 
+3. Detector data (30 files both in CSV and TXT format) 
+4. GIS files (5 files in various formats) 
+5. Signal Data: Signal change data (32 files both in CSV and TXT format); Signal timing sheets (4 
+files in PDF format) 
+6. Vehicle trajectory data (2 files in both CSV and TXT format) 
+7. Processed video (1 file in AVI format) 
+8. Data Analysis reports (2 files in both PDF and DOC format) 
+ 
+Note: TXT files are the original data files; CSV files are the converted data files. To ensure 
+proper data, use the TXT files.  
+ 
+Cross Reference:  
+ 
+The data sets and corresponding metadata for fellow NGSIM data environments (I-80 in Emeryville, CA, 
+US 101 in Los Angeles, CA, and Lankershim Boulevard in Los Angeles, CA) are also available on the 
+RDE.  
+ 
+Dat a Quality Information 
+Attribute Accuracy: No accuracy assessment has been performed for the data set.   
+ 
+Completeness Report:  The USDOT does not make any claims regarding data completeness. There 
+may be gaps in the data provided. 
+Lineage  
+Source Information  
+Source Cit ation 
+Cit ation Information  
+Originator: FHWA 
+Publication Date: 2005 
+Process Step  
+Process Description: The vehicle tracking process consisted of capturing video data of a roadway, 
+preprocessing the video images, and then extracting the vehicle trajectories from the video. The 
+PAGE 5
+ 
+Trajectory Extraction phase involved using the NG-VIDEO software to track vehicles and put the 
+trajectory data into a database. The disaggregate trajectory data was then processed to provide data 
+inputs for algorithm research. 
+Process Cont act: 
+Cont act Information  
+Cont act Organization Primary 
+Contact Organization: Cambridge Systematics 
+Contact Person: Vijay Kovvali  
+Contact Electronic Mail Address: vkovvali@camsys.com 
+ 
+Contact Organization: Cambridge Systematics 
+Contact Person: Lin Zhang  
+Contact Electronic Mail Address: lzhang@camsys.com 
+Entity and Attribute Information  
+ 
+Aerial Ortho Photos 
+  
+This directory contains ortho-rectified photographs of the study area.  
+ 
+Files: 
+ 
+ Atlanta-Peachtree.tif  
+The aerial image file coordinates are in NAD83 (the units are US Survey Feet).The ortho-
+rectified photographs are at a resolution of 1":1000' and a pixel resolution of 0.25 feet. The 
+photographs provide a relative accuracy of 2.5 feet. Please note that the tif file is about 800 MB 
+in size. Due to the size of this file, problems in opening the file in some photo editors may be 
+encountered. ArcGIS software is capable of opening the file. 
+ Atlanta-Peachtree.tfw  
+Support for Atlanta-Peachtree.tif; 
+ 
+ 
+ 
+ 
+CAD Drawings  
+  
+This directory contains CAD drawings of the study area. The CAD drawings were developed using the 
+ortho-rectified photographs 
+ 
+Files: 
+ 
+ Atlanta-Peachtree.dwg   
+The dwg file provides a CAD drawing of the vehicle trajectory study area. A highly detailed 
+representation of the network required for accurately transcribing vehicle trajectories is provided 
+in the CAD network. 
+ 
+ 
+PAGE 6
+ 
+Dat a Analysis 
+ 
+This directory presents aggregation of vehicle trajectory results to provide common macroscopic flow 
+parameters. The results provided in the report include aggregations of flows, speeds and number of 
+lane changes. Aggregation is conducted by intersection and origin-destination pairs. 
+ 
+Files: 
+ data-analysis-report-1245pm-0100pm.pdf  
+Contains data aggregation for 12:45 p.m. to 1:00 p.m. on November 8th, 2006 for Peachtree 
+Street in Atlanta, GA. Origin-destination, intersection volume, speed and headways aggregations 
+are provided. Lane changes by origin-destinations are also provided in the data analysis report. 
+ data-analysis-report-0400pm-0415pm.pdf   
+Contains data aggregation for 4:00 p.m. to 4:15 a.m. on November 8th, 2006 for Peachtree 
+Street in Atlanta, GA. Origin-destination, intersection volume, speed and headways aggregations 
+are provided. Lane changes by origin-destinations are also provided in the data analysis report. 
+ 
+ 
+GIS Fil es 
+ 
+This directory provides geographic network data in the form of shapefiles. The files provide the 
+geometry and attribute information for the area.  
+ 
+Files: 
+ camera-coverage.shp  
+This file provides the coverage of each of the eight cameras. The camera number and the length 
+of coverage are provided. 
+ camera-coverage.dbf  
+Support for camera-coverage.shp; 
+ camera-coverage.shx  
+Support for camera-coverage.shp; 
+ 
+ 
+Processed Vid eo 
+  
+This directory contains processed video data from one of the eight cameras for the time period used 
+for data reduction. The file provides video of the vehicles’ positions along with a superimposition of the 
+vehicle identification numbers and extracted vehicle dimensions and trajectories. This data is provided 
+to users to allow cross referencing of the vehicle trajectory data with the corresponding video. This 
+data is provided to users so that they may have a visual sense of the extracted data. The video is 
+compressed using open-sourced XviD codec. If you are having trouble opening the file, please 
+download the codec from http://www.koepi.org/xvid.shtml. The XviD file used for compressing the file 
+is XviD-1.0.3-20122004.exe, a self extracting binary file. 
+ 
+Files: 
+ 
+ peachtree-camera1-1245pm-0100pm-processed.avi 
+ 
+ 
+PAGE 7
+ 
+Signal Timing Dat a 
+ 
+This directory contains timing sheets and signal change data for the traffic signals present in the 
+study area.  
+ 
+ 
+Signal Change Data 
+ 
+Signal data were extracted from videos recording signal changes in the field. There are six 
+columns indicating signal changes as described in the attribute list below. In the case of no 
+separate left turn signals, there are only three columns for combined left turn and through 
+movements. The file names contain intersection name, movement direction, and time periods.  
+ 
+Files: 
+ Peachtree_10th_NB_1245-0100     
+This signal data is at the intersection of Peachtree Street and 10th Street north-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_10th_NB_0400-0415      
+This signal data is at the intersection of Peachtree Street and 10th Street north-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_10th_EB_1245-0100      
+This signal data is at the intersection of Peachtree Street and 10th Street east-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_10th_EB_0400-0415      
+This signal data is at the intersection of Peachtree Street and 10th Street east-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_10th_SB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 10th Street south-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_10th_SB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 10th Street south-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_10th_WB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 10th Street west-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_10th_WB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 10th Street west-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_11th_NB_1245-0100      
+This signal data is at the intersection of Peachtree Street and 11th Street north-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_11th_NB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 11th Street north-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_11th_EB_1245-0100      
+This signal data is at the intersection of Peachtree Street and 11th Street east-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_11th_EB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 11th Street east-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_11th_SB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 11th Street south-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_11th_SB_0400-0415       
+PAGE 8
+ 
+This signal data is at the intersection of Peachtree Street and 11th Street south-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_11th_WB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 11th Street west-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_11th_WB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 11th Street west-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_12th_NB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 12th Street north-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_12th_NB_0400-0415     
+This signal data is at the intersection of Peachtree Street and 12th Street north-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_12th_EB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 12th Street east-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_12th_EB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 12th Street east-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_12th_SB_1245-0100      
+This signal data is at the intersection of Peachtree Street and 12th Street south-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_12th_SB_0400-0415      
+This signal data is at the intersection of Peachtree Street and 12th Street south-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_12th_WB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 12th Street west-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_12th_WB_0400-0415      
+This signal data is at the intersection of Peachtree Street and 12th Street west-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_14th_NB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 14th Street north-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_14th_NB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 14th Street north-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_14th_EB_1245-0100      
+This signal data is at the intersection of Peachtree Street and 14th Street east-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_14th_EB_0400-0415      
+This signal data is at the intersection of Peachtree Street and 14th Street east-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_14th_SB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 14th Street south-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_14th_SB_0400-0415       
+This signal data is at the intersection of Peachtree Street and 14th Street south-bound 
+between 04:00pm-04:15pm. 
+ Peachtree_14th_WB_1245-0100       
+This signal data is at the intersection of Peachtree Street and 14th Street west-bound 
+between 12:45pm-01:00pm. 
+ Peachtree_14th_WB_0400-0415       
+PAGE 9
+ 
+This signal data is at the intersection of Peachtree Street and 14th Street west-bound 
+between 04:00pm-04:15pm. 
+ 
+Attribute  
+Attribute Label:  BG_Left (Column A) 
+Attribute Definition:  Frame number in the trajectories data that marks the beginning of the green 
+left turn phase.  
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  BY_Left (Column B) 
+Attribute Definition: Frame number in the trajectories data that marks the beginning of the yellow 
+left turn phase.  
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  BR_Left (Column C) 
+Attribute Definition: Frame number in the trajectories data that marks the beginning of the red left 
+turn phase.  
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label: BG_Thru (Column D) 
+Attribute Definition: Frame number in the trajectories data that marks the beginning of the green 
+through phase.  
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label: BY_Thru (Column E) 
+Attribute Definition: Frame number in the trajectories data that marks the beginning of the yellow 
+through phase.  
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label: BR_Thru (Column F) 
+Attribute Definition: Frame number in the trajectories data that marks the beginning of the red 
+through phase.  
+Attribute Domain Values: Integer 
+ 
+ 
+Signal Timing Sheets 
+ 
+Files: 
+ int51.pdf         
+The timing sheet provides the controller settings for intersection 51 - Peachtree Street and 
+10th Street. 
+ int52.pdf         
+The timing sheet provides the controller settings for intersection 52 - Peachtree Street and 
+11th Street. 
+ int53.pdf         
+The timing sheet provides the controller settings for intersection 53 - Peachtree Street and 
+12th Street. 
+ int73.pdf         
+The timing sheet provides the controller settings for intersection 73 - Peachtree Street and 
+14th Street. 
+ 
+ 
+PAGE 10
+ 
+Tube Detector Dat a 
+Wide-area tube count data was collected for the Peachtree Street study area. Tube data at five 
+intersections in the study area are presented for three days, from November 7 to November 9, 2006 
+at an aggregation of 15 minutes. This data set complements the vehicle trajectory data collection 
+effort by providing information on volumes and occupancy at the vehicle trajectory study area. The 
+file names contain intersection name, location, and movement direction.  
+ 
+Files: 
+ PEACHTREE_NORTH OF 10TH ST_NB  
+This tube data is for the north-bound traffic on north side of the intersection at Peachtree 
+Street and 10th Street. 
+ PEACHTREE_NORTH OF 10TH ST_SB      
+This tube data is for the south-bound traffic on north side of the intersection at Peachtree 
+Street and 10th Street. 
+ 10TH ST_EAST OF PEACHTREE _EB  
+This tube data is for the east-bound traffic on east side of the intersection at Peachtree 
+Street and 10th Street. 
+ 10TH ST_EAST OF PEACHTREE_WB      
+This tube data is for the west-bound traffic on east side of the intersection at Peachtree 
+Street and 10th Street. 
+ 10TH ST_WEST OF PEACHTREE_WB     
+This tube data is for the west-bound traffic on west side of the intersection at Peachtree 
+Street and 10th Street. 
+ 10TH ST_WEST OF PEACHTREE_EB      
+This tube data is for the east-bound traffic on west side of the intersection at Peachtree 
+Street and 10th Street. 
+ PEACHTREE SOUTH OF 10TH ST_NB      
+This tube data is for the north-bound traffic on south side of the intersection at Peachtree 
+Street and 10th Street. 
+ PEACHTREE SOUTH OF 10TH ST_SB      
+This tube data is for south-bound traffic on south side of the intersection at Peachtree Street 
+and 10th Street. 
+ PEACHTREE_NORTH OF 11TH ST_NB      
+This tube data is for the north-bound traffic on north side of the intersection at Peachtree 
+Street and 11th Street. 
+ PEACHTREE_NORTH OF 11TH ST_SB      
+This tube data is for the south-bound traffic on north side of the intersection at Peachtree 
+Street and 11th Street. 
+ 11TH ST_EAST OF PEACHTREE_EB    
+This tube data is for the east-bound traffic on east side of the intersection at Peachtree 
+Street and 11th Street. 
+ 11TH ST_EAST OF PEACHTREE_WB     
+This tube data is for the west-bound traffic on east side of the intersection at Peachtree 
+Street and 11th Street. 
+ 11TH ST_WEST OF PEACHTREE_EB     
+This tube data is for the east-bound traffic on west side of the intersection at Peachtree 
+Street and 11th Street. 
+ 11TH ST_WEST OF PEACHTREE_WB      
+This tube data is for the west-bound traffic on west side of the intersection at Peachtree 
+Street and 11th Street. 
+ PEACHTREE_NORTH OF 12TH ST_NB      
+This tube data is for the north-bound traffic on north side of the intersection at Peachtree 
+Street and 12th Street. 
+ PEACHTREE_NORTH OF 12TH ST_SB      
+PAGE 11
+ 
+This tube data is for the south-bound traffic on north side of the intersection at Peachtree 
+Street and 12th Street. 
+ 12TH ST_EAST OF PEACHTREE_EB     
+This tube data is for the east-bound traffic on east side of the intersection at Peachtree 
+Street and 12th Street. 
+ 12TH ST_EAST OF PEACHTREE_WB     
+This tube data is for the west-bound traffic on east side of the intersection at Peachtree 
+Street and 12th Street. 
+ 12TH ST_WEST OF PEACHTREE_EB      
+This tube data is for the east-bound traffic on west side of the intersection at Peachtree 
+Street and 12th Street. 
+ 12TH ST_WEST OF PEACHTREE_WB      
+This tube data is for the west-bound traffic on west side of the intersection at Peachtree 
+Street and 12th Street. 
+ 13TH ST_EAST OF PEACHTREE_EB      
+This tube data is for the east-bound traffic on east side of the intersection at Peachtree 
+Street and 13th Street. 
+ 13TH ST_EAST OF PEACHTREE_WB     
+This tube data is for the west-bound traffic on east side of the intersection at Peachtree 
+Street and 13th Street. 
+ PEACHTREE_NORTH OF 14TH ST_NB     
+This tube data is for the north-bound traffic on north side of the intersection at Peachtree 
+Street and 14th Street. 
+ PEACHTREE_NORTH OF 14TH ST_SB      
+This tube data is for the south-bound traffic on north side of the intersection at Peachtree 
+Street and 14th Street. 
+ 14TH ST_EAST OF PEACHTREE_EB      
+This tube data is for the east-bound traffic on east side of the intersection at Peachtree 
+Street and 14th Street. 
+ 14TH ST_EAST OF PEACHTREE_WB      
+This tube data is for the west-bound traffic on east side of the intersection at Peachtree 
+Street and 14th Street. 
+ PEACHTREE_SOUTH OF 14TH ST_NB     
+This tube data is for the north-bound traffic on south side of the intersection at Peachtree 
+Street and 14th Street. 
+ PEACHTREE_SOUTH OF 14TH ST_SB      
+This tube data is for the south-bound traffic on south side of the intersection at Peachtree 
+Street and 14th Street. 
+ 14TH ST_WEST OF PEACHTREE_EB      
+This tube data is for the east-bound traffic on west side of the intersection at Peachtree 
+Street and 14th Street. 
+ 14TH ST_WEST OF PEACHTREE_WB      
+This tube data is for the west-bound traffic on west side of the intersection at Peachtree 
+Street and 14th Street. 
+Attribute  
+Attribute Label:  Date (Column A) 
+Attribute Definition: The date data were collected. 
+Attribute Domain Values: Date (mm/dd/yyyy) 
+Attribute   
+Attribute Label:  Time (Column B) 
+Attribute Definition: The time data were collected. 
+Attribute Domain Values: Time (hh:mm:ss) 
+Attribute  
+Attribute Label:  Volume (Column C) 
+PAGE 12
+ 
+Attribute Definition: Number of vehicles passing through a tube station per hour. 
+Attribute Domain Values: Integer 
+ 
+ 
+ 
+Vehicl e Trajectory Dat a 
+Vehicle trajectory data was collected on Peachtree Street in Atlanta, Georgia on November 8, 2006. 
+Data from 12:45 p.m. to 1:00 p.m., and 4:00 p.m. to 4:15 p.m is included. This data was collected 
+using eight video cameras mounted on a 30-story building, which is located at1100 Peachtree Street 
+NE, Atlanta, GA. Vehicle trajectory data were transcribed from the video data using a customized 
+software application, Next Generation Simulation - Vehicle Interaction and Detection Environment for 
+Operations (NGSIM-VIDEO), developed for NGSIM. This program was used to automatically detect 
+and track most vehicles from the video images and transcribe the trajectory data to a database. 
+Manual transcription was used to track any vehicles which failed to be automatically detected and 
+tracked. The data provides X, Y coordinates of each vehicle, every 1/10th of a second in relative 
+space and in NAD83 (the units are US Survey Feet). Time is given in Epoch time, which is the 
+elapsed time since midnight (beginning of the calendar day) GMT on January 1, 1970 in 
+milliseconds. This elapsed epoch time must be shifted to the US Pacific time zone for comparisons 
+to local time at the highway. During the data collection period, no traffic incidents were recorded 
+within the study area or on any adjacent locations likely influencing traffic in the study area. 
+ 
+Files: 
+ 
+ trajectories-1245pm-0100pm 
+This file contains all vehicle trajectories for the specified time period, sorted by time. The X 
+accuracy of this data set is estimated at around 2 feet and the Y accuracy is estimated at 
+around 4 feet. The start time for the trajectory data set corresponds to 12:45:00 p.m. in the 
+Real-time Split Monitor (RSM) report. 
+ trajectories-0400pm-0415pm 
+This file contains all vehicle trajectories for the specified time period, sorted by time. The X 
+accuracy of this data set is estimated at around 2 feet and the Y accuracy is estimated at 
+around 4 feet. The start time for the trajectory data set corresponds to 4:00:00 p.m. in the 
+Real-time Split Monitor (RSM) report 
+ 
+Attribute  
+Attribute Label:  Vehicle_ID (Column A) 
+Attribute Definition: Vehicle identification number (ascending by time of entry into section) 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Frame_ID (Column B) 
+Attribute Definition:  Frame Identification number (ascending by start time) 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  T otal_Frames (Column C) 
+Attribute Definition: T otal number of frames in which the vehicle appears in this data set. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Global_Time (Column D) 
+Attribute Definition: Elapsed time in milliseconds since Jan 1, 1970 (Epoch time). 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Local_X (Column E) 
+PAGE 13
+ 
+Attribute Definition: Lateral (X) coordinate of the front center of the vehicle - perpendicular to the 
+median of the Peachtree Street. Measured in feet. Vehicles traveling on the east side of the 
+median have positive Local X values, while those traveling on the west side of the median have 
+negative Local X values 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  Local_Y (Column F) 
+Attribute Definition: Longitudinal (Y) coordinate of the front center of the vehicle along the median 
+of the Peachtree Street. Measured in feet. The start point is at the southern boundary of the study 
+area. 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  Global_X (Column G) 
+Attribute Definition: X Coordinate of the front center of the vehicle based on Georgia West State 
+Plane in NAD83. Measured in feet. 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  Global_Y (Column H) 
+Attribute Definition: Y Coordinate of the front center of the vehicle based on Georgia West State 
+Plane in NAD83. Measured in feet. 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  v_Length (Column I) 
+Attribute Definition: Length of vehicle in feet. 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  v_Width (Column J) 
+Attribute Definition: Width of vehicle in feet 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  v_Class (Column K) 
+Attribute Definition: Vehicle type: 1 - motorcycle, 2 - auto, 3 - truck 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  v_Vel (Column L) 
+Attribute Definition: Instantaneous velocity of vehicle (feet/second). 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  v_Acc (Column M) 
+Attribute Definition: Instantaneous acceleration of vehicle (feet/second square). 
+Attribute Domain Values: Double 
+Attribute  
+Attribute Label:  Lane_ID (Column N) 
+Attribute Definition:  Current lane position of vehicle. Lane numbering is incremented from the 
+left-most lane, except for locations where left-turn or right-turn bays exist. Left-turn bays are 
+numbered starting from 11 and are incremented from the left-most left-turn bay. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  O_Zone (Column O) 
+Attribute Definition: Origin zones of the vehicles, i.e., the place where the vehicles enter the 
+tracking system. There are 21 origins in the study area, numbered from 101 through 123. 
+PAGE 14
+ 
+Destination 204 and 209 are a one-way off-ramp; hence, there are no associated origin number 
+104 and 109. Please refer to the data analysis report for more detailed information. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  D_Zone (Column P) 
+Attribute Definition: Destination zones of the vehicles, i.e., the place where the vehicles exit the 
+tracking system. There are 22 destinations in the study area, numbered from 201 through 223. 
+Origin 119 is a one-way off-ramp; hence there is no associated destination number 219. Please 
+refer to the data analysis report for more detailed information. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Int_ID (Column Q) 
+Attribute Definition:  Intersection in which the vehicle is traveling. Intersections are numbered 
+from 1 to 5, with intersection 1 at the southernmost, and intersection 5 at the northernmost 
+section of the study area. Value of “0” means that the vehicle was not in the immediate vicinity of 
+an intersection and that the vehicle instead identifies with a section of Peachtree Street 
+(Section_ID, below). Please refer to the data analysis report for more detailed information. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label: Section_ID (Column R) 
+Attribute Definition: Section in which the vehicle is traveling. Peachtree Street is divided into six 
+sections (south of intersection 1; between intersections 1 and 2, 2 and 3, 3 and 4, 4 and 5, 5 and 
+6; and north of intersection 6). Value of “0” means that the vehicle does not identify with a section 
+of Peachtree Street and that the vehicle was in the immediate vicinity of an intersection (Int_ID 
+above). Please refer to the data analysis report for more detailed information. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Direction (Column S) 
+Attribute Definition: Moving direction of the vehicle. 1 - east-bound (EB), 2 - north-bound (NB), 3 - 
+west-bound (WB), 4 - south-bound (SB). 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Movement (Column T) 
+Attribute Definition:  Movement of the vehicle. 1 - through (TH), 2 - left-turn (LT), 3 - right-turn 
+(RT). 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Preceding (Column U) 
+Attribute Definition:  Vehicle ID of the lead vehicle in the same lane. A value of '0' represents no 
+preceding vehicle. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Following (Column V) 
+Attribute Definition: Vehicle ID of the vehicle following the subject vehicle in the same lane. A 
+value of '0' represents no following vehicle. 
+Attribute Domain Values: Integer 
+Attribute  
+Attribute Label:  Space_Headway (Column W) 
+Attribute Definition: Space Headway. Provides the distance between the front-center of a vehicle 
+to the front-center of the preceding vehicle. Measured in feet. 
+Attribute Domain Values: Double 
+PAGE 15
+ 
+Attribute  
+Attribute Label:  Time_Headway (Column X) 
+Attribute Definition: Time Headway. Provides the time to travel from the front-center of a vehicle 
+(at the speed of the vehicle) to the front-center of the preceding vehicle. A headway value of 
+9999.99 means that the vehicle is traveling at zero speed (congested conditions). Measured in 
+seconds. 
+Attribute Domain Values: Double 
+Distribution Information   
+Distributor    
+Cont act Information  
+Cont act Organization Primary 
+Contact Organization: Noblis 
+Contact Electronic Mail Address: richard.glassco@noblis.org 
+Met ad at a Reference Information  
+Metadata Date: 20160328 
+Metadata Review Date: 20160328 
+Metadata Future Review Date: not scheduled  
+Metadata Contact 
+Cont act Information 
+Cont act Organization Primary 
+Contact Organization: Noblis 
+Contact Person: Kathy Thompson 
+Contact Electronic Mail Address: kathy.thompson@noblis.org 
+ 
+ 
+ 

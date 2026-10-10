@@ -1,0 +1,2 @@
+acquisition,eligible_original_through_cohort,initial_vehicles,arrivals,modeled_vehicles,start_relative_s,start_frame,end_relative_s,horizon_s,signal_schedule_source,entry_speed_source
+B1,251,2,249,251,51.0,515,1020.3000000000001,969.3000000000001,B1 OBSERVED EXOGENOUS INPUT,Frozen TRAIN B2 boundary distributions; no B1 speed sample fit

@@ -1,0 +1,3413 @@
+PAGE 1
+NGSIM Peachtree Street (Atlanta) Data Analysis 
+(12:45 p.m. to 1:00 p.m.) 
+ 
+ 
+prepared for 
+Federal Highway Administration 
+prepared by 
+Cambridge Systematics, Inc. 
+ 
+ 
+June 2007 
+www.camsys.com 
+summary
+report 
+
+PAGE 2
+ 
+ 
+ 
+summary report 
+NGSIM Peachtree Street (Atlanta) Data 
+Analysis 
+(12:45 p.m. to 1:00 p.m.) 
+ 
+ 
+ 
+ 
+prepared for 
+Federal Highway Administration 
+prepared by 
+Cambridge Systematics, Inc. 
+555 12th Street, Suite 1600 
+Oakland, California  94607 
+June 2007 
+
+PAGE 3
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+i 
+Table of Contents 
+Introduction ................................
+................................
+................................
+................................................................
+................................
+................................
+................................................................
+................................
+................................
+......................................
+......
+......
+...... 
+1 
+Study Area Description ................................................................................................. 
+1 
+Vehicle Detection and Tracking ................................................................................... 
+4 
+Data Analysis................................
+................................
+................................
+................................................................
+................................
+................................
+................................................................
+................................
+................................
+....................................
+....
+....
+.... 
+5 
+Vehicle Type.................................................................................................................... 
+7 
+Origin-Destination Distribution................................................................................... 
+7 
+Traffic Volume Analysis................................................................................................ 
+9 
+Speed Analysis................................................................................................................ 
+12 
+Travel Time Analysis ..................................................................................................... 
+15 
+Lane Change Analysis ................................................................................................... 
+16 
+Headway Analysis ......................................................................................................... 
+19 
+Spacing Analysis............................................................................................................. 
+19 
+Gap Analysis ................................................................................................................... 
+20 
+ 
+
+PAGE 4
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+ii 
+List of Tables 
+1. 
+Vehicle Type.................................................................................................................... 
+7 
+2. 
+Origin-Destination Distribution................................................................................... 
+8 
+3. 
+Traffic Volume at Intersection 1 (in Vehicles) ............................................................ 
+9 
+4. 
+Traffic Volume at Intersection 2 (in Vehicles) ............................................................ 
+10 
+5. 
+Traffic Volume at Intersection 3 (in Vehicles) ............................................................ 
+10 
+6. 
+Traffic Volume at Intersection 4 (in Vehicles) ............................................................ 
+11 
+7. 
+Traffic Volume at Intersection 5 (in Vehicles) ............................................................ 
+11 
+8. 
+Average Speed in Section 2 (NB) (Feet Per Second).................................................. 
+12 
+9. 
+Average Speed in Section 2 (SB) (Feet Per Second) ................................................... 
+12 
+10. Average Speed in Section 3 (NB) (Feet Per Second).................................................. 
+13 
+11. Average Speed in Section 3 (SB) (Feet Per Second) ................................................... 
+13 
+12. Average Speed in Section 4 (NB) (Feet Per Second).................................................. 
+13 
+13. Average Speed in Section 4 (SB) (Feet Per Second) ................................................... 
+14 
+14. Average Speed in Section 5 (NB) (Feet Per Second).................................................. 
+14 
+15. Average Speed in Section 5 (SB) (Feet Per Second) ................................................... 
+14 
+16. Average Travel Time on Peachtree St. (NB) (in Seconds)......................................... 
+15 
+17. Average Travel Time on Peachtree St.  (SB) (in Seconds)......................................... 
+15 
+18. Number of Lane Changes by O-D Pairs...................................................................... 
+17 
+19. Average Lane Changes by O-D Pairs .......................................................................... 
+18 
+20. Average Headway on Peachtree St. (NB) (in Seconds)............................................. 
+19 
+21. Average Headway on Peachtree St. (SB) (in Seconds).............................................. 
+19 
+22. Average Spacing on Peachtree St. (NB) (in Feet) ....................................................... 
+20 
+23. Average Spacing on Peachtree St. (SB) (in Feet) ........................................................ 
+20 
+24. Average Lead and Lag Gaps on Peachtree St. (NB)  (in Feet).................................. 
+21 
+25. Average Lead and Lag Gaps on Peachtree St. (SB)  (in Feet)................................... 
+21 
+
+PAGE 5
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+iii 
+List of Figures 
+1. 
+Study Area and Camera Coverage .............................................................................. 
+2 
+2. 
+Study Area Schematic.................................................................................................... 
+3 
+3. 
+Vehicle Detection and Tracking Process ..................................................................... 
+4 
+4. 
+Study Area Schematic with Various Identification Numbers.................................. 
+6 
+5. 
+Number of Lane Changes Per Vehicle......................................................................... 
+16 
+ 
+
+PAGE 6
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+1 
+ Introduction 
+This report summarizes a data collection and processing effort undertaken to provide a 
+dataset of arterial vehicle trajectories data completed as part of the Federal Highway 
+Administration’s (FHWA) Next Generation Simulation (NGSIM) project, and provides a 
+detailed analysis of a subset of the data.  The data analyzed in this report represent vehicle 
+trajectories on a segment of Peachtree Street in Atlanta, Georgia collected between 
+12:45 p.m. and 1:00 p.m. on November 8, 2006.  Aggregate summaries of flow and speed 
+of the vehicles, number of lane changes, headway and gap analysis, and an input-output 
+analysis of flows are provided.  The results are aggregated by time and intersection. 
+Study Area Description 
+Data presented in this report represent travel on Peachtree Street, an arterial running 
+primarily north-south in Atlanta, Georgia.  The speed limit on the Peachtree Street is 35 
+mph.  These data were collected using video cameras mounted on a 30-story building, 
+which is located at 1100 Peachtree Street NE, Atlanta, Georgia. 
+Figure 1 provides an aerial image of the location with the camera coverage.  Figure 2 pre-
+sents a schematic illustration of the location for the vehicle trajectory dataset.  The site was 
+approximately 2,100 feet in length, with five intersections and two to three arterial 
+through lanes in each direction through the section.  Lane numbering is incremented from 
+the left-most lane.   
+Video data were collected using eight video cameras, cameras 1 through 8, with camera 1 
+recording the southernmost and camera 8 recording the northernmost section of the study 
+area, as shown in Figure 1.  Digital video images were collected over an approximate 6.5-
+hour period from 9:30 a.m. to 1:30 p.m. and from 4:00 p.m. to 6:30 p.m. on November 8, 
+2006, and 4-hour period from 8:00 a.m. to 12:00 p.m. on November 9, 2006.  Complete 
+vehicle trajectories were transcribed for two 15 minute periods -- one from 12:45 p.m. to 
+1:00 p.m. and the other from 4:00 p.m. to 4:15 p.m. – for a total of 30 minutes at a 
+resolution of 10 frames per second.  The data in this report summarizes only the period 
+from 4:00 p.m. to 4:15 p.m.   
+
+PAGE 7
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+2 
+Figure 1. 
+Study Area and Camera Coverage 
+ 
+
+PAGE 8
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+3 
+Figure 2. 
+Study Area Schematic 
+ 
+
+PAGE 9
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+4 
+Vehicle Detection and Tracking 
+Vehicle trajectory data were transcribed from the video data using a customized software 
+application, Next Generation - SIMulation Vehicle Interaction and Detection Environment 
+for Operations (NGSIM-VIDEO), developed for NGSIM.  This program detects and tracks 
+vehicles from video images and transcribes the trajectory data to a database. 
+The flow process for the vehicle transcription is shown in Figure 3.  The software detects 
+vehicles in a user-defined detection zone, and then tracks vehicles from the point of 
+detection. 
+Figure 3. 
+Vehicle Detection and Tracking Process 
+Automatic Detection & Tracking
+Inputs
+• XML File
+•
+AVI Files
+•
+Source Video
+•
+Rectified Video
+•
+Calibration Parameters
+•
+Camera Matrix (focal length, principal point)
+•
+Distortion Parameters (lens)
+•
+Rotation and Translation (world coordinates)
+•
+Shadow Parameters
+• Database
+Alerts
+Manual 
+Corrections
+Vehicle Trajectory Data
+Accurate
+yes
+no
+ 
+ 
+Tracking was performed for the data from 12:45 p.m. to 1:00 p.m.  Immediately after 
+1:00 p.m., vehicle detection was stopped; however, to account for full vehicle trajectories, 
+tracking continued to allow the vehicles which were already detected to be tracked com-
+pletely to the end of the study area.  Therefore, for the vehicle trajectory dataset of 
+12:45p.m. to 1:00 p.m., the actual tracking time is from 12:45:00 p.m. to 1:02:01 p.m. 
+
+PAGE 10
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+5 
+A total of 30 minutes of vehicle trajectories was processed from the video data collected on 
+November 8, 2006, representing the period from 12:45 p.m. to 1:00 p.m. and 4:00 p.m. to 
+4:15 p.m.  The data was divided into two 15-minute periods for processing and analysis. 
+Subsequent sections of this report provide analysis of the transcribed data.  This report 
+provides data analysis for the period from 12:45 p.m. to 1:00 p.m.  A separate report is 
+available providing the same performance statistics for the succeeding 4:00 p.m. to 
+4:15 p.m. period. 
+ Data Analysis 
+Data analysis was performed for specific locations in the study area.  Therefore, it is neces-
+sary to define those locations herein.  Figure 4 shows the study area schematic with identi-
+fication numbers for origins, destinations, intersections, sections, and lanes. 
+• 
+Origin – These were numbered from 101 through 123.  There are 20 origins in the 
+study area. Destinations 204, 207, and 209 are one-way parking lot entries; hence, there 
+are no associated origin numbers 104, 107, and 109. 
+• 
+Destination – There are 22 destinations in the study area, numbered from 201 through 
+223.  Origin 119 is a one-way parking lot exit; hence, there is no associated destination 
+number 219. 
+• 
+Intersection – These were numbered from 1 to 5, with intersection 1 at the southern-
+most, and intersection 5 at the northernmost section of the study area.  Intersections 1, 
+2, 3, and 5 in this report correspond to signal numbers 51, 52, 53, and 73, respectively 
+(Intersection 4 is a stop-controlled intersection).  
+• 
+Section – Peachtree St. was further divided into six sections between neighboring 
+intersections. 
+• 
+Lane – Lane numbering was incremented from the lane closest to the median, except 
+for locations where left-turn or right-turn bays exist.  Left-turn bays were numbered 
+starting from 11 and were incremented from the left-turn bay closest to the median.   
+                                                      
+
+PAGE 11
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+6 
+Figure 4.    Study Area Schematic with Various Identification Numbers 
+ 
+ 
+ 
+ 
+ 
+4
+5
+3
+1
+2
+1
+30 Floors Office
+Building -Camera 
+Location
+2
+1
+1
+1
+2
+2
+2
+2
+2
+1
+1
+1
+1
+3
+3
+3
+3
+2
+2
+                  
+                      LT and RT Bay Lengths
+                   Traffic Signal/
+                    Intersection Number
+         Note: Drawing Not to Scale
+#
+       # '
+4
+2
+2
+1
+1
+1
+1 1
+1
+11
+2
+2
+2
+11
+11
+11
+Section 1
+Section 2
+Section 3
+Section 4
+Section 5
+Section 6
+101
+102
+103
+204
+122
+105
+222
+203
+202
+201
+210
+223
+123
+1
+1
+1
+221
+106
+206
+205
+1
+1
+1
+2
+2
+2
+2
+2
+209
+108
+207
+110
+211
+121
+11
+11
+11
+1
+1
+1
+215
+208
+120
+220
+111
+1
+213
+212
+119
+112
+1
+1
+1
+2
+2
+2
+115
+217
+118
+117
+218
+113
+114 214
+116
+216
+1
+1
+2
+2
+1
+11
+
+PAGE 12
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+7 
+Vehicle Type 
+Vehicles are classified into three categories:  1) motorcycle, 2) automobile, and 3) truck and 
+buses.  The distribution of vehicle types is shown in Table 1. 
+Table 1. 
+Vehicle Type 
+Motorcycle 
+Automobile 
+Truck and Buses 
+All 
+Time Period 
+Vehicle Percentage Vehicles Percentage Vehicles Percentage Vehicles Percentage
+12:45 p.m.-12:50 p.m. 
+0 
+0.0% 
+354 
+97.5% 
+9 
+2.5% 
+363 
+100.0% 
+12:50 p.m.-12:55 p.m. 
+0 
+0.0% 
+367 
+97.3% 
+10 
+2.7% 
+377 
+100.0% 
+12:55 p.m.-1:00 p.m. 
+0 
+0.0% 
+371 
+98.9% 
+4 
+1.1% 
+375 
+100.0% 
+All 
+0 
+0.0% 
+1,092 
+97.9% 
+23 
+2.1% 
+1,115 
+100.0% 
+ 
+Origin-Destination Distribution 
+There are 20 origins and 22 destinations in the study area, as illustrated in Figure 4.  The 
+distribution of vehicles from origins to destinations is provided in Table 2. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 13
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+8 
+Table 2. 
+Origin-Destination Distribution 
+Destination 
+Origin
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+220
+221
+222
+223
+Sum 
+101 
+11
+25
+0
+0
+0
+2
+0
+0
+0
+0
+0
+1
+4
+82
+17
+0
+0
+0
+0
+5
+12
+18
+177 
+102 
+18
+2
+1
+1
+0
+0
+0
+0
+0
+1
+0
+1
+1
+6
+2
+0
+0
+0
+0
+2
+3
+133
+171 
+103 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1 
+105 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+1
+1
+0
+4 
+106 
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+6
+1
+0
+0
+0
+1
+7
+1
+2
+22 
+108 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+0
+3 
+110 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1 
+111 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+2 
+112 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+4
+3
+0
+0
+0
+0
+0
+0
+0
+7 
+113 
+5
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+39
+50
+0
+0
+0
+0
+2
+0
+3
+99 
+114 
+58
+8
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+58
+4
+40
+0
+0
+0
+2
+2
+6
+8
+187 
+115 
+18
+3
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+88
+48
+0
+0
+0
+0
+2
+3
+1
+0
+168 
+116 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+117 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+118 
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1 
+119 
+2
+0
+0
+0
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+10
+17 
+120 
+3
+2
+0
+0
+0
+9
+0
+0
+0
+0
+0
+0
+0
+2
+1
+0
+0
+0
+0
+0
+0
+1
+18 
+121 
+7
+10
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+2
+0
+0
+0
+0
+0
+0
+1
+10
+35 
+122 
+34
+125
+1
+0
+0
+1
+0
+0
+0
+0
+0
+1
+2
+15
+2
+0
+0
+0
+2
+0
+2
+16
+201 
+123 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+Sum 
+160
+175
+7
+2
+0
+16
+1
+2
+0
+1
+1
+3
+155
+209
+119
+0
+0
+1
+8
+24
+29
+201
+1,114 
+ 
+
+PAGE 14
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+9 
+Traffic Volume Analysis 
+The tables in this section provide traffic volume for each intersection.  Intersections are 
+numbered as 1, 2, 3, 4, and 5, as shown in Figure 4, and include:  
+1. Peachtree and 10th Street NE,  
+2. Peachtree and 11th Street NE, 
+3. Peachtree and 12th Street NE, 
+4. Peachtree and 13th Street NE,  
+5. Peachtree and 14th Street NE.   
+Traffic volume is grouped by moving direction [i.e., north-bound (NB), south-bound (SB), 
+east-bound (EB), and west-bound (WB)], by movement [i.e., through (TH), left-turn (LT), 
+and right-turn (RT)], by lane, and by time period. 
+Due to the severe shooting angle of the cameras, several of the start and end-lanes for 
+Intersections 1 and 5 were obscured. Hence for volume analysis, vehicle volumes by 
+movement were aggregated for mutiple start/end lanes as indicated in the tables below.  . 
+ 
+Table 3. 
+Traffic Volume at Intersection 1 (in Vehicles) 
+NB 
+SB 
+EB 
+WB 
+Sum
+LT 
+TH 
+RT
+LT 
+TH 
+RT
+LT 
+TH
+RT
+LT 
+TH
+RT
+Time Period 
+11 
+1 
+2 
+<* 
+11 
+1 
+2 
+< 
+1 
+2&3
+4 
+1 
+2&3
+< 
+ 
+12:45 p.m.-12:50 p.m.
+4
+26
+12
+0
+3
+15
+9
+0
+13
+43
+0
+0
+5
+3
+133 
+12:50 p.m.-12:55 p.m.
+7
+26
+14
+0
+6
+25
+6
+0
+11
+38
+0
+0
+11
+5
+149 
+12:55 p.m.-1:00 p.m. 
+7
+28
+14
+0
+11
+23
+13
+0
+13
+43
+0
+0
+1
+1
+154 
+Sum 
+18
+80
+40
+0
+20
+63
+28
+0
+37
+124
+0
+0
+17
+9
+436 
+* > and < symbols are associated with shared lanes. 
+ 
+
+PAGE 15
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+10 
+Table 4. Traffic Volume at Intersection 2 (in Vehicles) 
+NB 
+SB 
+EB 
+WB 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+Time Period 
+1 
+2 
+< 
+11 
+< 
+1 
+2 
+< 
+> 
+1 
+2 
+1 
+< 
+< 
+Sum 
+12:45 p.m.-12:50 p.m. 
+9
+0
+0
+0
+11
+13
+4
+1
+0
+0
+0
+0
+0
+0
+38 
+12:50 p.m.-12:55 p.m. 
+21
+0
+0
+0
+29
+12
+8
+3
+0
+0
+0
+0
+0
+0
+73 
+12:55 p.m.-1:00 p.m. 
+14
+0
+1
+1
+22
+16
+5
+3
+0
+0
+0
+0
+0
+0
+62 
+Sum 
+44
+0
+1
+1
+62
+41
+17
+7
+0
+0
+0
+0
+0
+0
+173 
+ 
+Table 5. Traffic Volume at Intersection 3 (in Vehicles) 
+NB 
+SB 
+EB 
+WB 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+Time Period 
+11 
+1 
+2 
+< 
+11 
+1 
+2 
+< 
+1 
+2 
+< 
+1 
+1 
+< 
+Sum 
+12:45 p.m.-12:50 p.m. 
+0
+21
+15
+1
+0
+12
+13
+3
+0
+2
+0
+0
+1
+1
+69 
+12:50 p.m.-12:55 p.m. 
+6
+31
+17
+0
+0
+34
+19
+3
+0
+2
+0
+0
+0
+1
+113 
+12:55 p.m.-1:00 p.m. 
+5
+32
+17
+2
+3
+26
+19
+3
+0
+0
+0
+0
+0
+2
+109 
+Sum 
+11
+84
+49
+3
+3
+72
+51
+9
+0
+4
+0
+0
+1
+4
+291 
+ 
+ 
+
+PAGE 16
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+11 
+Table 6. Traffic Volume at Intersection 4 (in Vehicles) 
+NB 
+SB 
+WB 
+Sum 
+TH 
+RT 
+LT 
+TH 
+LT 
+TH 
+RT 
+Time Period 
+11 
+1 
+2 
+< 
+> 
+1 
+2 
+> 
+1 
+< 
+ 
+12:45 p.m.-12:50 p.m. 
+1
+24
+13
+1
+0
+16
+12
+0
+0
+0
+67 
+12:50 p.m.-12:55 p.m. 
+3
+29
+19
+0
+0
+32
+20
+0
+0
+0
+103 
+12:55 p.m.-1:00 p.m. 
+1
+32
+16
+1
+0
+29
+17
+0
+0
+0
+96 
+Sum 
+5
+85
+48
+2
+0
+77
+49
+0
+0
+0
+266 
+ 
+Table 7. Traffic Volume at Intersection 5 (in Vehicles) 
+NB 
+SB 
+EB 
+WB 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+LT 
+TH 
+RT 
+ 
+ 
+11 
+1 
+2 
+< 
+11 
+1&2
+< 
+1 
+2 
+< 
+1 
+2&3
+< 
+Sum 
+12:45 p.m.-12:50 p.m. 
+5
+15
+9
+2
+12
+15
+0
+0
+0
+0
+0
+4
+5
+67 
+12:50 p.m.-12:55 p.m. 
+11
+24
+17
+4
+23
+37
+0
+0
+0
+0
+0
+0
+2
+118 
+12:55 p.m.-1:00 p.m. 
+7
+25
+18
+1
+22
+33
+0
+0
+0
+0
+0
+0
+1
+107 
+Sum 
+23
+64
+44
+7
+57
+85
+0
+0
+0
+0
+0
+4
+8
+292 
+
+PAGE 17
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+12 
+Speed Analysis 
+Speed analysis was performed at the midpoints of each section on Peachtree Street, which 
+are between two neighboring intersections as shown in Figure 4.  The following tables 
+provide average speeds for both moving directions (NB and SB) and for each lane. 
+Table 8. 
+Average Speed in Section 2 (NB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+Average
+Lane 
+1 
+2 
+ 
+Count
+Speed
+Count
+Speed
+ 
+12:45 p.m.-12:50 p.m. 
+31
+28.73
+22
+30.37
+29.41
+12:50 p.m.-12:55 p.m. 
+36
+37.77
+17
+40.48
+38.64
+12:55 p.m.-1:00 p.m. 
+36
+37.24
+18
+38.51
+37.66
+All 
+103
+34.86
+57
+35.95
+35.25
+ 
+Table 9. 
+Average Speed in Section 2 (SB) (Feet Per Second) 
+ 
+Movement 
+TH 
+TH+RT 
+LT 
+Average 
+Lane 
+1 
+2 
+11 
+ 
+Count
+Speed
+Count
+Speed
+Count 
+Speed 
+ 
+12:45 p.m.-12:50 p.m. 
+15 
+41.06
+16 
+36.73
+5 
+34.72
+38.25 
+12:50 p.m.-12:55 p.m. 
+29 
+39.40
+18 
+37.73
+7 
+42.45
+39.24 
+12:55 p.m.-1:00 p.m. 
+24 
+36.61
+20 
+38.37
+11 
+35.73
+37.07 
+All 
+68 
+38.78
+54 
+37.67
+23 
+37.55
+38.17 
+
+PAGE 18
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+13 
+Table 10. 
+Average Speed in Section 3 (NB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+Lane 
+1 
+2 
+ 
+Count 
+Speed 
+Count 
+Speed 
+Average 
+12:45 p.m.-12:50 p.m. 
+22 
+37.11
+19 
+36.07
+36.63 
+12:50 p.m.-12:55 p.m. 
+32 
+39.55
+20 
+39.43
+39.51 
+12:55 p.m.-1:00 p.m. 
+30 
+35.78
+19 
+36.41
+36.03 
+All 
+84 
+37.57
+58 
+37.34
+37.47 
+ 
+Table 11. 
+Average Speed in Section 3 (SB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+Lane 
+1 
+2 
+ 
+Count 
+Speed 
+Count 
+Speed 
+Average 
+12:45 p.m.-12:50 p.m. 
+11 
+41.56
+14 
+36.34
+38.64 
+12:50 p.m.-12:55 p.m. 
+32 
+39.77
+19 
+37.85
+39.05 
+12:55 p.m.-1:00 p.m. 
+29 
+38.04
+18 
+36.80
+37.57 
+All 
+72 
+39.35
+51 
+37.07
+38.40 
+ 
+Table 12. 
+Average Speed in Section 4 (NB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+LT 
+Lane 
+1 
+2 
+11 
+ 
+Count
+Speed
+Count
+Speed
+Count
+Speed
+Average
+12:45 p.m.-12:50 p.m. 
+24 
+40.34
+15
+39.92
+0
+-
+40.18
+12:50 p.m.-12:55 p.m. 
+32 
+41.48
+20
+38.11
+1
+24.36
+39.88
+12:55 p.m.-1:00 p.m. 
+35 
+36.75
+18
+40.65
+0
+-
+38.07
+All 
+91 
+39.36
+53
+39.49
+1
+24.36
+39.30
+ 
+
+PAGE 19
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+14 
+Table 13. 
+Average Speed in Section 4 (SB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+LT 
+Lane 
+1 
+2 
+11 
+ 
+Count
+Speed
+Count
+Speed
+Count
+Speed
+Average
+12:45 p.m.-12:50 p.m. 
+15 
+39.67
+16
+35.63
+0
+-
+37.59
+12:50 p.m.-12:55 p.m. 
+34 
+39.82
+22
+35.43
+0
+-
+38.10
+12:55 p.m.-1:00 p.m. 
+31 
+35.58
+19
+34.37
+1
+23.67
+34.90
+All 
+80 
+38.15
+57
+35.13
+1
+23.67
+36.80
+ 
+Table 14. 
+Average Speed in Section 5 (NB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+LT 
+Lane 
+1 
+2 
+11 
+ 
+Count
+Speed
+Count
+Speed
+Count
+Speed
+Average
+12:45 p.m.-12:50 p.m. 
+24 
+40.34
+15
+39.92
+0
+-
+40.18
+12:50 p.m.-12:55 p.m. 
+32 
+41.48
+20
+38.11
+1
+24.36
+39.88
+12:55 p.m.-1:00 p.m. 
+35 
+36.75
+18
+40.65
+0
+-
+38.07
+All 
+91 
+39.36
+53
+39.49
+1
+24.36
+39.30
+ 
+Table 15. 
+Average Speed in Section 5 (SB) (Feet Per Second) 
+Movement 
+TH 
+TH+RT 
+Lane 
+1 
+2 
+ 
+Count
+Speed
+Count
+Speed
+Average
+12:45 p.m.-12:50 p.m. 
+15 
+39.67
+16
+35.63
+37.59
+12:50 p.m.-12:55 p.m. 
+34 
+39.82
+22
+35.43
+38.10
+12:55 p.m.-1:00 p.m. 
+31 
+35.58
+19
+34.37
+35.12
+All 
+80 
+38.15
+57
+35.13
+36.89
+ 
+
+PAGE 20
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+15 
+Travel Time Analysis 
+Average travel times for vehicles traveling NB on Peachtree Street from the southernmost 
+to the northernmost section of the study area are provided in Table 16, representing a 
+distance covered of approximately 2022 ft.  Similarly, average travel times for vehicles 
+traveling SB on Peachtree Street from the northernmost to the southernmost section of the 
+study area are provided in Table 17, representing a distance covered of approximately 
+1950 ft. 
+Table 16. 
+Average Travel Time on Peachtree St. (NB) (in Seconds) 
+From Lane 
+1 
+2 
+To Lane 
+1 
+2 
+1 
+2 
+Average
+12:45 p.m.-12:50 p.m. 
+156.3
+146.9
+121.8
+149.7
+143.7 
+12:50 p.m.-12:55 p.m. 
+122.6
+103.8
+130.6
+115.6
+118.2 
+12:55 p.m.-1:00 p.m. 
+128.3
+94.2
+139
+136.9
+124.6 
+Average 
+135.7
+115.0
+130.5
+134.1
+128.8 
+ 
+Table 17. 
+Average Travel Time on Peachtree St. (SB) (in Seconds) 
+From Lane 
+1 
+2 
+To Lane 
+1 
+2 
+1 
+2 
+Average 
+12:45 p.m.-12:50 p.m.
+99.4 
+- 
+101.3 
+92.3 
+97.7 
+12:50 p.m.-12:55 p.m.
+103.5 
+110.0 
+108.8 
+111.6 
+108.5 
+12:55 p.m.-1:00 p.m. 
+115.5 
+101.8 
+- 
+110.3 
+109.2 
+Average 
+106.1 
+105.9 
+105.1 
+104.7 
+105.1 
+ 
+ 
+
+PAGE 21
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+16 
+Lane Change Analysis 
+An analysis of lane changes occurring in the study area is provided in this section.  It 
+should be noted that vehicles making either left turns or right turns to the closest receiving 
+lane were not counted as lane changes.  The number of lane changes per vehicle for all 
+vehicles in the study area is shown in Figure 5.  The number of lane changes by each 
+origin-destination (O-D) pair is provided in Table 18.  Table 19 provides the average lane 
+changes by each O-D pair, which was calculated by dividing the number of lane changes 
+by the number of vehicles for that O-D pair. 
+Figure 5. 
+Number of Lane Changes Per Vehicle 
+0
+100
+200
+300
+400
+500
+600
+700
+800
+Number of Lane Changes Per Vehicle
+Vehicles
+All
+687
+156
+111
+62
+99
+0
+1
+2
+3
+ 4+
+ 
+ 
+
+PAGE 22
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+17 
+Table 18. 
+Number of Lane Changes by O-D Pairs 
+Destination 
+Origin
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+220
+221
+222
+223
+Sum 
+101 
+0
+37
+0
+0
+0
+7
+0
+0
+0
+0
+0
+4
+2
+75
+30
+0
+0
+0
+0
+26
+17
+25
+223 
+102 
+7
+1
+2
+3
+0
+0
+0
+0
+0
+5
+0
+4
+7
+15
+13
+0
+0
+0
+0
+6
+3
+12
+78 
+103 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+105 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+8
+0
+0
+0
+0
+4
+6
+0
+18 
+106 
+13
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+19
+3
+0
+0
+0
+2
+0
+2
+7
+48 
+108 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+3
+4
+0
+0
+0
+11 
+110 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+6
+0
+6 
+111 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+0
+0
+0
+0
+0
+0
+4 
+112 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+11
+7
+0
+0
+0
+0
+0
+0
+0
+18 
+113 
+37
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+8
+0
+0
+0
+0
+0
+6
+0
+18
+69 
+114 
+85
+23
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+5
+7
+25
+21
+171 
+115 
+44
+25
+4
+3
+0
+5
+4
+2
+0
+0
+0
+0
+0
+48
+0
+0
+0
+0
+6
+11
+2
+0
+154 
+116 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+117 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+118 
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2 
+119 
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0 
+120 
+16
+0
+0
+0
+0
+6
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+8
+0
+59
+92 
+121 
+9
+6
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+6
+4
+0
+0
+0
+0
+0
+0
+3
+28 
+122 
+19
+21
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+7
+0
+0
+0
+0
+0
+0
+0
+6
+56 
+123 
+20
+22
+2
+0
+0
+2
+0
+0
+0
+0
+0
+3
+7
+32
+9
+0
+0
+0
+8
+0
+0
+0
+105 
+Sum 
+252
+135
+8
+6
+0
+23
+4
+5
+0
+5
+0
+11
+22
+225
+79
+0
+0
+3
+25
+68
+61
+151
+1,083 
+ 
+
+PAGE 23
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+18 
+Table 19. 
+Average Lane Changes by O-D Pairs 
+Destination 
+Origin
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+220
+221
+222
+223
+Avg. 
+101 
+0.0
+1.5
+0.0
+0.0
+0.0
+3.5
+0.0
+0.0
+0.0
+0.0
+0.0
+4.0
+0.5
+0.9
+1.8
+0.0
+0.0
+0.0
+0.0
+5.2
+1.4
+1.4
+1.3 
+102 
+0.4
+0.5
+2.0
+3.0
+0.0
+0.0
+0.0
+0.0
+0.0
+5.0
+0.0
+4.0
+7.0
+2.5
+6.5
+0.0
+0.0
+0.0
+0.0
+3.0
+1.0
+0.1
+0.5 
+103 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0 
+105 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+4.0
+0.0
+0.0
+0.0
+0.0
+4.0
+6.0
+0.0
+4.5 
+106 
+4.3
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.0
+3.2
+3.0
+0.0
+0.0
+0.0
+2.0
+0.0
+2.0
+3.5
+2.2 
+108 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+4.0
+0.0
+0.0
+3.0
+4.0
+0.0
+0.0
+0.0
+3.7 
+110 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+6.0
+0.0
+6.0 
+111 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+4.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.0 
+112 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.8
+2.3
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.6 
+113 
+7.4
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.2
+0.0
+0.0
+0.0
+0.0
+0.0
+3.0
+0.0
+6.0
+0.7 
+114 
+1.5
+2.9
+0.0
+0.0
+0.0
+3.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.5
+3.5
+4.2
+2.6
+0.9 
+115 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+1.0
+0.0
+0.0
+0.0
+0.0
+3.0
+3.7
+2.0
+0.0
+0.0 
+116 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+4.5 
+117 
+4.3
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+3.5
+2.2 
+118 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+3.7 
+119 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+6.0 
+120 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.0 
+121 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+3.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+2.6 
+122 
+1.1
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+1.5
+0.5
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+1.1
+0.3 
+123 
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0 
+Avg. 
+1.6
+0.8
+1.1
+3.0
+0.0
+1.4
+4.0
+2.5
+0.0
+5.0
+0.0
+3.7
+0.1
+1.1
+0.7
+0.0
+0.0
+3.0
+3.1
+2.8
+2.1
+0.8
+1.0 
+ 
+
+PAGE 24
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+19 
+Headway Analysis 
+Tables 20 and 21 provide average headway of vehicles traveling on Peachtree Street NB 
+and SB, respectively.  In addition to average headway for each time period, headways 
+were also analyzed based on vehicle speed (i.e., less than 5 mph, 5 to 20 mph, and more 
+than 20 mph). 
+Table 20. 
+Average Headway on Peachtree Street (NB) (in Seconds) 
+Speed (mph) 
+Time Period 
+<5 
+5-20 
+>20 
+Average 
+Headway 
+12:45 p.m.-12:50 p.m. 
+106.02 
+8.81 
+6.19 
+29.53 
+12:50 p.m.-12:55 p.m. 
+77.90 
+10.34 
+5.58 
+20.54 
+12:55 p.m.-1:00 p.m. 
+286.22 
+12.98 
+5.13 
+106.29 
+Average Headway 
+193.72 
+10.59 
+5.59 
+56.61 
+ 
+Table 21. 
+Average Headway on Peachtree Street (SB) (in Seconds) 
+Speed (mph) 
+Time Period 
+<5 
+5-20 
+>20 
+Average 
+Headway 
+12:45 p.m.-12:50 p.m. 
+38.46 
+17.79 
+11.43 
+15.43 
+12:50 p.m.-12:55 p.m. 
+63.65 
+12.09 
+7.23 
+16.82 
+12:55 p.m.-1:00 p.m. 
+234.68 
+14.24 
+8.28 
+77.02 
+Average Headway 
+176.22 
+14.26 
+8.44 
+44.28 
+ 
+Spacing Analysis 
+Spacing, or distance headway, was analyzed for each time period and for each speed 
+group.  Tables 22 and 23 provide average spacing of vehicles traveling on Peachtree Street 
+NB and SB, respectively. 
+
+PAGE 25
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+20 
+Table 22. 
+Average Spacing on Peachtree Street (NB) (in Feet) 
+Speed (mph) 
+Time Period 
+<5 
+5-20 
+>20 
+Average 
+Spacing 
+12:45 p.m.-12:50 p.m. 
+28.16 
+145.85 
+215.42 
+109.24 
+12:50 p.m.-12:55 p.m. 
+29.50 
+164.03 
+204.86 
+112.38 
+12:55 p.m.-1:00 p.m. 
+39.24 
+183.95 
+180.99 
+114.38 
+Average Spacing 
+32.34 
+163.06 
+199.32 
+112.05 
+ 
+Table 23. 
+Average Spacing on Peachtree Street (SB) (in Feet) 
+Speed (mph) 
+Time Period 
+<5 
+5-20 
+>20 
+Average 
+Spacing 
+12:45 p.m.-12:50 p.m. 
+29.72 
+286.04 
+368.77 
+256.29 
+12:50 p.m.-12:55 p.m. 
+27.46 
+215.86 
+271.27 
+188.99 
+12:55 p.m.-1:00 p.m. 
+29.11 
+250.29 
+297.79 
+191.30 
+Average Spacing 
+28.60 
+245.61 
+299.27 
+201.81 
+ 
+Gap Analysis 
+Tables 24 and 25 present the accepted lead and lag gaps by vehicles during lane-changing 
+on Peachtree Street NB and SB, respectively.  In addition to average gaps for each time 
+period, lead and lag gaps were also analyzed based on vehicle speed (i.e., less than 5 mph, 
+5 to 20 mph, and more than 20 mph). 
+
+PAGE 26
+ 
+Peachtree Street (Atlanta) Data Analysis (12:45 p.m. to 1:00 p.m.) 
+Cambridge Systematics, Inc. 
+21 
+Table 24. 
+Average Lead and Lag Gaps on Peachtree Street (NB)  
+(in Feet) 
+Lead Gap (Feet) 
+Lag Gap (Feet) 
+Time Period 
+<5 
+mph 
+5-20 
+mph 
+>20 
+mph 
+Average
+<5 
+mph 
+5-20 
+mph 
+>20 
+mph 
+Average
+12:45 p.m.-12:50 p.m. 
+- 
+66.00 
+73.80 
+71.57 
+- 
+156.50 
+90.60 
+109.43 
+12:50 p.m.-12:55 p.m. 
+- 
+80.50 
+63.71 
+67.44 
+- 
+145.50 
+84.57 
+98.11 
+12:55 p.m.-1:00 p.m. 
+- 
+132.67 
+89.50 
+115.40 
+- 
+54.00 
+43.50 
+49.80 
+Average 
+- 
+98.71 
+71.00 
+80.24 
+- 
+109.43 
+80.86 
+90.38 
+ 
+Table 25. 
+Average Lead and Lag Gaps on Peachtree Street (SB)  
+(in Feet) 
+Lead Gap (Feet) 
+Lag Gap (Feet) 
+Time Period 
+<5 
+mph 
+5-20 
+mph 
+>20 
+mph 
+Average
+<5 
+mph 
+5-20 
+mph 
+>20 
+mph 
+Average
+12:45 p.m.-12:50 p.m. 
+- 
+- 
+126.00 
+126.00 
+- 
+- 
+105.50 
+105.50 
+12:50 p.m.-12:55 p.m. 
+- 
+47.00 
+63.00 
+57.67 
+- 
+73.50 
+96.75 
+89.00 
+12:55 p.m.-1:00 p.m. 
+- 
+- 
+104.00 
+104.00 
+- 
+- 
+50.00 
+50.00 
+Average 
+- 
+47.00 
+86.86 
+78.00 
+- 
+73.50 
+92.57 
+88.33 
+ 

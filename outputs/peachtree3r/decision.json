@@ -1,0 +1,11 @@
+{
+  "classification": "B. BASELINE_NEEDS_REVISION",
+  "reason": "Operational measurement and empirical green-release mechanism are implemented, but the dominant residual stopping is downstream of included controls. Episode frequency, queue/temporal residuals and throughput improvement are insufficient for readiness. No unsupported receiving rule or turning agent was fabricated.",
+  "B1_LOCKED": true,
+  "background_agents_added": 0,
+  "ui_status": "UI_IMPLEMENTED_NOT_BROWSER_VALIDATED",
+  "IDM_recalibrated": false,
+  "IDM_reason": "Avoid compensating unmodeled receiving-context structure with fitted parameters; retain existing B2 IDM while isolating the measured release mechanism.",
+  "scenarios": "E1/E2/E3 DISABLED",
+  "next_step": "Identify receiving restrictions or revise observability/evaluation at the existing cuts from B2 and official evidence; no B1 until structural gap is resolved."
+}

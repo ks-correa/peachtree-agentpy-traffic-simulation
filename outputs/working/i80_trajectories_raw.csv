@@ -1,0 +1,1 @@
+Vehicle_ID;Frame_ID;Total_Frames;Global_Time;Local_X;Local_Y;Global_X;Global_Y;v_length;v_Width;v_Class;v_Vel;v_Acc;Lane_ID;O_Zone;D_Zone;Int_ID;Section_ID;Direction;Movement;Preceding;Following;Space_Headway;Time_Headway;Location

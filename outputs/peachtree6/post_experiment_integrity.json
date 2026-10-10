@@ -1,0 +1,14 @@
+{
+  "all_prior_artifacts_and_freezes_unchanged": true,
+  "scenario_design_unchanged": true,
+  "IDM_unchanged": true,
+  "scope_unchanged": true,
+  "official_runs": 240,
+  "test_suite": {
+    "tests_total": 222,
+    "passed": 196,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0
+  }
+}

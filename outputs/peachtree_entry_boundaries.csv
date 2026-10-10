@@ -1,0 +1,3 @@
+boundary,event,local_y_ft,direction,measurement,scope,B1_events,B2_events,geometry_status
+SOUTH_CUT,ENTRY,400.0,2,"Front-center sign crossing from two consecutive observations, interpolated <=0.1s",Selected complete class2/3 through-route cohort only,136,121,DEFINED_TRANSVERSE_MEASUREMENT_CUT_IN_DOCUMENTED_SECTION_NOT_CURB_OR_STUDY_EDGE
+NORTH_CUT,ENTRY,1400.0,4,"Front-center sign crossing from two consecutive observations, interpolated <=0.1s",Selected complete class2/3 through-route cohort only,115,155,DEFINED_TRANSVERSE_MEASUREMENT_CUT_IN_DOCUMENTED_SECTION_NOT_CURB_OR_STUDY_EDGE

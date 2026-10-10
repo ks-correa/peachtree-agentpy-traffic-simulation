@@ -1,0 +1,5 @@
+intersection,direction,EFFECTIVE_SIGNAL_CONTROL_REFERENCE,LEGACY_SIGNAL_PROXY,difference_ft,source,classification,interpretation
+2,2,649.846,632.5395,17.306500000000028,outputs/peachtree3t/intersection_envelopes.csv: entry,DATASET_DERIVED,Empirical adjacent-section to intersection annotation boundary; not a painted stop bar
+2,4,777.245,777.262,-0.016999999999939064,outputs/peachtree3t/intersection_envelopes.csv: entry,DATASET_DERIVED,Empirical adjacent-section to intersection annotation boundary; not a painted stop bar
+3,2,1184.777,1168.9155,15.861499999999978,outputs/peachtree3t/intersection_envelopes.csv: entry,DATASET_DERIVED,Empirical adjacent-section to intersection annotation boundary; not a painted stop bar
+3,4,1241.529,1240.7775,0.7515000000000782,outputs/peachtree3t/intersection_envelopes.csv: entry,DATASET_DERIVED,Empirical adjacent-section to intersection annotation boundary; not a painted stop bar

@@ -1,0 +1,61 @@
+test_export_and_subset_integrity (test_export_audit.ActualExportTests.test_export_and_subset_integrity) ... ok
+test_independent_full_location_scan (test_export_audit.ActualExportTests.test_independent_full_location_scan) ... ok
+test_no_fabricated_split_or_transferability (test_export_audit.ActualExportTests.test_no_fabricated_split_or_transferability) ... ok
+test_population_reconciliation (test_export_audit.ActualExportTests.test_population_reconciliation) ... ok
+test_previous_audit_preserved (test_export_audit.ActualExportTests.test_previous_audit_preserved) ... ok
+test_unavailable_percentages_are_null (test_export_audit.ActualExportTests.test_unavailable_percentages_are_null) ... ok
+test_empty_subset_is_header_only (test_export_audit.ExportParserTests.test_empty_subset_is_header_only) ... ok
+test_exact_location_filter (test_export_audit.ExportParserTests.test_exact_location_filter) ... ok
+test_locale_formats_remain_distinct (test_export_audit.ExportParserTests.test_locale_formats_remain_distinct) ... ok
+test_missing_location_cannot_be_certified (test_export_audit.ExportParserTests.test_missing_location_cannot_be_certified) ... ok
+test_parser_filter_preserves_raw_values (test_export_audit.ExportParserTests.test_parser_filter_preserves_raw_values) ... ok
+test_detector_not_trajectory (test_local_audit.AuditTests.test_detector_not_trajectory) ... ok
+test_headway (test_local_audit.AuditTests.test_headway) ... skipped 'No local trajectories: cannot test headway semantics'
+test_lane_changes (test_local_audit.AuditTests.test_lane_changes) ... skipped 'No local trajectories: cannot test lane-change detection'
+test_leader_follower (test_local_audit.AuditTests.test_leader_follower) ... skipped 'No local trajectories: cannot test leader/follower references'
+test_no_fabricated_split (test_local_audit.AuditTests.test_no_fabricated_split) ... ok
+test_parser (test_local_audit.AuditTests.test_parser) ... ok
+test_period_detection (test_local_audit.AuditTests.test_period_detection) ... ok
+test_reproducible_inventory (test_local_audit.AuditTests.test_reproducible_inventory) ... ok
+test_source_integrity (test_local_audit.AuditTests.test_source_integrity) ... ok
+test_train_test_isolation (test_local_audit.AuditTests.test_train_test_isolation) ... skipped 'No local trajectories: cannot verify real TRAIN/TEST isolation'
+test_unavailable_metrics_not_zero (test_local_audit.AuditTests.test_unavailable_metrics_not_zero) ... ok
+test_vehicle_id_and_no_leakage (test_local_audit.AuditTests.test_vehicle_id_and_no_leakage) ... skipped 'No local trajectories: cannot test Vehicle_ID or identity leakage'
+test_vehicle_time (test_local_audit.AuditTests.test_vehicle_time) ... skipped 'No local trajectories: cannot test vehicle time monotonicity'
+test_affine_groups_detected_despite_interleaved_timestamps (test_peachtree_audit.PeachtreeMethodsTests.test_affine_groups_detected_despite_interleaved_timestamps) ... ok
+test_ambiguous_relation_key_rejected (test_peachtree_audit.PeachtreeMethodsTests.test_ambiguous_relation_key_rejected) ... ok
+test_context_and_sentinel_filter (test_peachtree_audit.PeachtreeMethodsTests.test_context_and_sentinel_filter) ... ok
+test_excursions_nonadjacent_and_turn_bay (test_peachtree_audit.PeachtreeMethodsTests.test_excursions_nonadjacent_and_turn_bay) ... ok
+test_leader_join_isolated_by_component_and_frame (test_peachtree_audit.PeachtreeMethodsTests.test_leader_join_isolated_by_component_and_frame) ... ok
+test_missing_leader_is_not_matched_to_another_frame (test_peachtree_audit.PeachtreeMethodsTests.test_missing_leader_is_not_matched_to_another_frame) ... ok
+test_temporal_gap_and_complete_trajectory_detection (test_peachtree_audit.PeachtreeMethodsTests.test_temporal_gap_and_complete_trajectory_detection) ... ok
+test_actual_frames_and_identity_isolation (test_peachtree_audit.PeachtreeSourceTests.test_actual_frames_and_identity_isolation) ... ok
+test_reciprocal_counts_and_filter_denominators (test_peachtree_audit.PeachtreeSourceTests.test_reciprocal_counts_and_filter_denominators) ... ok
+test_source_integrity_and_reconciliation (test_peachtree_audit.PeachtreeSourceTests.test_source_integrity_and_reconciliation) ... ok
+test_source_not_declared_frozen_or_calibrated (test_peachtree_audit.PeachtreeSourceTests.test_source_not_declared_frozen_or_calibrated) ... ok
+test_transferability_orientation_and_categorical_types (test_peachtree_audit.PeachtreeSourceTests.test_transferability_orientation_and_categorical_types) ... ok
+test_actual_deterministic_output_hashes (test_peachtree_system.ActualSystemTests.test_actual_deterministic_output_hashes) ... ok
+test_all_sources_stay_intact (test_peachtree_system.ActualSystemTests.test_all_sources_stay_intact) ... ok
+test_confirmed_events_follow_protocol (test_peachtree_system.ActualSystemTests.test_confirmed_events_follow_protocol) ... ok
+test_documented_sections_intersections (test_peachtree_system.ActualSystemTests.test_documented_sections_intersections) ... ok
+test_draft_is_not_a_freeze_or_calibration (test_peachtree_system.ActualSystemTests.test_draft_is_not_a_freeze_or_calibration) ... ok
+test_parquet_qc_scope_identity_and_integrity (test_peachtree_system.ActualSystemTests.test_parquet_qc_scope_identity_and_integrity) ... ok
+test_real_clock_counts_and_document_association (test_peachtree_system.ActualSystemTests.test_real_clock_counts_and_document_association) ... ok
+test_real_physical_cohort_pairs_and_conservation (test_peachtree_system.ActualSystemTests.test_real_physical_cohort_pairs_and_conservation) ... ok
+test_real_throughput_matches_events_not_records (test_peachtree_system.ActualSystemTests.test_real_throughput_matches_events_not_records) ... ok
+test_confirmed_lane_change_and_bay_exclusion (test_peachtree_system.SystemMethodsTests.test_confirmed_lane_change_and_bay_exclusion) ... ok
+test_conflicting_phase_is_unknown_not_silently_backfilled (test_peachtree_system.SystemMethodsTests.test_conflicting_phase_is_unknown_not_silently_backfilled) ... ok
+test_discontinuous_jump_does_not_create_valid_route (test_peachtree_system.SystemMethodsTests.test_discontinuous_jump_does_not_create_valid_route) ... ok
+test_documented_topology_and_movement (test_peachtree_system.SystemMethodsTests.test_documented_topology_and_movement) ... ok
+test_first_appearance_inside_is_not_entry (test_peachtree_system.SystemMethodsTests.test_first_appearance_inside_is_not_entry) ... ok
+test_physical_entry_exit_and_travel_time_not_last_minus_first (test_peachtree_system.SystemMethodsTests.test_physical_entry_exit_and_travel_time_not_last_minus_first) ... ok
+test_relative_clock_origin_and_determinism (test_peachtree_system.SystemMethodsTests.test_relative_clock_origin_and_determinism) ... ok
+test_signal_parser_boundaries_unknown_and_timing (test_peachtree_system.SystemMethodsTests.test_signal_parser_boundaries_unknown_and_timing) ... ok
+test_southbound_physical_entry_exit (test_peachtree_system.SystemMethodsTests.test_southbound_physical_entry_exit) ... ok
+test_synchronization_uses_fixed_reference_not_fitted_offset (test_peachtree_system.SystemMethodsTests.test_synchronization_uses_fixed_reference_not_fitted_offset) ... ok
+test_tuple_identity_and_no_cross_acquisition_pairing (test_peachtree_system.SystemMethodsTests.test_tuple_identity_and_no_cross_acquisition_pairing) ... ok
+
+----------------------------------------------------------------------
+Ran 56 tests in 4.229s
+
+OK (skipped=6)

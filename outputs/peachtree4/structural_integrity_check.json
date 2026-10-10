@@ -1,0 +1,9 @@
+{
+  "structural_freeze_sha256": "3794b17b25c4e36eee63995071f327f7e2ecec44a0f32f8c26791d4f82a61830",
+  "structural_code_hashes_verified": true,
+  "source_hashes_verified": true,
+  "structural_input_signature_verified": true,
+  "structural_code_files": 13,
+  "source_files": 8,
+  "UI_changes_authorized_by_phase4": true
+}

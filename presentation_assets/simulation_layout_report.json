@@ -1,0 +1,203 @@
+{
+  "status": "SIMULATION SECTION PRESENTATION READY",
+  "separation": "CURRENT RUN AND OFFICIAL RESULTS CLEARLY SEPARATED",
+  "science": "SCIENTIFIC RESULTS UNCHANGED",
+  "scientific_files_verified": 2305,
+  "scientific_hashes_intact": true,
+  "B1": {
+    "horizon_s": 969.3,
+    "clock": "16:09.3",
+    "target": 251,
+    "initial": 2,
+    "arrivals": 249,
+    "source_artifact": "outputs/peachtree5/b1_exogenous_inputs.json"
+  },
+  "B2": {
+    "horizon_s": 939.3,
+    "clock": "15:39.3",
+    "target": 274,
+    "initial": 21,
+    "arrivals": 253,
+    "source_artifact": "outputs/peachtree3u/final_inputs.json"
+  },
+  "layout": [
+    "Configuración",
+    "Contexto y escenario",
+    "Progreso temporal y demanda",
+    "Canvas claro",
+    "Métricas en vivo",
+    "Dinámica de la corrida",
+    "Resultados oficiales — 30 réplicas",
+    "Comportamiento emergente",
+    "Interpretación"
+  ],
+  "graphs_per_context": 8,
+  "technical_same_structure": true,
+  "UI_tests": {
+    "UI_tests": 24,
+    "passed": 24,
+    "failures": 0,
+    "errors": 0,
+    "scientific_tests_rerun": false,
+    "new_scientific_experiments": false
+  },
+  "browser_QA": {
+    "combinations": [
+      {
+        "context": "B1",
+        "scenario": "BASE",
+        "horizon_s": 969.3000000000001,
+        "scheduled_target": 251,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B1",
+        "scenario": "E1",
+        "horizon_s": 969.3000000000001,
+        "scheduled_target": 251,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B1",
+        "scenario": "E2",
+        "horizon_s": 969.3000000000001,
+        "scheduled_target": 251,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B1",
+        "scenario": "E3",
+        "horizon_s": 969.3000000000001,
+        "scheduled_target": 251,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B2",
+        "scenario": "BASE",
+        "horizon_s": 939.3000000000001,
+        "scheduled_target": 274,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B2",
+        "scenario": "E1",
+        "horizon_s": 939.3000000000001,
+        "scheduled_target": 274,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B2",
+        "scenario": "E2",
+        "horizon_s": 939.3000000000001,
+        "scheduled_target": 274,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      },
+      {
+        "context": "B2",
+        "scenario": "E3",
+        "horizon_s": 939.3000000000001,
+        "scheduled_target": 274,
+        "correct_saved_signals": true,
+        "correct_live_metrics": true,
+        "official_context_verified": true,
+        "run_pause_continue": true,
+        "demonstration_end": true,
+        "white_canvas": true,
+        "charts": 8
+      }
+    ],
+    "checked": 8,
+    "PNG_downloads": 8,
+    "CSV_downloads": 8,
+    "technical_same_layout": true,
+    "full_visual_window_matches_official_horizon": true,
+    "page_errors": [],
+    "new_scientific_experiments": false
+  },
+  "exports": [
+    {
+      "figure_file": "simulation_exports/official_B2_departures.png",
+      "table_file": "simulation_exports/official_B2_departures.csv",
+      "source_artifact": "outputs/peachtree6/temporal_departures.csv;outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "figure_file": "simulation_exports/official_B2_directional.png",
+      "table_file": "simulation_exports/official_B2_directional.csv",
+      "source_artifact": "outputs/peachtree6/directional_results.csv"
+    },
+    {
+      "figure_file": "simulation_exports/official_B2_operational_stopped.png",
+      "table_file": "simulation_exports/official_B2_operational_stopped.csv",
+      "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "figure_file": "simulation_exports/official_B2_travel_mean_s.png",
+      "table_file": "simulation_exports/official_B2_travel_mean_s.csv",
+      "source_artifact": "outputs/peachtree6/b2_scenario_summary.csv"
+    },
+    {
+      "figure_file": "simulation_exports/run_B2_E3_Completa_departures.png",
+      "table_file": "simulation_exports/run_B2_E3_Completa_departures.csv",
+      "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+    },
+    {
+      "figure_file": "simulation_exports/run_B2_E3_Completa_queue.png",
+      "table_file": "simulation_exports/run_B2_E3_Completa_queue.csv",
+      "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+    },
+    {
+      "figure_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.png",
+      "table_file": "simulation_exports/run_B2_E3_Completa_speed_stopped.csv",
+      "source_artifact": "outputs/peachtree6/traces/B2_E3_7000.json"
+    },
+    {
+      "figure_file": "simulation_exports/run_B2_E3_space_time.png",
+      "table_file": "simulation_exports/run_B2_E3_space_time.csv",
+      "source_artifact": "outputs/peachtree6/illustrative_B2_E3.parquet;outputs/peachtree3u/structural_model_freeze.json"
+    }
+  ],
+  "playback_source": "Frozen AgentPy seed7000 snapshots; no new physics or experiments",
+  "snapshot_end_note": "Snapshots end 0.3 s before the official horizon; the last saved state is held visually without adding physical steps."
+}

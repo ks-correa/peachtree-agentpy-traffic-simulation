@@ -1,0 +1,51 @@
+[
+  {
+    "name": "peachtree-street-aerial-ortho-photos.zip",
+    "size": 26591877,
+    "compressed": 26591877,
+    "offset": 0,
+    "method": 0
+  },
+  {
+    "name": "peachtree-street-cad-diagram.zip",
+    "size": 41349,
+    "compressed": 41349,
+    "offset": 26591947,
+    "method": 0
+  },
+  {
+    "name": "peachtree-street-data-analysis.zip",
+    "size": 1564801,
+    "compressed": 1564801,
+    "offset": 26633358,
+    "method": 0
+  },
+  {
+    "name": "peachtree-street-gis-files.zip",
+    "size": 1986,
+    "compressed": 1986,
+    "offset": 28198223,
+    "method": 0
+  },
+  {
+    "name": "peachtree-street-signal-timing.zip",
+    "size": 386038,
+    "compressed": 386038,
+    "offset": 28200269,
+    "method": 0
+  },
+  {
+    "name": "peachtree-street-tube-data.zip",
+    "size": 88918,
+    "compressed": 88918,
+    "offset": 28586371,
+    "method": 0
+  },
+  {
+    "name": "NGSIM_Peachtree_Vehicle_Trajectories.csv",
+    "size": 109189739,
+    "compressed": 22001238,
+    "offset": 28675349,
+    "method": 8
+  }
+]

@@ -1,0 +1,8 @@
+error_class,confidence,evidence
+MEASUREMENT_REFERENCE_ERROR,HIGH,Convention verified: Local_Y is front center; no extra half-length error confirmed in existing engine.
+CONTROL_ZONE_ERROR,HIGH,Nominal next_line loses own12th association before B2 stopped front/head band.
+QUEUE_HEAD_ERROR,HIGH,Approach-only proxy can miss head beyond nominal control; recovered lane0 requires bracketing agreement.
+SIGNAL_RELEASE_ERROR,MEDIUM,"Group medians vary but only 5–8 valid releases/group; retain1.6s, do not fit."
+FOLLOWER_PROPAGATION_ERROR,MEDIUM,Observed onset lags are measurable; no mechanism added without stable gap-conditioned evidence.
+IDM_DYNAMIC_ERROR,LOW,"Magnitude differences exist, but unresolved physical reference prevents parametric attribution."
+UNIDENTIFIED,HIGH,Painted stop-bar coordinates not established by available metadata/annotation; do not freeze physical model.

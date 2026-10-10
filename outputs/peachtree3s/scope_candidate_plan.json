@@ -1,0 +1,36 @@
+{
+  "B1_LOCKED": true,
+  "basis": "Observed B2 intersection envelopes, buffers25/50/100ft. No SIM metrics inspected to select a boundary. Must keep both junctions plus downstream room and exclude unidentified interacting context, not merely its frames.",
+  "specs": [
+    {
+      "name": "FULL_CURRENT_SCOPE",
+      "low_ft": 400.0,
+      "high_ft": 1400.0,
+      "basis": "Existing S2/S4 arbitrary mid-section cuts"
+    },
+    {
+      "name": "EXTENDED_TO_NEXT_CONTROLS",
+      "low_ft": 100.0,
+      "high_ft": 1678.066,
+      "basis": "Contains10th and13th; STOP priority/receiving supply unresolved"
+    },
+    {
+      "name": "REDUCED_JUNCTION_ENVELOPE_PLUS_25FT",
+      "low_ft": 622.878,
+      "high_ft": 1271.452,
+      "basis": "Observed full I2/I3 envelopes plus prespecified physical discharge buffer; no fit-based selection"
+    },
+    {
+      "name": "REDUCED_JUNCTION_ENVELOPE_PLUS_50FT",
+      "low_ft": 597.878,
+      "high_ft": 1296.452,
+      "basis": "Observed full I2/I3 envelopes plus prespecified physical discharge buffer; no fit-based selection"
+    },
+    {
+      "name": "REDUCED_JUNCTION_ENVELOPE_PLUS_100FT",
+      "low_ft": 547.878,
+      "high_ft": 1346.452,
+      "basis": "Observed full I2/I3 envelopes plus prespecified physical discharge buffer; no fit-based selection"
+    }
+  ]
+}

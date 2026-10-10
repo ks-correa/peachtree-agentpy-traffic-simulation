@@ -1,0 +1,4 @@
+strategy,train,test,train_vehicles,train_rows,train_duration,test_vehicles,test_rows,test_duration,traffic_condition,leakage_risk,distribution_shift,status
+A,P1+P2,P3,,,,,,,Unknown from trajectories,Cannot verify IDs or physical identity across periods,Not calculable,MISSING_VEHICLE_TRAJECTORIES
+B,P1,P2,,,,,,,Unknown from trajectories,Cannot verify IDs or physical identity across periods,Not calculable,MISSING_VEHICLE_TRAJECTORIES
+C,P1 then P1+P2,P2 then P3,,,,,,,Unknown from trajectories,Cannot verify IDs or physical identity across periods,Not calculable,MISSING_VEHICLE_TRAJECTORIES

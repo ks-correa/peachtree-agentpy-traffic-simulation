@@ -1,0 +1,190 @@
+{
+  "phase": "PEACHTREE-3",
+  "dataset": "NGSIM Peachtree Street",
+  "dataset_sha256": "9769b819a1c0a010fa16cafa06a50bc7bc352f8e14303222f64a00c5e65b6702",
+  "client_date": "2026-10-09",
+  "created_utc": "2026-10-10T03:03:43.172477+00:00",
+  "scope": {
+    "local_y_ft": [
+      400,
+      1400
+    ],
+    "population": "ARTERIAL_THROUGH_COHORT",
+    "classes": [
+      2,
+      3
+    ],
+    "train_cohort_eligible": 276,
+    "test_cohort_eligible_from_authorized_prior_summary": 251,
+    "intersections": [
+      2,
+      3
+    ],
+    "streets": [
+      "11th",
+      "12th"
+    ],
+    "sections": [
+      2,
+      3,
+      4
+    ],
+    "boundaries": [
+      "SOUTH_CUT400",
+      "NORTH_CUT1400"
+    ],
+    "limitations": [
+      "Omitted turning/local interactions",
+      "Stop bars represented by previously reconstructed annotation mouths",
+      "Lane11 through labels require logical connector assumption"
+    ]
+  },
+  "TRAIN": "B2",
+  "TEST": "B1",
+  "B1_LOCKED": true,
+  "validation_description": "TEMPORAL/ACQUISITION HOLDOUT VALIDATION WITH PRIOR FEASIBILITY SUMMARY EXPOSURE",
+  "dt_s": 0.1,
+  "simulation_window_B2_relative_s": [
+    92.9,
+    1032.7
+  ],
+  "signal_series": [
+    {
+      "intersection": 2,
+      "direction": 2,
+      "phase": "Thru",
+      "acquisition": "B2"
+    },
+    {
+      "intersection": 2,
+      "direction": 4,
+      "phase": "Thru",
+      "acquisition": "B2"
+    },
+    {
+      "intersection": 3,
+      "direction": 2,
+      "phase": "Thru",
+      "acquisition": "B2"
+    },
+    {
+      "intersection": 3,
+      "direction": 4,
+      "phase": "Thru",
+      "acquisition": "B2"
+    }
+  ],
+  "quality_filters": [
+    {
+      "rule": "NO_SAME_FRAME_LEADER",
+      "reason": "Zero means no leader; nonzero absent references are invalid"
+    },
+    {
+      "rule": "LEADER_OUTSIDE_STUDY_POPULATION_OR_GATE_BAND",
+      "reason": "Do not calibrate responses to agents absent from the proposed limited model"
+    },
+    {
+      "rule": "LEADER_CONTEXT_MISMATCH",
+      "reason": "Same direction, section and lane required"
+    },
+    {
+      "rule": "INVALID_BUMPER_GAP",
+      "reason": "Front-to-front headway minus leader length must be positive"
+    },
+    {
+      "rule": "SPATIAL_KINEMATIC_DISCONTINUITY",
+      "reason": "Step distance > mean reported speed*0.1s + 2*hypot(2ft,4ft); accuracy-derived diagnostic, not a guaranteed error bound"
+    },
+    {
+      "rule": "ACCELERATION_AT_OBSERVED_SATURATION",
+      "reason": "Exact observed +/-12.27ft/s^2 accumulation; no inference of true extreme acceleration"
+    },
+    {
+      "rule": "LANE_TRANSITION_ACTIVE_WINDOW",
+      "reason": "Within +/-1s of an observed road lane-label transition; descriptive maneuver exclusion, not a reaction parameter"
+    },
+    {
+      "rule": "AMBIGUOUS_SIGNAL_INTERSECTION_OR_LANE",
+      "reason": "Road approaches controlled by I2/I3 only; no intersection interior, special lanes or unknown phases"
+    },
+    {
+      "rule": "HEADWAY_POSITION_DISAGREEMENT",
+      "reason": "Absolute front-to-front positional discrepancy >8ft (two nominal 4ft longitudinal errors)"
+    }
+  ],
+  "preprocessing_version": "PEACHTREE3-TRAIN-ONLY-v1",
+  "estimation_criteria": {
+    "v0": "Median positive speed of normal-lane GREEN road observations with no recorded leader, excluding saturation/spatial jumps; no percentile chosen after rollout",
+    "T": "Median valid reported Time_Headway in cleaned moving GREEN CF sample at or above median strictly positive CF speed; front-to-front seed, then calibrated net-gap parameter",
+    "s0": "Median positive cleaned CF bumper gap at exactly reported zero speed",
+    "a": "Median strictly positive nonsaturated cleaned CF acceleration",
+    "b": "Median absolute strictly negative nonsaturated cleaned CF acceleration",
+    "bounds": "Prespecified empirical P10/P90 of each estimation sample; median is initial candidate. Bounds not selected on visual fit.",
+    "queue_proxy": "Exactly stopped connected lane chain; adjacency gap bounded by TRAIN standstill-gap P90. Numerical zero tolerance1e-6m/s; no cognitive threshold.",
+    "yellow": "Inspect B2 sample first; conservative comfortable-stopping-distance rule if no stable decision rule identifiable.",
+    "calibration_seeds": [
+      10,
+      11,
+      12
+    ],
+    "final_train_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029
+    ],
+    "delta": {
+      "value": 4,
+      "classification": "LITERATURE_DERIVED",
+      "source": "https://mtreiber.de/MicroApplet/IDM.html"
+    },
+    "objective_components": [
+      "mean_speed_relative_error",
+      "speed_W1_normalized",
+      "headway_W1_normalized",
+      "route_time_relative_error",
+      "stopped_fraction_absolute_error",
+      "throughput_temporal_normalized_error"
+    ],
+    "objective_weights": "Equal arithmetic mean of individually reported dimensionless errors; missing exits/unfinished demand add explicit feasibility penalty",
+    "optimization": "Bounded deterministic parameter search followed by Powell; candidate score is average of fixed development seeds, never best seed"
+  },
+  "hashes": {
+    "data\\peachtree_full.csv": "9769b819a1c0a010fa16cafa06a50bc7bc352f8e14303222f64a00c5e65b6702",
+    "data\\b2_baseline_source.parquet": "4cf0555fd19da9d0cdccf722e2ab0eca9b69e1d2f662f3617c0315519dd4d758",
+    "data\\b2_exogenous_inputs.json": "992706992886da3e5685cc8ec38806bcd6c9ea4a29746d5dec14974a1040f11b",
+    "docs\\b2_estimation_criteria.json": "185a3f9f140adca77dda99df023357a4fa508fd9ebcffe75df0c88f22e741751",
+    "outputs\\working\\peachtree_cf_preparation_B2.parquet": "14f198a2aa692bbc2807e0ed2816ad6bafd9431e285385e814da028b61ee9beb",
+    "outputs\\peachtree_signal_timeline.csv": "449af3a4aeb8ab158f31f244802f00f7c77f97d64b8863f77f0f8ffd3dda8a6a",
+    "outputs\\peachtree_intersection_mouths.csv": "f2e2173a7d998656ef8cf5cbb8141821e62a26e02b27c5928718fee27c18167a",
+    "simulation\\training_data.py": "491231b7efbe0a6c52bc255059e23854278920585eb30d172c060985cc1886cb"
+  },
+  "authorization": "Explicit user instruction approving reduced scope and B2/B1 lock; no blind-validation claim",
+  "freeze_kind": "SCOPE_DATA_METRICS_CRITERIA; behavior model may be revised using TRAIN only, with run version recorded"
+}
