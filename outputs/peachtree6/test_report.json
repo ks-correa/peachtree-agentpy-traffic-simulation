@@ -1,34 +1,33 @@
 {
-  "tests_total": 222,
-  "passed": 196,
+  "tests_total": 246,
+  "passed": 212,
   "skipped": 26,
-  "failures": 0,
-  "errors": 0,
-  "scenarios_authorized": true,
+  "failures": 2,
+  "errors": 6,
   "skipped_details": [
     {
       "test": "test_export_audit.ActualExportTests.test_export_and_subset_integrity",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_export_audit.ActualExportTests.test_independent_full_location_scan",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_export_audit.ActualExportTests.test_no_fabricated_split_or_transferability",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_export_audit.ActualExportTests.test_population_reconciliation",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_export_audit.ActualExportTests.test_previous_audit_preserved",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_export_audit.ActualExportTests.test_unavailable_percentages_are_null",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_local_audit.AuditTests.test_headway",
@@ -56,59 +55,60 @@
     },
     {
       "test": "test_peachtree_audit.PeachtreeSourceTests.test_actual_frames_and_identity_isolation",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_audit.PeachtreeSourceTests.test_reciprocal_counts_and_filter_denominators",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_integrity_and_reconciliation",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_audit.PeachtreeSourceTests.test_source_not_declared_frozen_or_calibrated",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_audit.PeachtreeSourceTests.test_transferability_orientation_and_categorical_types",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_actual_deterministic_output_hashes",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_all_sources_stay_intact",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_confirmed_events_follow_protocol",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_documented_sections_intersections",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_draft_is_not_a_freeze_or_calibration",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_parquet_qc_scope_identity_and_integrity",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_real_clock_counts_and_document_association",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_real_physical_cohort_pairs_and_conservation",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     },
     {
       "test": "test_peachtree_system.ActualSystemTests.test_real_throughput_matches_events_not_records",
-      "reason": "Historical mixed-source feasibility fixture incompatible with frozen protocol; fitting B1 remains prohibited"
+      "reason": "B1 LOCKED: historical source/mixed-metric fixture retained, not opened in PEACHTREE-3"
     }
-  ]
+  ],
+  "B1_LOCKED": true
 }

@@ -1,19 +1,60 @@
-# Dashboard final de presentación
+# Guía del dashboard actual
 
-PRESENTATION MODE abre por defecto; TECHNICAL MODE conserva la interfaz avanzada.
+La fase científica está cerrada: estructura y parámetros congelados, validación con limitaciones y evaluación BASE/E1/E2/E3 completada. La recomendación dentro del alcance es E1. La UI lee resultados y estados guardados.
 
-Inicio: `python -m streamlit run streamlit_app.py`.
+## Inicio
 
-Navegación: Proyecto, Datos, Modelo, Simulación, Calibración, Validación, Escenarios, Resultados, Comportamiento emergente, Decisión, Limitaciones, Material para presentación.
+```bash
+python -m pip install -r requirements-presentation.txt
+python -m streamlit run streamlit_app.py --server.address 127.0.0.1 --server.port 8510
+```
 
-Los17 puntos de la guía están mapeados en presentation_assets/presentation_manifest.json. Cada bloque contiene mensaje, nota de exposición, fuente, PNG y CSV. El centro de exportación permite descargar imágenes1920×1080, tablas numéricas con source_artifact y ZIP completo. Datos de integrantes/docente/fecha quedan en campos configurables, sin información inventada.
+Abrir http://127.0.0.1:8510. PRESENTATION MODE es predeterminado. TECHNICAL MODE también utiliza tema claro y la misma estructura de Simulación.
 
-El Canvas reproduce estados AgentPy oficiales guardados, con Run/Pause/Resume/Reset y playback0.5/1/2/5/10. No ejecuta nueva experimentación ni reproduce trayectorias reales NGSIM. Los indicadores oficiales provienen de las30 réplicas de cada configuración, separados de la animación ilustrativa seed7000.
+## Navegación
 
-QA:12 pruebas nuevas de presentación aprobadas, incluidas12 secciones sin AgentPy.run y reconciliación estadística. Se preserva el reporte científico222 casos,196 aprobados,26 omitidos, sin repetir física/calibración/validación. Chrome headless verifica navegación, dibujo real de Canvas y descarga ZIP; capturas en presentation_assets/screenshots/. Limitaciones y sesgos científicos permanecen visibles.
+Proyecto, Datos, Modelo, Simulación, Calibración, Validación, Escenarios, Resultados, Comportamiento emergente, Decisión, Limitaciones y Material para presentación. Participantes, docente y fecha son configurables; no se inventan datos personales.
+
+## Demostrar la simulación
+
+1. Abrir **Simulación** y seleccionar B1/B2 y BASE/E1/E2/E3.
+2. Elegir ventana visual: 60, 120, 180 s o Completa. La seed ilustrativa es 7000.
+3. Pulsar Iniciar. Pausar/Continuar conservan el avance; Reiniciar vuelve a cero.
+4. Usar playback x0.5/x1/x2/x5/x10 según el tiempo disponible para exponer.
+5. Observar progreso, demanda, ocho indicadores en vivo y Canvas.
+6. Desplazarse hacia abajo para mostrar las gráficas de la corrida, luego resultados oficiales de 30 réplicas y comportamiento emergente.
+
+**Por qué se detiene:** la ventana predeterminada termina a los 180 s (03:00) simulados. Es el final de la demostración. Seleccionar **Completa** permite cubrir 969,3 s (16:09.3) en B1 o 939,3 s (15:39.3) en B2.
+
+El avance temporal es independiente del porcentaje de vehículos ingresados. Las salidas son un resultado del modelo, no una meta fija de finalización. B1 tiene 251 TARGET (2 iniciales + 249 llegadas); B2 tiene 274 (21 + 253).
+
+El Canvas es claro, interpola posiciones mediante requestAnimationFrame y conserva dimensiones físicas. Mostrar referencias técnicas revela controles/cuts; el modo técnico amplía IDs, ticks y parámetros. Playback no cambia dt = 0,1 s ni ejecuta nuevos pasos AgentPy. Los snapshots tienen separación de 0,5 s; el tramo final sin snapshot conserva visualmente el último estado guardado.
+
+## Qué representan las gráficas
+
+- **Corrida actual:** velocidad/fracción detenida en paneles separados, cola, salidas y espacio–tiempo de la seed ilustrativa. Las series muestran toda la ventana visual, no se limitan al reloj reproducido.
+- **Resultados oficiales:** medias de 30 réplicas por escenario, IC95, recorrido, fracción detenida, desempeño NB/SB e hitos t50/t90/tFinal.
+- **Emergencia:** espacio–tiempo y cards oficiales de cola media, máxima, múltiples detenciones y máximo de activos, comparados con BASE.
+
+Las figuras tienen títulos/unidades en español, valores esenciales sin hover, codificación consistente y fuente discreta. Las rutas completas están en metadata/manifest; las exportaciones no tienen toolbar.
+
+## Descargar material
+
+Cada gráfica de Simulación ofrece **Descargar PNG** y **Descargar CSV**. Los PNG se generan a 1920×1080. El CSV incluye `source_artifact`. Material para presentación ofrece el paquete completo y los 17 bloques de la guía, con mensaje, fuentes, figuras, tablas y notas.
+
+- [ZIP](../presentation_assets/presentation_material.zip)
+- [Manifest](../presentation_assets/presentation_manifest.json)
+- [Auditoría de gráficas](../presentation_assets/presentation_chart_audit.json)
+- [Reporte y QA de Simulación](../presentation_assets/simulation_layout_report.json)
+
+## Evidencia de calidad y límites
+
+El QA de interfaz guardado registra 24 pruebas aprobadas y 8 combinaciones contexto/escenario verificadas en Chrome, incluyendo señales/estados, playback y descargas. El reporte general de trabajo posterior registra 246 casos, con 2 fallos y 6 errores; no debe confundirse con ese QA de interfaz. Los resultados y freezes científicos siguen intactos. Permanecen visibles los sesgos de headway y detenciones, diferencias de distribución B1 y restricciones de demanda cerrada.
 
 ALL 17 PRESENTATION REQUIREMENTS COVERED
 
-VISUAL PRESENTATION DASHBOARD READY
+SIMULATION SECTION PRESENTATION READY
 
-Los freezes, métricas y archivos científicos permanecen byte-identical. No nuevos escenarios, parámetros o resultados oficiales.
+CURRENT RUN AND OFFICIAL RESULTS CLEARLY SEPARATED
+
+SCIENTIFIC RESULTS UNCHANGED

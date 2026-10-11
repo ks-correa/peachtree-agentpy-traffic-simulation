@@ -1,30 +1,24 @@
-# Project data access and phase continuity
+# Project continuity and frozen scientific results
 
-Continue in this repository; preserve PEACHTREE-3 and PEACHTREE-3R artifacts.
-Current phase decision is in outputs/peachtree3s/decision.json.
+Continue in this repository. Preserve all historical phases, including PEACHTREE-3 and PEACHTREE-3R. The current scientific decision is outputs/peachtree6/experiment_freeze.json: COMPLETED, recommended E1. Structure (3U), calibration (4) and validation (5) are frozen.
 
-B1 remains locked unless the user explicitly authorizes a later validation phase.
-Never use B1 for parameter fitting, model/boundary selection, diagnostics or visual
-tuning. Do not directly open mixed legacy reports, CSVs or markdown summaries:
-docs/peachtree_system_reconstruction.md and older feasibility reports contain B1
-behavioral summaries. Prefer the B2-only phase3R/3S artifacts and the official
-afternoon 0400pm-0415pm documents. Inventorying filenames and hashing bytes are
-integrity actions, not behavioral analysis.
+The user authorized and completed B1 validation and subsequent scenario evaluation. B1 remains prohibited for parameter fitting, model/boundary selection, threshold/offset design or behavioral tuning. Reading authorized frozen B1 results and saved states for presentation is allowed; this is not permission to recalibrate or run experiments.
 
-Use simulation.training_data.read_train_csv for mixed legacy CSVs: route on B2
-before parsing numerical behavior. calibration.structural.full_b2 returns the
-isolated B2 cache and rejects other acquisitions. Do not print raw mixed dataset
-rows. Synthetic B1 labels in unit fixtures are not actual holdout data.
-
-For the current suite, run:
-
-python -m scripts.run_train_tests --report outputs/peachtree3s/test_report.json
-
-Never run unfiltered historical actual-source fixtures: the TRAIN runner skips
-them before setUpClass to protect the holdout. Keep prior test reports intact.
-
-No IDM recalibration, threshold changes, offset fitting, arbitrary stop-line
-shifts, trajectory replay or E1/E2/E3 implementation in this phase. AgentPy and
-dt=0.1s remain authoritative. Directional reduced scope is a separate mode; UI
-limits await boundary approval. Future validation must be described as:
+Validation must retain the declaration:
 TEMPORAL/ACQUISITION HOLDOUT VALIDATION WITH PRIOR FEASIBILITY SUMMARY EXPOSURE.
+
+Do not directly open mixed legacy reports or raw mixed CSVs for behavioral analysis. docs/peachtree_system_reconstruction.md and older feasibility reports contain prior B1 summaries. Prefer isolated B2 sources and frozen phase4/5/6 artifacts. Filename inventory and byte hashing are integrity actions. Do not print raw mixed rows.
+
+For mixed legacy CSVs use simulation.training_data.read_train_csv, routing on B2 before parsing numerical behavior. calibration.structural.full_b2 returns the isolated B2 cache and rejects other acquisitions. Synthetic B1 fixture labels are not actual holdout observations.
+
+Current work is UI, plotting, presentation exports and documentation only unless the user explicitly authorizes new scientific work. No IDM recalibration, threshold changes, offset fitting, stop-line shifts, trajectory replay, new scenarios or scientific-result rewrites. AgentPy and dt=0.1s remain authoritative. BASE/E1/E2/E3 are already implemented and evaluated; do not describe them as pending.
+
+streamlit_app.py is the current entry point. Presentation and Technical modes use the shared complete simulation view and a light Canvas. The UI reproduces frozen seed7000 states; playback changes visual speed only. Current-run indicators and official 30-replica results remain visibly separate. Default demo window is 180s; Full uses the acquisition's official horizon.
+
+For current UI verification run:
+
+python -m scripts.qa_simulation_layout
+
+Reports go under presentation_assets/. Keep scientific test reports intact; do not rerun scientific suites to verify documentation or UI edits. Never run unfiltered historical actual-source fixtures. If later scientific work is explicitly authorized, use the phase-appropriate guarded TRAIN runner; it skips incompatible mixed-source fixtures before setUpClass.
+
+Do not commit the large original datasets excluded by .gitignore. Preserve local files. Historical scientific reports retain their phase-specific statuses; update README and current usage guides instead of rewriting history.

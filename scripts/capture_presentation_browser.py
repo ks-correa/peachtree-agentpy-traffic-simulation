@@ -19,8 +19,8 @@ def main():
             results.append({'section':name,'browser_rendered':True,'exceptions':exception})
         page.get_by_role('tab',name='Simulación',exact=True).click();page.wait_for_timeout(700)
         page.get_by_label('Playback',exact=True).click();page.get_by_text('x10',exact=True).click()
-        page.get_by_role('button',name='Run',exact=True).click();page.wait_for_timeout(2500)
-        page.get_by_role('button',name='Pause',exact=True).click();page.wait_for_timeout(500)
+        page.get_by_role('button',name='Iniciar',exact=True).click();page.wait_for_timeout(2500)
+        page.get_by_role('button',name='Pausar',exact=True).click();page.wait_for_timeout(500)
         canvasframe=next(frame for frame in page.frames if frame.locator('#corridor').count())
         assert canvasframe.locator('#metric-0').inner_text().strip()!='—'
         assert canvasframe.locator('#live-cards').inner_text().strip()

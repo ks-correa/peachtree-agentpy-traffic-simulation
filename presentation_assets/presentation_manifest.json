@@ -823,5 +823,6 @@
         "source_artifact": "outputs/peachtree6/illustrative_B2_E3.parquet;outputs/peachtree3u/structural_model_freeze.json"
       }
     ]
-  }
+  },
+  "usage_guide": "README_PRESENTACION.md"
 }
